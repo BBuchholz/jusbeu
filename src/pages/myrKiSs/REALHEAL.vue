@@ -1,6 +1,7 @@
 <template>
   <div>
     <p><a href="https://play.google.com/store/apps/details?id=com.mymaloka.companion">Launch Maloka App</a></p>
+    <p>Visit STS for log book forms, using pass code "REALHEAL" to locate them once there...</p>
     <!-- <a href="https://anxious-grove.netlify.app/" target="_blank"> -->
     <img class="card" src="/REALHEAL-73a4.png">
     <!-- </a> -->
