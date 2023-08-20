@@ -37,15 +37,7 @@ const { t } = useI18n()
         {{ t('button.go') }}
       </button>
     </div>
-    <p>
-      <a rel="noreferrer" href="https://github.com/BBuchholz/myriad-central-node" target="_blank">
-        Myriad Central Node
-      </a>
-    </p>
-    <p>
-      <em text-sm opacity-75>You are currently at a Central Node within the Myriad Ecosystem</em>
-    </p>
-    <img alt="Myriad Central Node logo" :src="isDark ? '/MCN_LOGO_DARK.png' : '/MCN_LOGO_LIGHT.png'">
+    <img alt="Myriad Central Node logo" :src="isDark ? '/JusBeU_DARK.png' : '/JusBeU_LIGHT.png'">
   </div>
 </template>
 
