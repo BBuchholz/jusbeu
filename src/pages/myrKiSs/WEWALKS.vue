@@ -2,6 +2,12 @@
   <p class="display">
     "WEWALKS"
   </p>
+  <p class="display">
+    Walking As A Meditative Practice
+  </p>
+  <p class="display">
+    COMING SOON: Learning Path Investigations in Association with Sylvan Circle Academy
+  </p>
   <div class="flex-container">
     <!-- <a href="#" target="_blank"> -->
     <img
@@ -9,7 +15,7 @@
       src="https://madamadam.s3.us-east-2.amazonaws.com/WEWALKS-9071_20230821_115243_0000.png"
     >
     <p class="flex-child display">
-      testing
+      COMING SOON!
     </p>
     <!-- </a> -->
   </div>
@@ -17,7 +23,7 @@
     <!-- <a href="#" target="_blank"> -->
 
     <p class="flex-child display">
-      testing
+      COMING SOON!
     </p>
     <img class="card flex-child" src="https://madamadam.s3.us-east-2.amazonaws.com/LPI-60fc_CARD.png">
     <!-- </a> -->
@@ -27,7 +33,7 @@
     <img class="card flex-child" src="https://madamadam.s3.us-east-2.amazonaws.com/SYLFAN-857a_CARD.png">
 
     <p class="flex-child display">
-      testing
+      COMING SOON!
     </p>
     <!-- </a> -->
   </div>
