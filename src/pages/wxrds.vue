@@ -1,60 +1,57 @@
 <script setup>
-import { ref } from 'vue'
+import { getCardFor } from './allCards'
 
-const user = useUserStore()
-
-const testWxrds = ref([
-  {
-    wxrdvalue: 'test',
-    wxrdtype: '',
-    content: '',
-    related: '',
-    uuid: '',
-    image: '',
-  },
-  {
-    wxrdvalue: 'test2',
-    wxrdtype: '',
-    content: '',
-    related: '',
-    uuid: '',
-    image: '',
-  },
-  {
-    wxrdvalue: 'test3',
-    wxrdtype: '',
-    content: '',
-    related: '',
-    uuid: '',
-    image: '',
-  },
+const sortedCards = ref([
+  getCardFor('CARDS'),
+  getCardFor('CGBA'),
+  getCardFor('SYLFAN'),
+  getCardFor('BUILDER'),
+  getCardFor('WEWALKS'),
+  getCardFor('BAOLG2'),
+  getCardFor('PLAY'),
+  getCardFor('MCCU'),
+  getCardFor('PANDAEMONIC'),
 ])
 </script>
 
 <template>
-  <p mt-4 text-sm>
-    <span opacity-75>Recently attempts:</span>
-    <ul>
-      <li v-for="otherMyrKi in user.otherMyrKis" :key="otherMyrKi">
-        <RouterLink :to="`/myrKiSs/${otherMyrKi}`" replace>
-          {{ otherMyrKi }}
-        </RouterLink>
-      </li>
-    </ul>
-  </p>
+  <div class="text-center">
+    <h3>Zhones</h3>
+  </div>
 
-  <!-- <p>
-    Wxrds
-  </p>
-
-  <StepInStone
-    v-for="wxrd in testWxrds"
-    :key="wxrd.uuid"
-    :uuid="wxrd.uuid"
-    :wxrdvalue="wxrd.wxrdvalue"
-    :wxrdtype="wxrd.wxrdtype"
-    :content="wxrd.content"
-    :related="wxrd.related"
-    :image="wxrd.image"
-  /> -->
+  <div v-for="aCard in sortedCards" :key="aCard" class="zhone flex-container">
+    <div class="card flex-child">
+      <img :src="aCard.image">
+    </div>
+    <div class="flex-child content">
+      <a :href="aCard.siteUrl">
+        {{ aCard.siteName }}
+      </a> - {{ aCard.siteDesc }}
+    </div>
+  </div>
 </template>
+
+<style scoped>
+.text-center {
+  margin: 40px;
+}
+
+a {
+    color: aqua;
+}
+
+.zhone {
+    margin: 40px;
+}
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+</style>
