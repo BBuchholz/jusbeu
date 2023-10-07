@@ -18,8 +18,8 @@
 
     <RouterLink
       icon-btn
-      to="/wxrds"
-      title="Wxrds"
+      to="/myrKiSs/CREDITS"
+      title="Credits"
     >
       <div i-carbon-language />
     </RouterLink>

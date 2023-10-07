@@ -81,6 +81,22 @@ export const allCards = ref([
     uuid: '',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/WEWALKS-9071_20230821_115243_0000.png',
   },
+  {
+    passCode: 'SCA',
+    siteUrl: '',
+    siteName: '',
+    siteDesc: '',
+    uuid: 'fd10ebc6-e270-4488-8208-a94089b70a5f',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/SCA-0a5f_CARD.png',
+  },
+  {
+    passCode: 'COVENTRY',
+    siteUrl: '',
+    siteName: '',
+    siteDesc: '',
+    uuid: '670487fa-39e9-4118-ab6b-8d0ae368f6df',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CGBA-f6df_CARD.png',
+  },
 ])
 
 // TODO: build function that is exported that gets a single
@@ -94,6 +110,16 @@ export function getCardFor(aPassCode) {
         = allCards.value.find(card =>
           card.passCode.toLowerCase()
                   === aPassCode.toLowerCase(),
+        )
+
+  return foundCard
+}
+
+export function getCardForUuid(aUuid) {
+  const foundCard
+        = allCards.value.find(card =>
+          card.uuid.toLowerCase()
+                  === aUuid.toLowerCase(),
         )
 
   return foundCard

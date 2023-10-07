@@ -1,32 +1,29 @@
 <script setup>
-import { getCardFor } from './allCards'
+import { getCardFor } from '../allCards'
+import { getCreditsFor } from '../allCredit'
 
 const sortedCards = ref([
-  getCardFor('CARDS'),
-  getCardFor('CGBA'),
-  getCardFor('SYLFAN'),
-  getCardFor('BUILDER'),
-  getCardFor('WEWALKS'),
-  getCardFor('BAOLG2'),
-  getCardFor('PLAY'),
-  getCardFor('MCCU'),
-  getCardFor('PANDAEMONIC'),
+  // getCardFor('SC'),
+  getCardFor('SCA'),
+  getCardFor('COVENTRY'),
 ])
 </script>
 
 <template>
   <div class="text-center">
-    <h3>Zhones</h3>
+    <h3>CREDIT WHERE CREDIT IS DUE</h3>
+  </div>
+
+  <div class="text-center">
+    <p>Unless otherwise specified all copyrights mentioned on this page are licensed under CC-BY-SA 4.0</p>
   </div>
 
   <div v-for="aCard in sortedCards" :key="aCard" class="zhone flex-container">
-    <div class="flex-child card">
+    <div class="card flex-child">
       <img :src="aCard.image">
     </div>
     <div class="flex-child content">
-      <a :href="aCard.siteUrl">
-        {{ aCard.siteName }}
-      </a> - {{ aCard.siteDesc }}
+      <p>{{ getCreditsFor(aCard.uuid) }}</p>
     </div>
   </div>
 </template>
@@ -35,7 +32,6 @@ const sortedCards = ref([
 .text-center {
   margin: 40px;
 }
-
 a {
     color: aqua;
 }
