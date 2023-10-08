@@ -21,6 +21,16 @@ export const allCredit = ref([
       },
     ],
   },
+  {
+    cardUuid: 'a87e0c60-4492-4b2d-a9b4-d901c6bf08ef',
+    cardDesignCredit: 'Brent Buchholz',
+    cardComponentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Imagine AI Art App',
+      },
+    ],
+  },
 ])
 
 // TODO: build function that is exported that gets a single
@@ -45,8 +55,10 @@ export function getCreditsFor(aCardUuid) {
   let output = `(C) ${foundCredit.cardDesignCredit}`
 
   if (foundCredit.cardComponentCredits.length > 0) {
+    output += ' (card layout and design)'
+
     for (const compCredit of foundCredit.cardComponentCredits)
-      output += `, ${compCredit.creditDue}`
+      output += `, ${compCredit.creditDue} (${compCredit.creditItem})`
   }
 
   return output

@@ -3,7 +3,7 @@ import { getCardFor } from '../allCards'
 import { getCreditsFor } from '../allCredit'
 
 const sortedCards = ref([
-  // getCardFor('SC'),
+  getCardFor('SC'),
   getCardFor('SCA'),
   getCardFor('COVENTRY'),
 ])
