@@ -5,6 +5,7 @@ import {
 } from '../allCards'
 
 const sortedCards = ref([
+  getCardFor('JSY'),
   getCardFor('SC'),
   getCardFor('ENERGY1'),
   getCardFor('SCA'),

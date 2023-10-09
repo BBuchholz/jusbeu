@@ -49,6 +49,16 @@ export const allCards = ref([
       },
     ],
   },
+  {
+    passCode: 'JSY',
+    uuid: 'f3745e9d-91a7-4beb-8c10-784fcd865bd4',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/JSY-5bd4_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+      },
+    ],
+  },
 ])
 
 // TODO: build function that is exported that gets a single
@@ -95,8 +105,10 @@ export function getCreditsFor(aPassCode) {
   if (foundCredit.componentCredits.length > 0) {
     output += ' (card layout and design)'
 
-    for (const compCredit of foundCredit.componentCredits)
-      output += `, ${compCredit.creditDue} (${compCredit.creditItem})`
+    for (const compCredit of foundCredit.componentCredits) {
+      if (compCredit && compCredit.creditDue && compCredit.creditItem)
+        output += `, ${compCredit.creditDue} (${compCredit.creditItem})`
+    }
   }
 
   return output
