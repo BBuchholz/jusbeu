@@ -105,6 +105,14 @@ export const allCards = ref([
     uuid: 'a87e0c60-4492-4b2d-a9b4-d901c6bf08ef',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/SC-08ef_CARD.png',
   },
+  {
+    passCode: 'ENERGY1',
+    siteUrl: '',
+    siteName: '',
+    siteDesc: '',
+    uuid: 'ce09a0e0-f2bf-4fc3-9e7a-f70d865d63af',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY1-63af_CARD.png',
+  },
 ])
 
 // TODO: build function that is exported that gets a single

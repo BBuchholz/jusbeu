@@ -31,6 +31,16 @@ export const allCredit = ref([
       },
     ],
   },
+  {
+    cardUuid: 'ce09a0e0-f2bf-4fc3-9e7a-f70d865d63af',
+    cardDesignCredit: 'Brent Buchholz',
+    cardComponentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
 ])
 
 // TODO: build function that is exported that gets a single
