@@ -3,12 +3,12 @@ import {
   getCardFor,
 } from '../allCards'
 
-const currentIndex = ref(0)
-
 const relatedCards = ref([
   getCardFor('SC'),
   getCardFor('SCA'),
 ])
+
+const currentIndex = ref(0)
 
 const currentCard = ref(relatedCards.value[currentIndex.value])
 

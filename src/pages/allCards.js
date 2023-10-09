@@ -59,6 +59,16 @@ export const allCards = ref([
       },
     ],
   },
+  {
+    passCode: 'JSY',
+    uuid: 'd48dace7-80df-46b6-b8b4-c80b1c2ba4d6',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/JSY-a4d6_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+      },
+    ],
+  },
 ])
 
 // TODO: build function that is exported that gets a single
@@ -70,6 +80,16 @@ export const allCards = ref([
 export function getCardFor(aPassCode) {
   const foundCard
         = allCards.value.find(card =>
+          card.passCode.toLowerCase()
+                  === aPassCode.toLowerCase(),
+        )
+
+  return foundCard
+}
+
+export function getCardsFor(aPassCode) {
+  const foundCard
+        = allCards.value.filter(card =>
           card.passCode.toLowerCase()
                   === aPassCode.toLowerCase(),
         )

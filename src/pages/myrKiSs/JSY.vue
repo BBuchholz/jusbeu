@@ -1,20 +1,63 @@
+<script setup>
+import {
+  getCardsFor,
+} from '../allCards'
+
+const relatedCards = ref([
+  ...getCardsFor('JSY'),
+])
+
+const currentIndex = ref(0)
+
+const currentCard = ref(relatedCards.value[currentIndex.value])
+
+function incrementIndex() {
+  if (currentIndex.value >= relatedCards.value.length - 1)
+    currentIndex.value = 0
+  else
+    currentIndex.value++
+
+  currentCard.value = relatedCards.value[currentIndex.value]
+}
+
+function decrementIndex() {
+  if (currentIndex.value <= 0)
+    currentIndex.value = relatedCards.value.length - 1
+  else
+    currentIndex.value--
+
+  currentCard.value = relatedCards.value[currentIndex.value]
+}
+</script>
+
 <template>
   <p class="display">
     info here
   </p>
   <div>
-    <!-- <a href="#" target="_blank"> -->
-    <img class="card" src="https://madamadam.s3.us-east-2.amazonaws.com/JSY-5bd4_CARD.png">
-    <!-- </a> -->
+    <button @click="decrementIndex">
+      -
+    </button>
+    <button @click="incrementIndex">
+      +
+    </button>
+    <img class="card" :src="currentCard.image">
   </div>
   <p class="display">
     card attribution info here
   </p>
 </template>
 
-<style>
+<style scoped>
   .display {
     margin: 40px;
+  }
+
+  button {
+    padding: 20px;
+    margin: 20px;
+    border: solid;
+    border-radius: 10px;
   }
 
   .card {
