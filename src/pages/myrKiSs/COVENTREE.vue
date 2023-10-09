@@ -1,3 +1,36 @@
+<script setup>
+import {
+  getCardFor,
+} from '../allCards'
+
+const currentIndex = ref(0)
+
+const relatedCards = ref([
+  getCardFor('SC'),
+  getCardFor('SCA'),
+])
+
+const currentCard = ref(relatedCards.value[currentIndex.value])
+
+function incrementIndex() {
+  if (currentIndex.value >= relatedCards.value.length - 1)
+    currentIndex.value = 0
+  else
+    currentIndex.value++
+
+  currentCard.value = relatedCards.value[currentIndex.value]
+}
+
+function decrementIndex() {
+  if (currentIndex.value <= 0)
+    currentIndex.value = relatedCards.value.length - 1
+  else
+    currentIndex.value--
+
+  currentCard.value = relatedCards.value[currentIndex.value]
+}
+</script>
+
 <template>
   <p class="display">
     COMING SOON: WELLcome 2 tha GarDin
@@ -7,27 +40,43 @@
     <img class="card" src="https://madamadam.s3.us-east-2.amazonaws.com/CGBA-f6df_CARD.png">
     <!-- </a> -->
   </div>
+  <div>
+    <button @click="decrementIndex">
+      -
+    </button>
+    <button @click="incrementIndex">
+      +
+    </button>
+    <img class="card" :src="currentCard.image">
+  </div>
   <p class="display">
     card attribution info here
   </p>
 </template>
 
-  <style>
-    .display {
-      margin: 40px;
-    }
+<style scoped>
+  .display {
+    margin: 40px;
+  }
 
-    .card {
-      max-width: 50%;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      border: 5px;
-      border-color: white;
-      border-style: solid;
-      border-radius: 1%;
-    }
-  </style>
+  button {
+    padding: 20px;
+    margin: 20px;
+    border: solid;
+    border-radius: 10px;
+  }
+
+  .card {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 1%;
+  }
+</style>
