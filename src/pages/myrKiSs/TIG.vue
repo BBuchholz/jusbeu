@@ -1,10 +1,21 @@
 <template>
   <p class="display">
-    info here
+    THEE IMITATION GAME
   </p>
   <div>
+    <ul>
+      <li>
+        <RouterLink
+          to="/ptpa"
+        >
+          Piano Tok Play Alongs
+        </RouterLink>
+      </li>
+    </ul>
+  </div>
+  <div>
     <!-- <a href="#" target="_blank"> -->
-    <!-- <img class="card" src=""> -->
+    <img class="card" src="https://madamadam.s3.us-east-2.amazonaws.com/TIG-dac3_CARD.png">
     <!-- </a> -->
   </div>
   <p class="display">
