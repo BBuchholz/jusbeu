@@ -56,6 +56,8 @@ export const allCards = ref([
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
+        creditItem: 'image elements',
+        creditDue: 'Logo Maker Android App',
       },
     ],
   },
@@ -65,8 +67,6 @@ export const allCards = ref([
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/JSY-a4d6_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
-      {
-      },
     ],
   },
   {
@@ -88,6 +88,8 @@ export const allCards = ref([
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
+        creditItem: 'image elements',
+        creditDue: 'Adobe Express Logo Maker',
       },
     ],
   },
@@ -139,6 +141,16 @@ export function getCreditFor(aPassCode) {
   return foundCredit
 }
 
+export function getCreditForUuid(aUuid) {
+  const foundCredit
+        = allCards.value.find(card =>
+          card.uuid.toLowerCase()
+                  === aUuid.toLowerCase(),
+        )
+
+  return foundCredit
+}
+
 export function getCreditsFor(aPassCode) {
   const foundCredit = getCreditFor(aPassCode)
 
@@ -147,6 +159,23 @@ export function getCreditsFor(aPassCode) {
   if (foundCredit.componentCredits.length > 0) {
     output += ' (card layout and design)'
 
+    for (const compCredit of foundCredit.componentCredits) {
+      if (compCredit && compCredit.creditDue && compCredit.creditItem)
+        output += `, ${compCredit.creditDue} (${compCredit.creditItem})`
+    }
+  }
+
+  return output
+}
+
+export function getCreditsForUuid(aUuid) {
+  const foundCredit = getCreditForUuid(aUuid)
+
+  let output = `(C) ${foundCredit.designCredit}`
+
+  output += ' (card layout and design)'
+
+  if (foundCredit.componentCredits.length > 0) {
     for (const compCredit of foundCredit.componentCredits) {
       if (compCredit && compCredit.creditDue && compCredit.creditItem)
         output += `, ${compCredit.creditDue} (${compCredit.creditItem})`

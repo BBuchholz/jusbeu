@@ -1,15 +1,11 @@
 <script setup>
 import {
-  getCardFor,
-  getCreditsFor,
+  allCards,
+  getCreditsForUuid,
 } from '../allCards'
 
 const sortedCards = ref([
-  getCardFor('JSY'),
-  getCardFor('SC'),
-  getCardFor('ENERGY1'),
-  getCardFor('SCA'),
-  getCardFor('COVENTRY'),
+  ...allCards.value,
 ])
 </script>
 
@@ -27,7 +23,7 @@ const sortedCards = ref([
       <img :src="aCard.image">
     </div>
     <div class="flex-child content">
-      <p>{{ getCreditsFor(aCard.passCode) }}</p>
+      <p>{{ getCreditsForUuid(aCard.uuid) }}</p>
     </div>
   </div>
 </template>
