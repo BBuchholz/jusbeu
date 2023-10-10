@@ -69,6 +69,18 @@ export const allCards = ref([
       },
     ],
   },
+  {
+    passCode: 'BUILDER',
+    uuid: '787ceeca-e0f0-4504-a7d4-5dadaa6e4db3',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/BUILDER-4db3_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
 ])
 
 // TODO: build function that is exported that gets a single
