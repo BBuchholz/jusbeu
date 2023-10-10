@@ -93,6 +93,22 @@ export const allCards = ref([
       },
     ],
   },
+  {
+    passCode: 'OBAOLG',
+    uuid: '7c19103b-9a80-4805-85f8-e6cab564fc22',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/OBAOLG-fc22_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+    ],
+  },
+  {
+    passCode: 'OBAOLG',
+    uuid: '95e87d50-f7f8-4540-82c6-f4c31d6e4cea',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/OBAOLG-4cea_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+    ],
+  },
 ])
 
 // TODO: build function that is exported that gets a single
