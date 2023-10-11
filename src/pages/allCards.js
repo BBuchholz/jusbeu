@@ -82,6 +82,18 @@ export const allCards = ref([
     ],
   },
   {
+    passCode: 'TIG',
+    uuid: '67c43342-a45c-4b43-97e9-749dcd27dac3',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TIG-dac3_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'OBAOLG',
     uuid: '8666e3d0-02ce-4aa2-8ae5-f62ef174009b',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/OBAOLG-009b_CARD.png',
@@ -107,6 +119,49 @@ export const allCards = ref([
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/OBAOLG-4cea_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
+    ],
+  },
+  {
+    passCode: 'thaMESA',
+    uuid: '6fb6e639-4121-4fa1-b2bb-9d418e6cbe9f',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/thaMESA-be9f_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'thaTRUTH',
+    uuid: '77b2a7ab-0b0b-4182-a8b3-78a1553ba60b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/thaTRUTH-a60b_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'thaTRUTH',
+    uuid: 'aa99247d-d511-4e6d-b90d-25f2b832aa8b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/thaTRUTH-aa8b_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
+    passCode: 'PERMUTATIONS',
+    uuid: 'b4ecb988-6631-45b3-bf8e-8d2b946bde6d',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/PERMUTATIONS-de6d_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
     ],
   },
 ])
