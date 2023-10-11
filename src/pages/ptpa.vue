@@ -2,6 +2,15 @@
   <h1 class="display">
     Piano Tok Play Alongs
   </h1>
+  <p class="display">
+    We like these little play along exercises from familiar tunes as a way to encourage playful practice that engages the novelty centers of the brain to encourage engagement with the instrument and associated muscle memory, etc.
+  </p>
+  <p class="display">
+    Any Learning Participants (LPs) who would like to submit their "renditions" may submit listed or unlisted video links by <a href="https://forms.gle/4mDTuTL8e8LXfeed7" target="_blank">clicking here</a> and filling out the form as is appropriate.
+  </p>
+  <p class="display">
+    All submissions are manually processed to prevent spamming and such, so please be patient if you've submitted and it hasn't popped up on the site immediately (feel free to <a href="mailto:syndicated.circuitry@gmail.com" target="_blank">contact us through email (click here)</a> with any questions)
+  </p>
   <div>
     <ul>
       <li>
