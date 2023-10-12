@@ -52,6 +52,13 @@ export const allCards = ref([
     componentCredits: [],
   },
   {
+    passCode: 'ENTOMDT',
+    uuid: 'ed9b8ac5-399c-4b4a-bc2c-8562f0749f81',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENTOMDT-9f81_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
     passCode: 'SC',
     uuid: 'a87e0c60-4492-4b2d-a9b4-d901c6bf08ef',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/SC-08ef_CARD.png',
