@@ -26,6 +26,32 @@ export const allCards = ref([
     ],
   },
   {
+    passCode: 'ENTOMDT',
+    uuid: 'c91dc841-0631-4057-90b6-75609c08091c',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENTOMDT-091c_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'ENTOMDT',
+    uuid: '7beb3f2c-43c4-4256-a531-ee1ed33914ba',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENTOMDT-14ba_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
+    passCode: 'ENTOMDT',
+    uuid: 'e5098c2d-78ba-4b91-818b-8578de044b67',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENTOMDT-4b67_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
     passCode: 'SC',
     uuid: 'a87e0c60-4492-4b2d-a9b4-d901c6bf08ef',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/SC-08ef_CARD.png',
