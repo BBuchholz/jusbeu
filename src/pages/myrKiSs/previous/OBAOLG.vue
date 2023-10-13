@@ -1,7 +1,7 @@
 <script setup>
 import {
   getCardsFor,
-} from '../allCards'
+} from '../../allCards'
 
 const relatedCards = ref([
   ...getCardsFor('OBAOLG'),
