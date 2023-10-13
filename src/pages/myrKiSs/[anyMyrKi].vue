@@ -40,9 +40,6 @@ function decrementIndex() {
 
 <template>
   <div v-if="currentCard">
-    <p class="display">
-      info here
-    </p>
     <div>
       <button @click="decrementIndex">
         -
