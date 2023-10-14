@@ -111,7 +111,7 @@ devDependencies:
     version: 4.9.5
   unocss:
     specifier: ^0.51.4
-    version: 0.51.4(postcss@8.4.21)(rollup@2.79.1)(vite@4.2.1)
+    version: 0.51.4(postcss@8.4.31)(rollup@2.79.1)(vite@4.2.1)
   unplugin-auto-import:
     specifier: ^0.15.2
     version: 0.15.2(@vueuse/core@9.13.0)(rollup@2.79.1)
@@ -2667,7 +2667,7 @@ packages:
       sirv: 2.0.2
     dev: true
 
-  /@unocss/postcss@0.51.4(postcss@8.4.21):
+  /@unocss/postcss@0.51.4(postcss@8.4.31):
     resolution: {integrity: sha512-Jkf7GD8svev854pHVuFx0AtZoh3LQKbFoU5DDT1Hb0Yr/l2sxUSxzx1Jb5vUun89tSlfzIZ2pKAd0BqwtqWlmw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -2678,7 +2678,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.2.12
       magic-string: 0.30.0
-      postcss: 8.4.21
+      postcss: 8.4.31
     dev: true
 
   /@unocss/preset-attributify@0.51.4:
@@ -3266,7 +3266,7 @@ packages:
       '@vue/shared': 3.2.47
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.21
+      postcss: 8.4.31
       source-map: 0.6.1
 
   /@vue/compiler-sfc@3.3.0-alpha.9:
@@ -3280,7 +3280,7 @@ packages:
       '@vue/shared': 3.3.0-alpha.9
       estree-walker: 2.0.2
       magic-string: 0.30.0
-      postcss: 8.4.21
+      postcss: 8.4.31
       source-map: 0.6.1
     dev: true
 
@@ -4245,7 +4245,7 @@ packages:
       css-select: 4.3.0
       parse5: 6.0.1
       parse5-htmlparser2-tree-adapter: 6.0.1
-      postcss: 8.4.21
+      postcss: 8.4.31
       pretty-bytes: 5.6.0
     dev: true
 
@@ -7413,8 +7413,8 @@ packages:
     resolution: {integrity: sha512-YVE1mIJ4VpUMqZObFndk9CJu6DBJR/GB13p3tXuNbwD4XExaI5EOuRl6BHeIDxIqXZVxSfAC+y6U1Z/IxCfKUg==}
     dev: true
 
-  /nanoid@3.3.4:
-    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+  /nanoid@3.3.6:
+    resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -7997,11 +7997,11 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss@8.4.21:
-    resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
+  /postcss@8.4.31:
+    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.4
+      nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
@@ -9367,7 +9367,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss@0.51.4(postcss@8.4.21)(rollup@2.79.1)(vite@4.2.1):
+  /unocss@0.51.4(postcss@8.4.31)(rollup@2.79.1)(vite@4.2.1):
     resolution: {integrity: sha512-84kRoL29Rk0AKdeS2GGZ+YduW5F0S2on3cSxA2Hh1KlI4MN8Xvxa8+f4RfFS0U5iH4yoHohvcWThRgjDhOWSeg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -9380,7 +9380,7 @@ packages:
       '@unocss/cli': 0.51.4(rollup@2.79.1)
       '@unocss/core': 0.51.4
       '@unocss/extractor-arbitrary-variants': 0.51.4
-      '@unocss/postcss': 0.51.4(postcss@8.4.21)
+      '@unocss/postcss': 0.51.4(postcss@8.4.31)
       '@unocss/preset-attributify': 0.51.4
       '@unocss/preset-icons': 0.51.4
       '@unocss/preset-mini': 0.51.4
@@ -9865,7 +9865,7 @@ packages:
     dependencies:
       '@types/node': 18.6.1
       esbuild: 0.17.12
-      postcss: 8.4.21
+      postcss: 8.4.31
       resolve: 1.22.1
       rollup: 3.18.0
     optionalDependencies:
