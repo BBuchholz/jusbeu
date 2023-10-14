@@ -204,6 +204,27 @@ export const allCards = ref([
       },
     ],
   },
+  {
+    passCode: 'PERMUTATIONS',
+    uuid: '1a3be85f-e212-4211-9b1c-df426fd30c5b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/PERMUTATIONS-0c5b_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
+    passCode: 'PERMUTATIONS',
+    uuid: '9a3c897c-933e-4f83-846f-6db2ac37d602',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/PERMUTATIONS-d602_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
+    passCode: 'PERMUTATIONS',
+    uuid: '9b5b3c87-6c83-4d62-96fc-5b0b85277c88',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/PERMUTATIONS-7c88_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
 ])
 
 // TODO: build function that is exported that gets a single
