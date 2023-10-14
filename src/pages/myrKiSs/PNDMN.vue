@@ -8,35 +8,47 @@ import { shuffle as _shuffle } from 'lodash-es'
 import { ref } from 'vue'
 
 function getInitialCards() {
-  return [1, 2, 3, 4]
+  return ['1W', '2D', '3S', '4C']
 }
-const cards = ref(getInitialCards())
+const table = ref([])
 const selected = ref([])
-let id = cards.value.length + 1
+const deck = ref([])
+const discard = ref(getInitialCards())
+const status = ref('before game')
+let id = table.value.length + 1
 
 function insert() {
-  const i = Math.round(Math.random() * cards.value.length)
-  cards.value.splice(i, 0, id++)
+  const i = Math.round(Math.random() * table.value.length)
+  table.value.splice(i, 0, id++)
 }
 
 function reset() {
-  cards.value = getInitialCards()
+  table.value = getInitialCards()
   selected.value = []
 }
 
 function shuffle() {
-  cards.value = _shuffle(cards.value)
+  discard.value = deck.value.concat(discard.value)
+  deck.value = _shuffle(discard.value)
+  discard.value = []
 }
 
 function remove(card) {
-  const i = cards.value.indexOf(card)
+  const i = table.value.indexOf(card)
   if (i > -1)
-    cards.value.splice(i, 1)
+    table.value.splice(i, 1)
 }
 
 function deal() {
-  reset()
-  shuffle()
+  if (table.value.length < 4) {
+    if (deck.value.length > 0)
+      table.value.push(deck.value.pop())
+    else
+      status.value = 'out of cards'
+  }
+  else {
+    status.value = 'no open spaces'
+  }
 }
 
 function select(card) {
@@ -45,11 +57,30 @@ function select(card) {
   else
     selected.value.push(card)
 }
+
+function selectionIsValid() {
+  // PROTOTYPING: this is a stub
+  if (selected.value.length === 2)
+    return true
+
+  else
+    return false
+}
+
+function collect() {
+  // PROTOTYPING: this is a stub
+  for (const card of selected.value) {
+    table.value = table.value.filter(aCard => card !== aCard)
+    discard.value.push(card)
+  }
+
+  selected.value = []
+}
 </script>
 
 <template>
   <TransitionGroup tag="ul" name="fade" class="container">
-    <div v-for="card in cards" :key="card" class="card" @click="select(card)">
+    <div v-for="card in table" :key="card" class="card" @click="select(card)">
       {{ card }}
       <button @click="remove(card)">
         x
@@ -63,13 +94,19 @@ function select(card) {
   <button class="styled-btn" @click="reset">
     reset
   </button>
+  <button v-if="selectionIsValid()" class="styled-btn" @click="collect">
+    collect
+  </button>
   <button class="styled-btn" @click="shuffle">
     shuffle
   </button>
   <button class="styled-btn" @click="deal">
     deal
   </button>
+  <p>STATUS: {{ status }}</p>
   <p>SELECTED: {{ selected }}</p>
+  <p>DECK: {{ deck }}</p>
+  <p>DISCARD: {{ discard }}</p>
 </template>
 
 <style>
