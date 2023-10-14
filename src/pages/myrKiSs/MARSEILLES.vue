@@ -33,6 +33,10 @@ const sortedCards = ref([
     <img :src="getImageForCardKey('Z01')">
   </div>
 
+  <div class="card">
+    <img :src="getImageForCardKey('Z00')">
+  </div>
+
   <div v-for="aCardKey in sortedCards" :key="aCardKey">
     <div v-if="hasCardKey(aCardKey)" class="zhone flex-container">
       <div class="card flex-child">
