@@ -6,9 +6,14 @@ https://aerotwist.com/blog/flip-your-animations/
 <script setup>
 import { shuffle as _shuffle } from 'lodash-es'
 import { ref } from 'vue'
+import {
+  allCards,
+  getImageForCardKey,
+} from '../allTarotMarseilles'
 
 function getInitialCards() {
-  return ['1W', '2D', '3S', '4C']
+  // return ['1W', '2D', '3S', '4C']
+  return [...allCards.value.map(card => card.cardKey)]
 }
 const table = ref([])
 const selected = ref([])
@@ -80,11 +85,9 @@ function collect() {
 
 <template>
   <TransitionGroup tag="ul" name="fade" class="container">
-    <div v-for="card in table" :key="card" class="card" @click="select(card)">
-      {{ card }}
-      <button @click="remove(card)">
-        x
-      </button>
+    <div v-for="cardKey in table" :key="cardKey" @click="select(cardKey)">
+      <!-- {{ cardKey }} -->
+      <img :src="getImageForCardKey(cardKey)" class="card">
     </div>
   </TransitionGroup>
   <!--
@@ -128,7 +131,7 @@ function collect() {
 
 .card {
   flex: 1;
-  width: 100%;
+  width: 200px;
   height: auto;
   background-color: #b74c4c;
   border: 1px solid #666;
