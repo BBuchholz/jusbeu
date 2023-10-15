@@ -2,6 +2,25 @@ import { ref } from 'vue'
 
 export const allCards = ref([
   {
+    passCode: 'ZAGREUS',
+    uuid: '9d7e1859-439a-48da-96b0-cfee5605a60b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ZAGREUS-a60b_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'ZAGREUS',
+    uuid: '1f6063ab-eae5-4ed2-b6b8-0a098c92da5f',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ZAGREUS-da5f_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
     passCode: 'SCA',
     uuid: 'fd10ebc6-e270-4488-8208-a94089b70a5f',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/SCA-0a5f_CARD.png',
