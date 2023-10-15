@@ -20,7 +20,9 @@ const sortedCards = ref([
 
   <div v-for="aCard in sortedCards" :key="aCard" class="zhone flex-container">
     <div class="card flex-child">
-      <img :src="aCard.image">
+      <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+        <img :src="aCard.image">
+      </RouterLink>
     </div>
     <div class="flex-child content">
       <p>{{ getCreditsForUuid(aCard.uuid) }}</p>
