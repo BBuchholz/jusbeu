@@ -4,7 +4,7 @@ import {
 } from '../allCards'
 
 const relatedCards = ref([
-  ...getCardsFor('OBAOLG'),
+  ...getCardsFor('ZAGREUS'),
 ])
 
 const currentIndex = ref(0)
@@ -46,6 +46,7 @@ function decrementIndex() {
   <p class="display">
     card attribution info here
   </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/B3lsJmwNO40?si=hQnBAHhUzCHoq8Oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
 </template>
 
 <style scoped>
