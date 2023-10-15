@@ -2,6 +2,18 @@ import { ref } from 'vue'
 
 export const allCards = ref([
   {
+    passCode: 'PNDMN',
+    uuid: '5f4b0b8b-2ecd-4eec-ba39-226b2a04c6fc',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/PNDMN-c6fc_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'ZAGREUS',
     uuid: '9d7e1859-439a-48da-96b0-cfee5605a60b',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ZAGREUS-a60b_CARD.png',

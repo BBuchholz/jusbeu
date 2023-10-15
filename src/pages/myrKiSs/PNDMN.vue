@@ -87,13 +87,14 @@ function collect() {
       </button>
     </div>
   </TransitionGroup>
-
+  <!--
   <button class="styled-btn" @click="insert">
     insert at random index
   </button>
   <button class="styled-btn" @click="reset">
     reset
   </button>
+  -->
   <button v-if="selectionIsValid()" class="styled-btn" @click="collect">
     collect
   </button>
