@@ -85,7 +85,12 @@ function collect() {
 
 <template>
   <TransitionGroup tag="ul" name="fade" class="container">
-    <div v-for="cardKey in table" :key="cardKey" @click="select(cardKey)">
+    <div
+      v-for="cardKey in table"
+      :key="cardKey"
+      :class="{ highlighted: selected.includes(cardKey) }"
+      @click="select(cardKey)"
+    >
       <!-- {{ cardKey }} -->
       <img :src="getImageForCardKey(cardKey)" class="card">
     </div>
@@ -120,6 +125,11 @@ function collect() {
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+}
+
+.highlighted {
+  /* transform: scale(1.05); */
+  transform: rotate(3deg);
 }
 
 .styled-btn {
