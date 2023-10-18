@@ -1,0 +1,107 @@
+import { ref } from 'vue'
+import { setCG1 } from './setCG1'
+import { setJBU1 } from './setJBU1'
+
+export const allCards = ref([
+  ...setJBU1.value,
+  ...setCG1.value,
+])
+
+export function getCardFor(aPassCode) {
+  const foundCard
+        = allCards.value.find(card =>
+          card.passCode.toLowerCase()
+                  === aPassCode.toLowerCase(),
+        )
+
+  return foundCard
+}
+
+export function getCardsFor(aPassCode) {
+  const foundCard
+        = allCards.value.filter(card =>
+          card.passCode.toLowerCase()
+                  === aPassCode.toLowerCase(),
+        )
+
+  return foundCard
+}
+
+export function getCardForUuid(aUuid) {
+  const foundCard
+        = allCards.value.find(card =>
+          card.uuid.toLowerCase()
+                  === aUuid.toLowerCase(),
+        )
+
+  return foundCard
+}
+
+export function getCreditFor(aPassCode) {
+  const foundCredit
+        = allCards.value.find(card =>
+          card.passCode.toLowerCase()
+                  === aPassCode.toLowerCase(),
+        )
+
+  return foundCredit
+}
+
+export function getCreditForUuid(aUuid) {
+  const foundCredit
+        = allCards.value.find(card =>
+          card.uuid.toLowerCase()
+                  === aUuid.toLowerCase(),
+        )
+
+  return foundCredit
+}
+
+export function getCreditsFor(aPassCode) {
+  const foundCredit = getCreditFor(aPassCode)
+
+  let output = `(C) ${foundCredit.designCredit}`
+
+  if (foundCredit.componentCredits.length > 0) {
+    output += ' (card layout and design)'
+
+    for (const compCredit of foundCredit.componentCredits) {
+      if (compCredit && compCredit.creditDue && compCredit.creditItem)
+        output += `, ${compCredit.creditDue} (${compCredit.creditItem})`
+    }
+  }
+
+  return output
+}
+
+export function getCreditsForCard(aCard) {
+  let output = `(C) ${aCard.designCredit}`
+
+  if (aCard.componentCredits.length > 0) {
+    output += ' (card layout and design)'
+
+    for (const compCredit of aCard.componentCredits) {
+      if (compCredit && compCredit.creditDue && compCredit.creditItem)
+        output += `, ${compCredit.creditDue} (${compCredit.creditItem})`
+    }
+  }
+
+  return output
+}
+
+export function getCreditsForUuid(aUuid) {
+  const foundCredit = getCreditForUuid(aUuid)
+
+  let output = `(C) ${foundCredit.designCredit}`
+
+  output += ' (card layout and design)'
+
+  if (foundCredit.componentCredits.length > 0) {
+    for (const compCredit of foundCredit.componentCredits) {
+      if (compCredit && compCredit.creditDue && compCredit.creditItem)
+        output += `, ${compCredit.creditDue} (${compCredit.creditItem})`
+    }
+  }
+
+  return output
+}
