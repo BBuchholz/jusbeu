@@ -2,7 +2,7 @@
 import {
   allCards,
   getCreditsForUuid,
-} from '../allCards'
+} from '../../allCards'
 
 const sortedCards = ref([
   ...allCards.value,

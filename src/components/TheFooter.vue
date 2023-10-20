@@ -18,8 +18,8 @@
 
     <RouterLink
       icon-btn
-      to="/myrKiSs/CREDITS"
-      title="Credits"
+      to="/myrKiSs/SETS"
+      title="Sets"
     >
       <div i-carbon-language />
     </RouterLink>
