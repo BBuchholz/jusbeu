@@ -77,7 +77,8 @@ export function getCreditsFor(aPassCode) {
 export function getCreditsForCard(aCard) {
   let output = `(C) ${aCard.designCredit}`
 
-  if (aCard.componentCredits.length > 0) {
+  if (aCard.componentCredits
+      && aCard.componentCredits.length > 0) {
     output += ' (card layout and design)'
 
     for (const compCredit of aCard.componentCredits) {
