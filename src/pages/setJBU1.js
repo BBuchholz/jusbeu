@@ -2,14 +2,114 @@ import { ref } from 'vue'
 
 export const setJBU1 = ref([
   {
-    passCode: 'ENERGY',
-    uuid: 'ce09a0e0-f2bf-4fc3-9e7a-f70d865d63af',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY1-63af_CARD.png',
+    passCode: 'CHAKRA',
+    uuid: '9a60bd58-f5b3-4fa8-ba7d-984879cc3e31',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-3e31_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
-        creditItem: 'image',
+        creditItem: 'base image',
         creditDue: 'Bing Image Creator',
+      },
+      {
+        creditItem: 'image modifications',
+        creditDue: 'Brent Buchholz',
+      },
+    ],
+  },
+  {
+    passCode: 'CHAKRA',
+    uuid: '005bfd21-2e4b-4396-988d-ed0a5f690703',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-0703_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+      {
+        creditItem: 'image modifications',
+        creditDue: 'Brent Buchholz',
+      },
+    ],
+  },
+  {
+    passCode: 'CHAKRA',
+    uuid: '80541e01-88c3-4355-990e-8f0f1fb5a049',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-a049_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+      {
+        creditItem: 'image modifications',
+        creditDue: 'Brent Buchholz',
+      },
+    ],
+  },
+  {
+    passCode: 'CHAKRA',
+    uuid: 'c0da3963-1896-4566-9d7b-b435ea31a90d',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-a90d_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+      {
+        creditItem: 'image modifications',
+        creditDue: 'Brent Buchholz',
+      },
+    ],
+  },
+  {
+    passCode: 'CHAKRA',
+    uuid: 'ad409366-5bba-4f94-ba63-43bc972e4092',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-4092_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+      {
+        creditItem: 'image modifications',
+        creditDue: 'Brent Buchholz',
+      },
+    ],
+  },
+  {
+    passCode: 'CHAKRA',
+    uuid: 'fb9e6176-b131-45ea-9340-fcb1becd28c5',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-28c5_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+      {
+        creditItem: 'image modifications',
+        creditDue: 'Brent Buchholz',
+      },
+    ],
+  },
+  {
+    passCode: 'CHAKRA',
+    uuid: 'eb421879-a0df-4384-ab5c-ddbda2a9c61b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-c61b_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+      {
+        creditItem: 'image modifications',
+        creditDue: 'Brent Buchholz',
       },
     ],
   },
@@ -45,5 +145,17 @@ export const setJBU1 = ref([
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/PERMUTATIONS-7c88_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [],
+  },
+  {
+    passCode: 'ENERGY',
+    uuid: 'ce09a0e0-f2bf-4fc3-9e7a-f70d865d63af',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY1-63af_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
   },
 ])
