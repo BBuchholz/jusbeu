@@ -205,14 +205,13 @@ test('Devil', () => {
   expect(getPotentialMatchesFor('Devil')).toContain('Star')
   expect(getPotentialMatchesFor('Devil')).toContain('Hermit')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
   // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Devil')).toContain('')
-  expect(getPotentialMatchesFor('Devil')).toContain('')
-  expect(getPotentialMatchesFor('Devil')).toContain('')
+  expect(getPotentialMatchesFor('Devil')).toContain('Chariot')
+  expect(getPotentialMatchesFor('Devil')).toContain('Mountebank')
+  expect(getPotentialMatchesFor('Devil')).toContain('World')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('Devil')).toContain('')
+  expect(getPotentialMatchesFor('Devil')).toContain('Lovers')
 })
 
 test('Star', () => {
@@ -222,31 +221,34 @@ test('Star', () => {
   expect(getPotentialMatchesFor('Star')).toContain('World')
   expect(getPotentialMatchesFor('Star')).toContain('Chariot')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
   // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Star')).toContain('')
-  expect(getPotentialMatchesFor('Star')).toContain('')
-  expect(getPotentialMatchesFor('Star')).toContain('')
+  expect(getPotentialMatchesFor('Star')).toContain('Emperor')
+  expect(getPotentialMatchesFor('Star')).toContain('Force')
+  expect(getPotentialMatchesFor('Star')).toContain('Le Mat')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('Star')).toContain('')
+  expect(getPotentialMatchesFor('Star')).toContain('Sun')
 })
 
 test('Mountebank', () => {
   // By Modality, MUTABLE (should be 4 expectations)
-  expect(getPotentialMatchesFor('Mountebank')).toContain('Temperance')
+  expect(getPotentialMatchesFor('Mountebank'))
+    .toContain('Temperance')
   expect(getPotentialMatchesFor('Mountebank')).toContain('Force')
   expect(getPotentialMatchesFor('Mountebank')).toContain('Wheel')
-  expect(getPotentialMatchesFor('Mountebank')).toContain('Judgement')
+  expect(getPotentialMatchesFor('Mountebank'))
+    .toContain('Judgement')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
-  // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Mountebank')).toContain('')
-  expect(getPotentialMatchesFor('Mountebank')).toContain('')
-  expect(getPotentialMatchesFor('Mountebank')).toContain('')
+  // By Element, AIR (should be 3 expectations)
+  expect(getPotentialMatchesFor('Mountebank'))
+    .toContain('Chariot')
+  expect(getPotentialMatchesFor('Mountebank'))
+    .toContain('Empress')
+  expect(getPotentialMatchesFor('Mountebank')).toContain('World')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('Mountebank')).toContain('')
+  expect(getPotentialMatchesFor('Mountebank'))
+    .toContain('Hanged Man')
 })
 
 test('Popess', () => {
@@ -256,14 +258,13 @@ test('Popess', () => {
   expect(getPotentialMatchesFor('Popess')).toContain('Pope')
   expect(getPotentialMatchesFor('Popess')).toContain('Le Mat')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
-  // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Popess')).toContain('')
-  expect(getPotentialMatchesFor('Popess')).toContain('')
-  expect(getPotentialMatchesFor('Popess')).toContain('')
+  // By Element, WATER (should be 3 expectations)
+  expect(getPotentialMatchesFor('Popess')).toContain('Hermit')
+  expect(getPotentialMatchesFor('Popess')).toContain('Judgement')
+  expect(getPotentialMatchesFor('Popess')).toContain('Wheel')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('Popess')).toContain('')
+  expect(getPotentialMatchesFor('Popess')).toContain('Moon')
 })
 
 test('Pope', () => {
@@ -273,31 +274,32 @@ test('Pope', () => {
   expect(getPotentialMatchesFor('Pope')).toContain('Empress')
   expect(getPotentialMatchesFor('Pope')).toContain('Le Mat')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
-  // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Pope')).toContain('')
-  expect(getPotentialMatchesFor('Pope')).toContain('')
-  expect(getPotentialMatchesFor('Pope')).toContain('')
+  // By Element, EARTH (should be 3 expectations)
+  expect(getPotentialMatchesFor('Pope')).toContain('Death')
+  expect(getPotentialMatchesFor('Pope')).toContain('Devil')
+  expect(getPotentialMatchesFor('Pope')).toContain('Temperance')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('Pope')).toContain('')
+  expect(getPotentialMatchesFor('Pope')).toContain('Death')
 })
 
 test('Temperance', () => {
   // By Modality, MUTABLE (should be 4 expectations)
   expect(getPotentialMatchesFor('Temperance')).toContain('Force')
   expect(getPotentialMatchesFor('Temperance')).toContain('Wheel')
-  expect(getPotentialMatchesFor('Temperance')).toContain('Judgement')
-  expect(getPotentialMatchesFor('Temperance')).toContain('Mountebank')
+  expect(getPotentialMatchesFor('Temperance'))
+    .toContain('Judgement')
+  expect(getPotentialMatchesFor('Temperance'))
+    .toContain('Mountebank')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
-  // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Temperance')).toContain('')
-  expect(getPotentialMatchesFor('Temperance')).toContain('')
-  expect(getPotentialMatchesFor('Temperance')).toContain('')
+  // By Element, EARTH (should be 3 expectations)
+  expect(getPotentialMatchesFor('Temperance')).toContain('Death')
+  expect(getPotentialMatchesFor('Temperance')).toContain('Devil')
+  expect(getPotentialMatchesFor('Temperance')).toContain('Pope')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('Temperance')).toContain('')
+  expect(getPotentialMatchesFor('Temperance'))
+    .toContain('Hanged Man')
 })
 
 test('Hermit', () => {
@@ -307,14 +309,13 @@ test('Hermit', () => {
   expect(getPotentialMatchesFor('Hermit')).toContain('Popess')
   expect(getPotentialMatchesFor('Hermit')).toContain('Le Mat')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
-  // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Hermit')).toContain('')
-  expect(getPotentialMatchesFor('Hermit')).toContain('')
-  expect(getPotentialMatchesFor('Hermit')).toContain('')
+  // By Element, WATER (should be 3 expectations)
+  expect(getPotentialMatchesFor('Hermit')).toContain('Judgement')
+  expect(getPotentialMatchesFor('Hermit')).toContain('Popess')
+  expect(getPotentialMatchesFor('Hermit')).toContain('Wheel')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('Hermit')).toContain('')
+  expect(getPotentialMatchesFor('Hermit')).toContain('Tower')
 })
 
 test('World', () => {
@@ -324,14 +325,13 @@ test('World', () => {
   expect(getPotentialMatchesFor('World')).toContain('Star')
   expect(getPotentialMatchesFor('World')).toContain('Hermit')
 
-  // TODO: IMPLEMENT TESTS FROM ATTRIBUTION CHARTS
-  // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('World')).toContain('')
-  expect(getPotentialMatchesFor('World')).toContain('')
-  expect(getPotentialMatchesFor('World')).toContain('')
+  // By Element, AIR (should be 3 expectations)
+  expect(getPotentialMatchesFor('World')).toContain('Chariot')
+  expect(getPotentialMatchesFor('World')).toContain('Empress')
+  expect(getPotentialMatchesFor('World')).toContain('Mountebank')
 
   // By Planet/Sign (should be 1 expectation)
-  expect(getPotentialMatchesFor('World')).toContain('')
+  expect(getPotentialMatchesFor('World')).toContain('Death')
 })
 
 test('Judgement', () => {

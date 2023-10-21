@@ -5,10 +5,10 @@ export const allCards = ref([
     cardKey: '01',
     cardTitle: 'The Mountebank',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a01.jpg',
-    modality: '',
-    element: '',
-    planet: '',
-    sign: '',
+    modality: 'Mutable',
+    element: 'Air',
+    planet: 'Mercury',
+    sign: 'Gemini',
   },
   {
     cardKey: '02',
@@ -32,10 +32,10 @@ export const allCards = ref([
     cardKey: '04',
     cardTitle: 'The Emperor',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a04.jpg',
-    modality: '',
-    element: '',
-    planet: '',
-    sign: '',
+    modality: 'Cardinal',
+    element: 'Fire',
+    planet: 'Mars',
+    sign: 'Aries',
   },
   {
     cardKey: '05',
@@ -70,8 +70,8 @@ export const allCards = ref([
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a08.jpg',
     modality: '',
     element: '',
-    planet: '',
-    sign: '',
+    planet: 'Jupiter',
+    sign: 'Pisces, Sagittarius',
   },
   {
     cardKey: '09',
@@ -86,19 +86,19 @@ export const allCards = ref([
     cardKey: '10',
     cardTitle: 'The Wheel',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a10.jpg',
-    modality: '',
-    element: '',
+    modality: 'Mutable',
+    element: 'Water',
     planet: '',
     sign: '',
   },
   {
     cardKey: '11',
-    cardTitle: 'Strength',
+    cardTitle: 'Force',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a11.jpg',
-    modality: '',
-    element: '',
-    planet: '',
-    sign: '',
+    modality: 'Mutable',
+    element: 'Fire',
+    planet: 'Jupiter',
+    sign: 'Sagittarius',
   },
   {
     cardKey: '12',
@@ -122,10 +122,10 @@ export const allCards = ref([
     cardKey: '14',
     cardTitle: 'Temperance',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a14.jpg',
-    modality: '',
-    element: '',
-    planet: '',
-    sign: '',
+    modality: 'Mutable',
+    element: 'Earth',
+    planet: 'Mercury',
+    sign: 'Virgo',
   },
   {
     cardKey: '15',
@@ -149,9 +149,9 @@ export const allCards = ref([
     cardKey: '17',
     cardTitle: 'The Star',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a17.jpg',
-    modality: '',
-    element: '',
-    planet: '',
+    modality: 'Fixed',
+    element: 'Fire',
+    planet: 'Sol',
     sign: 'Leo',
   },
   {
@@ -176,10 +176,10 @@ export const allCards = ref([
     cardKey: '20',
     cardTitle: 'Judgement',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a20.jpg',
-    modality: '',
-    element: '',
-    planet: '',
-    sign: '',
+    modality: 'Mutable',
+    element: 'Water',
+    planet: 'Jupiter',
+    sign: 'Pisces',
   },
   {
     cardKey: '21',
@@ -194,8 +194,8 @@ export const allCards = ref([
     cardKey: '22',
     cardTitle: 'Le Mat',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a22.jpg',
-    modality: '',
-    element: '',
+    modality: 'Cardinal',
+    element: 'Fire',
     planet: '',
     sign: '',
   },
@@ -722,12 +722,6 @@ export const allCards = ref([
     sign: '',
   },
 ])
-
-// TODO: build function that is exported that gets a single
-// card by passcode so in other pages we can
-// call this function to get just one, I want to display
-// cards next to the zhones, and have the written
-// part be the description
 
 export function getCardFor(aCardKey) {
   const foundCard
