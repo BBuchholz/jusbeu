@@ -10,7 +10,7 @@ import {
 } from '../src/pages/allTarotMarseilles'
 
 test('should get card by name', () => {
-  const thaCard = getCardFor(getCardKeyForTitle('The Sun'))
+  const thaCard = getCardFor(getCardKeyForTitle('Sun'))
   expect(thaCard).toBeDefined()
   expect(thaCard.sign).toBeDefined()
   expect(thaCard.sign).toStrictEqual('Leo')
@@ -205,10 +205,10 @@ test('Devil', () => {
   expect(getPotentialMatchesFor('Devil')).toContain('Star')
   expect(getPotentialMatchesFor('Devil')).toContain('Hermit')
 
-  // By Element (should be 3 expectations)
-  expect(getPotentialMatchesFor('Devil')).toContain('Chariot')
-  expect(getPotentialMatchesFor('Devil')).toContain('Mountebank')
-  expect(getPotentialMatchesFor('Devil')).toContain('World')
+  // By Element, EARTH (should be 3 expectations)
+  expect(getPotentialMatchesFor('Devil')).toContain('Death')
+  expect(getPotentialMatchesFor('Devil')).toContain('Temperance')
+  expect(getPotentialMatchesFor('Devil')).toContain('Pope')
 
   // By Planet/Sign (should be 1 expectation)
   expect(getPotentialMatchesFor('Devil')).toContain('Lovers')
@@ -303,11 +303,11 @@ test('Temperance', () => {
 })
 
 test('Hermit', () => {
-  // By Modality, CARDINAL (should be 4 expectations)
-  expect(getPotentialMatchesFor('Hermit')).toContain('Empress')
-  expect(getPotentialMatchesFor('Hermit')).toContain('Pope')
-  expect(getPotentialMatchesFor('Hermit')).toContain('Popess')
-  expect(getPotentialMatchesFor('Hermit')).toContain('Le Mat')
+  // By Modality, FIXED (should be 4 expectations)
+  expect(getPotentialMatchesFor('Hermit')).toContain('Chariot')
+  expect(getPotentialMatchesFor('Hermit')).toContain('Devil')
+  expect(getPotentialMatchesFor('Hermit')).toContain('Star')
+  expect(getPotentialMatchesFor('Hermit')).toContain('World')
 
   // By Element, WATER (should be 3 expectations)
   expect(getPotentialMatchesFor('Hermit')).toContain('Judgement')
