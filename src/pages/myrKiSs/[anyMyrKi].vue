@@ -3,6 +3,14 @@ import {
   getCardsFor,
 } from '../allCards'
 
+import {
+  getTopicsFor,
+} from '../allTopics'
+
+import {
+  getSeedsFor,
+} from '../allSeeds'
+
 const props = defineProps<{ anyMyrKi: string }>()
 const router = useRouter()
 const user = useUserStore()
@@ -13,6 +21,14 @@ watchEffect(() => {
 
 const foundCards = ref([
   ...getCardsFor(props.anyMyrKi),
+])
+
+const foundTopics = ref([
+  ...getTopicsFor(props.anyMyrKi),
+])
+
+const foundSeeds = ref([
+  ...getSeedsFor(props.anyMyrKi),
 ])
 
 const currentIndex = ref(0)
@@ -49,9 +65,28 @@ function decrementIndex() {
       </button>
       <img class="card" :src="currentCard.image">
     </div>
-    <p class="display">
-      card attribution info here
-    </p>
+    <div v-if="foundTopics.length">
+      <p>Topics:</p>
+      <ul>
+        <li v-for="foundTopic in foundTopics" :key="foundTopic.topicCode">
+          {{ `${foundTopic.topic}` }}
+        </li>
+      </ul>
+    </div>
+    <div v-if="foundSeeds.length">
+      <p>Seeds:</p>
+      <ul>
+        <li v-for="foundSeed in foundSeeds" :key="foundSeed.seedCode">
+          <a
+            target="_blank"
+            :href="foundSeed.seedLinkHref"
+            class="showlink"
+          >
+            {{ foundSeed.seedLinkText }}
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div v-else>
     <p>
@@ -74,7 +109,7 @@ function decrementIndex() {
       Please verify you entered it correctly.
     </p>
 
-    <template v-if="user.otherMyrKis.length">
+    <div v-if="user.otherMyrKis.length">
       <p mt-4 text-sm>
         <span opacity-75>Recently attempts:</span>
         <ul>
@@ -85,7 +120,7 @@ function decrementIndex() {
           </li>
         </ul>
       </p>
-    </template>
+    </div>
 
     <div>
       <button

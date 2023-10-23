@@ -7,6 +7,9 @@ export const allCards = ref([
     seedLinkText: 'Music Theory Site',
     seedSourceType: 'tik tok video',
     seedSourceLink: 'https://www.tiktok.com/t/ZT8h81wpk/',
+    passCodes: [
+
+    ],
   },
   {
     seedCode: 'SC2',
@@ -14,6 +17,9 @@ export const allCards = ref([
     seedLinkText: 'Hook Theory',
     seedSourceType: 'tik tok video',
     seedSourceLink: 'https://www.tiktok.com/t/ZT8h81wpk/',
+    passCodes: [
+
+    ],
   },
   {
     seedCode: 'SC3',
@@ -21,6 +27,19 @@ export const allCards = ref([
     seedLinkText: 'Sound Gym',
     seedSourceType: 'tik tok video',
     seedSourceLink: 'https://www.tiktok.com/t/ZT8h81wpk/',
+    passCodes: [
+
+    ],
+  },
+  {
+    seedCode: 'ZAG1',
+    seedLinkHref: 'https://www.youtube.com/watch?v=B3lsJmwNO40',
+    seedLinkText: 'You\'re Stuck In Here With Me',
+    seedSourceType: 'youtube video',
+    seedSourceLink: '',
+    passCodes: [
+      'ZAGREUS',
+    ],
   },
 ])
 
@@ -32,4 +51,13 @@ export function getSeedForSeedCode(aSeedCode) {
         )
 
   return foundCredit
+}
+
+export function getSeedsFor(aPassCode) {
+  const foundSeeds
+        = allCards.value.filter(seedEntry =>
+          seedEntry.passCodes.includes(aPassCode.toUpperCase()),
+        )
+
+  return foundSeeds
 }
