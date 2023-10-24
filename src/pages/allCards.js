@@ -1,5 +1,8 @@
 import { ref } from 'vue'
 
+/**
+ * @deprecated this shouldn't be used (use allSets.js instead)
+ */
 export const allCards = ref([
   {
     passCode: 'PNDMN',
