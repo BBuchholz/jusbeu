@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {
   getCardsFor,
-} from '../allCards'
+} from '../allSets'
 
 import {
   getTopicsFor,

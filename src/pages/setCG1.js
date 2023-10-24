@@ -2,6 +2,18 @@ import { ref } from 'vue'
 
 export const setCG1 = ref([
   {
+    passCode: 'RATATOSKR',
+    uuid: '0c00ffac-fcd4-42a1-8bad-1af11e15d7d5',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/RATATOSKR-d7d5_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Imagine AI Art App',
+      },
+    ],
+  },
+  {
     passCode: 'PNDMN',
     uuid: '5f4b0b8b-2ecd-4eec-ba39-226b2a04c6fc',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/PNDMN-c6fc_CARD.png',
