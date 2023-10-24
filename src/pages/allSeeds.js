@@ -2,6 +2,16 @@ import { ref } from 'vue'
 
 export const allCards = ref([
   {
+    seedCode: 'SGS1',
+    seedLinkHref: 'https://forms.gle/gjxyu9cYcdiHh2TcA',
+    seedLinkText: 'Squirrel Gathers Seeds',
+    seedSourceType: 'Google Form',
+    seedSourceLink: '',
+    passCodes: [
+      'RATATOSKR',
+    ],
+  },
+  {
     seedCode: 'TIG1',
     seedLinkHref: 'https://www.tiktok.com/t/ZT8rMPcHv/',
     seedLinkText: 'Still Dre (PianoTok play along video)',
