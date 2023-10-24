@@ -1,10 +1,11 @@
 <script setup>
 import {
-  getCardsFor,
-} from '../allCards'
+  getCardFor,
+} from '../../allCards'
 
 const relatedCards = ref([
-  ...getCardsFor('OBAOLG'),
+  getCardFor('SC'),
+  getCardFor('SCA'),
 ])
 
 const currentIndex = ref(0)
@@ -32,8 +33,13 @@ function decrementIndex() {
 
 <template>
   <p class="display">
-    info here
+    COMING SOON: WELLcome 2 tha GarDin
   </p>
+  <div>
+    <!-- <a href="#" target="_blank"> -->
+    <img class="card" src="https://madamadam.s3.us-east-2.amazonaws.com/CGBA-f6df_CARD.png">
+    <!-- </a> -->
+  </div>
   <div>
     <button @click="decrementIndex">
       -

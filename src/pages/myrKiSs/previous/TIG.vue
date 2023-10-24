@@ -5,11 +5,11 @@
   <div>
     <ul>
       <li>
-        <RouterLink
+        <!-- <RouterLink
           to="/ptpa"
-        >
-          Piano Tok Play Alongs
-        </RouterLink>
+        > -->
+        Piano Tok Play Alongs
+        <!-- </RouterLink> -->
       </li>
     </ul>
   </div>

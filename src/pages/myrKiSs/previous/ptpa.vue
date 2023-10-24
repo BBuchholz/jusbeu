@@ -13,70 +13,71 @@
   </p>
   <div>
     <ul>
-      <li>
+      Everything has been moved to TIG myrki seeds...
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rduJkA/"
         >
           What Is Love
         </a>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rdCQqb/"
         >
           Hallelujah
         </a>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rdutAR/"
         >
           Halloween Theme
         </a>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rBjpvg/"
         >
           Imagine 1
         </a>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rBkG8r/"
         >
           Imagine 2
         </a>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rBA8wn/"
         >
           Fur Elise
         </a>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rM97j8/"
         >
           Epic Hack
         </a>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <a
           target="_blank"
           href="https://www.tiktok.com/t/ZT8rMPcHv/"
         >
           Still Dre
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
   <p class="display">
