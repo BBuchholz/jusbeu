@@ -4,11 +4,11 @@ import {
 } from '../allCards'
 
 import {
-  getTopicsFor,
+  getTopicsForPassCode,
 } from '../allTopics'
 
 import {
-  getSeedsFor,
+  getSeedsForPassCode,
 } from '../allSeeds'
 
 const props = defineProps<{ anyMyrKi: string }>()
@@ -23,12 +23,12 @@ const foundCards = ref([
   ...getCardsFor(props.anyMyrKi),
 ])
 
-const foundTopics = ref([
-  ...getTopicsFor(props.anyMyrKi),
+const foundTopicsForPassCode = ref([
+  ...getTopicsForPassCode(props.anyMyrKi),
 ])
 
-const foundSeeds = ref([
-  ...getSeedsFor(props.anyMyrKi),
+const foundSeedsForPassCode = ref([
+  ...getSeedsForPassCode(props.anyMyrKi),
 ])
 
 const currentIndex = ref(0)
@@ -65,18 +65,18 @@ function decrementIndex() {
       </button>
       <img class="card" :src="currentCard.image">
     </div>
-    <div v-if="foundTopics.length">
+    <div v-if="foundTopicsForPassCode.length">
       <p>Topics:</p>
       <ul>
-        <li v-for="foundTopic in foundTopics" :key="foundTopic.topicCode">
+        <li v-for="foundTopic in foundTopicsForPassCode" :key="foundTopic.topicCode">
           {{ `${foundTopic.topic}` }}
         </li>
       </ul>
     </div>
-    <div v-if="foundSeeds.length">
+    <div v-if="foundSeedsForPassCode.length">
       <p>Seeds:</p>
       <ul>
-        <li v-for="foundSeed in foundSeeds" :key="foundSeed.seedCode">
+        <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
           <a
             target="_blank"
             :href="foundSeed.seedLinkHref"

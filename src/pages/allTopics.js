@@ -39,7 +39,7 @@ export const allCards = ref([
   },
 ])
 
-export function getTopicsFor(aPassCode) {
+export function getTopicsForPassCode(aPassCode) {
   const foundTopics
         = allCards.value.filter(topicEntry =>
           topicEntry.passCodes.includes(aPassCode.toUpperCase()),

@@ -133,7 +133,7 @@ export function getSeedForSeedCode(aSeedCode) {
   return foundCredit
 }
 
-export function getSeedsFor(aPassCode) {
+export function getSeedsForPassCode(aPassCode) {
   const foundSeeds
         = allCards.value.filter(seedEntry =>
           seedEntry.passCodes.includes(aPassCode.toUpperCase()),
