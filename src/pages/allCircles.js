@@ -1,0 +1,59 @@
+import { ref } from 'vue'
+
+export const allCircles = ref([
+  {
+
+    circleName: 'Duality of Man and Beast',
+    circleCode: 'MBDUEL',
+    passCodes: [
+      'ZAGREUS',
+    ],
+  },
+  {
+    circleName: 'Paradigms of GodHead',
+    circleCode: 'GHPARADIGM',
+    passCodes: [
+      'ZAGREUS',
+    ],
+  },
+  {
+    circleName: 'Gematria',
+    circleCode: 'GEMATRIA',
+    passCodes: [
+      'PERMUTATIONS',
+    ],
+  },
+  {
+    circleName: 'Temurah',
+    circleCode: 'TEMURAH',
+    passCodes: [
+      'PERMUTATIONS',
+    ],
+  },
+  {
+    circleName: 'Notarikon',
+    circleCode: 'NOTARIKON',
+    passCodes: [
+      'PERMUTATIONS',
+    ],
+  },
+])
+
+export function getCirclesForPassCode(aPassCode) {
+  const foundcircles
+        = allCircles.value.filter(circleEntry =>
+          circleEntry.passCodes.includes(aPassCode.toUpperCase()),
+        )
+
+  return foundcircles
+}
+
+export function getCircleForCircleCode(aCircleCode) {
+  const foundCircle
+        = allCircles.value.find(circle =>
+          circle.circleCode.toLowerCase()
+                  === aCircleCode.toLowerCase(),
+        )
+
+  return foundCircle
+}
