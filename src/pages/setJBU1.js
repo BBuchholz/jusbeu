@@ -194,16 +194,4 @@ export const setJBU1 = ref([
     designCredit: 'Brent Buchholz',
     componentCredits: [],
   },
-  {
-    passCode: 'ENERGY',
-    uuid: 'ce09a0e0-f2bf-4fc3-9e7a-f70d865d63af',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY1-63af_CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Bing Image Creator',
-      },
-    ],
-  },
 ])
