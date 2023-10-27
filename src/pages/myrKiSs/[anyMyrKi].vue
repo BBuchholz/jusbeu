@@ -4,6 +4,7 @@ import {
 } from '../allSets'
 
 import {
+  getCardsForPassCodeArray,
   getCircleForCircleCode,
   getCirclesForPassCode,
 } from '../allCircles'
@@ -41,6 +42,9 @@ const foundSeedsForCircleCode = ref([
   ...getSeedsForPassCode(props.anyMyrKi),
 ])
 
+const foundCardsForCircle = ref([
+  ...getCardsForPassCodeArray(foundCircle.value.passCodes),
+])
 // END CIRCLE LOOKUP ////////////////////////////////////
 
 const currentIndex = ref(0)

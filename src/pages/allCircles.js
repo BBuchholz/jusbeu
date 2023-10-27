@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import { allCards } from './allSets'
 
 export const allCircles = ref([
   {
@@ -56,4 +57,19 @@ export function getCircleForCircleCode(aCircleCode) {
         )
 
   return foundCircle
+}
+
+export function getCardsForPassCodeArray(aPassCodeArray) {
+  let foundCards
+
+  if (aPassCodeArray && aPassCodeArray.length > 0) {
+    foundCards
+      = allCards.value.filter(card =>
+        aPassCodeArray.includes(card.passCode))
+  }
+  else {
+    foundCards = []
+  }
+
+  return foundCards
 }
