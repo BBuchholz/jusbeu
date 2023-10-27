@@ -2,6 +2,36 @@ import { ref } from 'vue'
 
 export const allCards = ref([
   {
+    seedCode: 'NRG1',
+    seedLinkHref: 'https://www.youtube.com/watch?v=zodg4WwBovc',
+    seedLinkText: 'Everything Is Energy (video)',
+    seedSourceType: 'youtube video',
+    seedSourceLink: '',
+    passCodes: [
+      'ENERGY',
+    ],
+  },
+  {
+    seedCode: 'NRG2',
+    seedLinkHref: 'https://www.youtube.com/watch?v=cWLOUCXKHZw',
+    seedLinkText: 'LEARN TO VIBRATE CORRECTLY (video)',
+    seedSourceType: 'youtube video',
+    seedSourceLink: '',
+    passCodes: [
+      'ENERGY',
+    ],
+  },
+  {
+    seedCode: 'SGS1',
+    seedLinkHref: 'https://forms.gle/gjxyu9cYcdiHh2TcA',
+    seedLinkText: 'Squirrel Gathers Seeds',
+    seedSourceType: 'Google Form',
+    seedSourceLink: '',
+    passCodes: [
+      'RATATOSKR',
+    ],
+  },
+  {
     seedCode: 'TIG1',
     seedLinkHref: 'https://www.tiktok.com/t/ZT8rMPcHv/',
     seedLinkText: 'Still Dre (PianoTok play along video)',

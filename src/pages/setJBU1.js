@@ -2,6 +2,54 @@ import { ref } from 'vue'
 
 export const setJBU1 = ref([
   {
+    passCode: 'ENERGY',
+    uuid: 'd48f8b09-865f-4f2c-a9cd-0af41fdeb04d',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY-b04d_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'ENERGY',
+    uuid: '462413d8-7cf0-437d-b6ae-7a8d19fecb99',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY-cb99_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'ENERGY',
+    uuid: 'f632286a-33c4-4b57-8bf1-a0dbeee6d06a',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY-d06a_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'ENERGY',
+    uuid: 'dae9cfab-1d2b-449e-8594-b23e23f0f59b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ENERGY-f59b_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'base image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'CHAKRA',
     uuid: '9a60bd58-f5b3-4fa8-ba7d-984879cc3e31',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/CHAKRA-3e31_CARD.png',
