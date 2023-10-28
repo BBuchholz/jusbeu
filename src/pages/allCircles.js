@@ -5,7 +5,7 @@ export const allCircles = ref([
   {
 
     circleName: 'Duality of Man and Beast',
-    circleCode: 'MBDUEL',
+    circleCode: 'BEASTMANDUALITY',
     passCodes: [
       'ZAGREUS',
     ],

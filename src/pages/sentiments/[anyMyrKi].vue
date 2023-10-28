@@ -1,7 +1,12 @@
 <script setup>
 import {
+  getCardsFor,
+} from '../allSets'
+
+import {
   getCardsForPassCodeArray,
   getCircleForCircleCode,
+  getCirclesForPassCode,
 } from '../allCircles'
 
 import {
@@ -16,19 +21,19 @@ watchEffect(() => {
   user.setNewMyrKi(props.anyMyrKi)
 })
 
-// // BEGIN CARD LOOKUP /////////////////////////////////////
-// const foundCards = ref([
-//   ...getCardsFor(props.anyMyrKi),
-// ])
+// BEGIN CARD LOOKUP /////////////////////////////////////
+const foundCards = ref([
+  ...getCardsFor(props.anyMyrKi),
+])
 
-// const foundCirclesForPassCode = ref([
-//   ...getCirclesForPassCode(props.anyMyrKi),
-// ])
+const foundCirclesForPassCode = ref([
+  ...getCirclesForPassCode(props.anyMyrKi),
+])
 
-// const foundSeedsForPassCode = ref([
-//   ...getSeedsForPassCode(props.anyMyrKi),
-// ])
-// // END CARD LOOKUP //////////////////////////////////////
+const foundSeedsForPassCode = ref([
+  ...getSeedsForPassCode(props.anyMyrKi),
+])
+// END CARD LOOKUP //////////////////////////////////////
 
 // BEGIN CIRCLE LOOKUP //////////////////////////////////
 const foundCircle = ref(getCircleForCircleCode(props.anyMyrKi))
@@ -48,34 +53,34 @@ if (foundCircle
 }
 // END CIRCLE LOOKUP ////////////////////////////////////
 
-// // BEGIN CARD CAROUSEL //////////////////////////////////
-// const currentIndex = ref(0)
+// BEGIN CARD CAROUSEL //////////////////////////////////
+const currentIndex = ref(0)
 
-// const currentCard = ref(foundCards.value[currentIndex.value])
+const currentCard = ref(foundCards.value[currentIndex.value])
 
-// function incrementIndex() {
-//   if (currentIndex.value >= foundCards.value.length - 1)
-//     currentIndex.value = 0
-//   else
-//     currentIndex.value++
+function incrementIndex() {
+  if (currentIndex.value >= foundCards.value.length - 1)
+    currentIndex.value = 0
+  else
+    currentIndex.value++
 
-//   currentCard.value = foundCards.value[currentIndex.value]
-// }
+  currentCard.value = foundCards.value[currentIndex.value]
+}
 
-// function decrementIndex() {
-//   if (currentIndex.value <= 0)
-//     currentIndex.value = foundCards.value.length - 1
-//   else
-//     currentIndex.value--
+function decrementIndex() {
+  if (currentIndex.value <= 0)
+    currentIndex.value = foundCards.value.length - 1
+  else
+    currentIndex.value--
 
-//   currentCard.value = foundCards.value[currentIndex.value]
-// }
-// // END CARD CAROUSEL //////////////////////////////////////
+  currentCard.value = foundCards.value[currentIndex.value]
+}
+// END CARD CAROUSEL //////////////////////////////////////
 </script>
 
 <template>
   <!-- BEGIN CARD DISPLAY ///////////////////////////////// -->
-  <!-- <div v-if="currentCard">
+  <div v-if="currentCard">
     <div>
       <button @click="decrementIndex">
         -
@@ -111,10 +116,10 @@ if (foundCircle
         </li>
       </ul>
     </div>
-  </div> -->
+  </div>
   <!-- END CARD DISPLAY////////////////////////////////// -->
   <!-- BEGIN CIRCLE DISPLAY////////////////////////////// -->
-  <div v-if="foundCircle">
+  <div v-else-if="foundCircle">
     <p>Circle: {{ foundCircle.circleName }}</p>
     <div v-if="foundSeedsForCircleCode.length">
       <p>Seeds:</p>

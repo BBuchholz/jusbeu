@@ -18,7 +18,7 @@ const sortedCardsJBU1 = ref([
   ...setJBU1.value,
 ])
 
-const selectedSet = ref('jbu1')
+const selectedSet = ref('cg1')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
