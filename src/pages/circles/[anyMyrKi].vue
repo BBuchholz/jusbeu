@@ -21,10 +21,6 @@ watchEffect(() => {
   user.setNewMyrKi(props.anyMyrKi)
 })
 
-function navigateTo(aCode) {
-  user.setNewMyrKi(aCode)
-}
-
 // BEGIN CARD LOOKUP /////////////////////////////////////
 const foundCards = ref([
   ...getCardsFor(props.anyMyrKi),
@@ -97,12 +93,12 @@ function decrementIndex() {
     <div v-if="foundCirclesForPassCode.length">
       <p>Circles:</p>
       <ul>
-        <li v-for="thisFoundCircle in foundCirclesForPassCode" :key="thisFoundCircle.circleCode">
-          <RouterLink
-            :to="`/circles/${thisFoundCircle.circleCode}`"
-          >
-            {{ `${thisFoundCircle.circleName}` }}
-          </RouterLink>
+        <li
+          v-for="thisFoundCircle in foundCirclesForPassCode"
+          :key="thisFoundCircle.circleCode"
+          @click="go(thisFoundCircle.circleCode)"
+        >
+          {{ `${thisFoundCircle.circleName}` }}
         </li>
       </ul>
     </div>
