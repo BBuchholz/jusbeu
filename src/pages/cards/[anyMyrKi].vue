@@ -4,8 +4,6 @@ import {
 } from '../allSets'
 
 import {
-  getCardsForPassCodeArray,
-  getCircleForCircleCode,
   getCirclesForPassCode,
 } from '../allCircles'
 
@@ -20,6 +18,10 @@ const user = useUserStore()
 watchEffect(() => {
   user.setNewMyrKi(props.anyMyrKi)
 })
+
+// function navigateTo(aCode) {
+//   user.setNewMyrKi(aCode)
+// }
 
 // BEGIN CARD LOOKUP /////////////////////////////////////
 const foundCards = ref([
@@ -36,21 +38,21 @@ const foundSeedsForPassCode = ref([
 // END CARD LOOKUP //////////////////////////////////////
 
 // BEGIN CIRCLE LOOKUP //////////////////////////////////
-const foundCircle = ref(getCircleForCircleCode(props.anyMyrKi))
+// const foundCircle = ref(getCircleForCircleCode(props.anyMyrKi))
 
-const foundSeedsForCircleCode = ref([
-  ...getSeedsForPassCode(props.anyMyrKi),
-])
+// const foundSeedsForCircleCode = ref([
+//   ...getSeedsForPassCode(props.anyMyrKi),
+// ])
 
-let foundCardsForCircle = ref([])
+// let foundCardsForCircle = ref([])
 
-if (foundCircle
-    && foundCircle.value
-    && foundCircle.value.passCodes) {
-  foundCardsForCircle = ref([
-    ...getCardsForPassCodeArray(foundCircle.value.passCodes),
-  ])
-}
+// if (foundCircle
+//     && foundCircle.value
+//     && foundCircle.value.passCodes) {
+//   foundCardsForCircle = ref([
+//     ...getCardsForPassCodeArray(foundCircle.value.passCodes),
+//   ])
+// }
 // END CIRCLE LOOKUP ////////////////////////////////////
 
 // BEGIN CARD CAROUSEL //////////////////////////////////
@@ -88,17 +90,21 @@ function decrementIndex() {
       <button @click="incrementIndex">
         +
       </button>
-      <img class="card" :src="currentCard.image">
+      <RouterLink
+        :to="`/sentiments/${currentCard.uuid}`"
+      >
+        <img class="card" :src="currentCard.image">
+      </RouterLink>
     </div>
     <div v-if="foundCirclesForPassCode.length">
       <p>Circles:</p>
       <ul>
-        <li
-          v-for="thisFoundCircle in foundCirclesForPassCode"
-          :key="thisFoundCircle.circleCode"
-          @click="go(thisFoundCircle.circleCode)"
-        >
-          {{ `${thisFoundCircle.circleName}` }}
+        <li v-for="thisFoundCircle in foundCirclesForPassCode" :key="thisFoundCircle.circleCode">
+          <RouterLink
+            :to="`/circles/${thisFoundCircle.circleCode}`"
+          >
+            {{ `${thisFoundCircle.circleName}` }}
+          </RouterLink>
         </li>
       </ul>
     </div>
@@ -106,32 +112,31 @@ function decrementIndex() {
       <p>Seeds:</p>
       <ul>
         <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <a
+          <!-- <a
             target="_blank"
             :href="foundSeed.seedLinkHref"
             class="showlink"
           >
             {{ foundSeed.seedLinkText }}
-          </a>
+          </a> -->
+          <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
+            {{ foundSeed.seedLinkText }}
+          </RouterLink>
         </li>
       </ul>
     </div>
   </div>
   <!-- END CARD DISPLAY////////////////////////////////// -->
   <!-- BEGIN CIRCLE DISPLAY////////////////////////////// -->
-  <div v-else-if="foundCircle">
+  <!-- <div v-else-if="foundCircle">
     <p>Circle: {{ foundCircle.circleName }}</p>
     <div v-if="foundSeedsForCircleCode.length">
       <p>Seeds:</p>
       <ul>
         <li v-for="foundSeed in foundSeedsForCircleCode" :key="foundSeed.seedCode">
-          <a
-            target="_blank"
-            :href="foundSeed.seedLinkHref"
-            class="showlink"
-          >
+          <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
             {{ foundSeed.seedLinkText }}
-          </a>
+          </RouterLink>
         </li>
       </ul>
     </div>
@@ -142,7 +147,7 @@ function decrementIndex() {
         </RouterLink>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- END CIRCLE DISPLAY////////////////////////////// -->
   <!-- BEGIN NOT FOUND DISPLAY//////////////////////// -->
   <div v-else>

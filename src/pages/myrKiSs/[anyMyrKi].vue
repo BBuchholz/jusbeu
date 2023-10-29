@@ -110,13 +110,16 @@ function decrementIndex() {
       <p>Seeds:</p>
       <ul>
         <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <a
+          <!-- <a
             target="_blank"
             :href="foundSeed.seedLinkHref"
             class="showlink"
           >
             {{ foundSeed.seedLinkText }}
-          </a>
+          </a> -->
+          <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
+            {{ foundSeed.seedLinkText }}
+          </RouterLink>
         </li>
       </ul>
     </div>
@@ -129,13 +132,16 @@ function decrementIndex() {
       <p>Seeds:</p>
       <ul>
         <li v-for="foundSeed in foundSeedsForCircleCode" :key="foundSeed.seedCode">
-          <a
+          <!-- <a
             target="_blank"
             :href="foundSeed.seedLinkHref"
             class="showlink"
           >
             {{ foundSeed.seedLinkText }}
-          </a>
+          </a> -->
+          <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
+            {{ foundSeed.seedLinkText }}
+          </RouterLink>
         </li>
       </ul>
     </div>

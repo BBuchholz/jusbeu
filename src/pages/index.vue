@@ -8,7 +8,8 @@ const anyMyrKi = $ref(user.savedMyrKi)
 const router = useRouter()
 function go() {
   if (anyMyrKi) {
-    router.push(`/myrKiSs/${encodeURIComponent(anyMyrKi)}`)
+    // router.push(`/myrKiSs/${encodeURIComponent(anyMyrKi)}`)
+    router.push(`/cards/${encodeURIComponent(anyMyrKi)}`)
     user.setNewMyrKi(anyMyrKi)
   }
 }

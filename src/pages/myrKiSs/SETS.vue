@@ -58,7 +58,10 @@ function onSelectedSetChange(e) {
     </p>
     <div v-for="aCard in sortedCardsCG1" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+          <img :src="aCard.image">
+        </RouterLink> -->
+        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
       </div>
@@ -74,7 +77,10 @@ function onSelectedSetChange(e) {
     </p>
     <div v-for="aCard in sortedCardsJBU1" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+          <img :src="aCard.image">
+        </RouterLink> -->
+        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
       </div>
@@ -90,7 +96,10 @@ function onSelectedSetChange(e) {
     </p>
     <div v-for="aCard in sortedCardsAll" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+          <img :src="aCard.image">
+        </RouterLink> -->
+        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
       </div>

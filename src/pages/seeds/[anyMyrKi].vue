@@ -1,15 +1,10 @@
 <script setup>
 import {
-  getCardsFor,
-} from '../allSets'
-
-import {
   getCardsForPassCodeArray,
-  getCircleForCircleCode,
-  getCirclesForPassCode,
 } from '../allCircles'
 
 import {
+  getSeedForSeedCode,
   getSeedsForPassCode,
 } from '../allSeeds'
 
@@ -21,123 +16,41 @@ watchEffect(() => {
   user.setNewMyrKi(props.anyMyrKi)
 })
 
-// BEGIN CARD LOOKUP /////////////////////////////////////
-const foundCards = ref([
-  ...getCardsFor(props.anyMyrKi),
-])
+// BEGIN Seed LOOKUP //////////////////////////////////
+const foundSeed = ref(getSeedForSeedCode(props.anyMyrKi))
 
-const foundCirclesForPassCode = ref([
-  ...getCirclesForPassCode(props.anyMyrKi),
-])
-
-const foundSeedsForPassCode = ref([
-  ...getSeedsForPassCode(props.anyMyrKi),
-])
-// END CARD LOOKUP //////////////////////////////////////
-
-// BEGIN CIRCLE LOOKUP //////////////////////////////////
-const foundCircle = ref(getCircleForCircleCode(props.anyMyrKi))
-
-const foundSeedsForCircleCode = ref([
+const foundSeedsForSeedCode = ref([
   ...getSeedsForPassCode(props.anyMyrKi),
 ])
 
-let foundCardsForCircle = ref([])
+let foundCardsForSeed = ref([])
 
-if (foundCircle
-    && foundCircle.value
-    && foundCircle.value.passCodes) {
-  foundCardsForCircle = ref([
-    ...getCardsForPassCodeArray(foundCircle.value.passCodes),
+if (foundSeed
+    && foundSeed.value
+    && foundSeed.value.passCodes) {
+  foundCardsForSeed = ref([
+    ...getCardsForPassCodeArray(foundSeed.value.passCodes),
   ])
 }
-// END CIRCLE LOOKUP ////////////////////////////////////
-
-// BEGIN CARD CAROUSEL //////////////////////////////////
-const currentIndex = ref(0)
-
-const currentCard = ref(foundCards.value[currentIndex.value])
-
-function incrementIndex() {
-  if (currentIndex.value >= foundCards.value.length - 1)
-    currentIndex.value = 0
-  else
-    currentIndex.value++
-
-  currentCard.value = foundCards.value[currentIndex.value]
-}
-
-function decrementIndex() {
-  if (currentIndex.value <= 0)
-    currentIndex.value = foundCards.value.length - 1
-  else
-    currentIndex.value--
-
-  currentCard.value = foundCards.value[currentIndex.value]
-}
-// END CARD CAROUSEL //////////////////////////////////////
+// END Seed LOOKUP ////////////////////////////////////
 </script>
 
 <template>
-  <!-- BEGIN CARD DISPLAY ///////////////////////////////// -->
-  <div v-if="currentCard">
-    <div>
-      <button @click="decrementIndex">
-        -
-      </button>
-      <button @click="incrementIndex">
-        +
-      </button>
-      <img class="card" :src="currentCard.image">
-    </div>
-    <div v-if="foundCirclesForPassCode.length">
-      <p>Circles:</p>
-      <ul>
-        <li
-          v-for="thisFoundCircle in foundCirclesForPassCode"
-          :key="thisFoundCircle.circleCode"
-          @click="go(thisFoundCircle.circleCode)"
-        >
-          {{ `${thisFoundCircle.circleName}` }}
-        </li>
-      </ul>
-    </div>
-    <div v-if="foundSeedsForPassCode.length">
-      <p>Seeds:</p>
-      <ul>
-        <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <a
-            target="_blank"
-            :href="foundSeed.seedLinkHref"
-            class="showlink"
-          >
-            {{ foundSeed.seedLinkText }}
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- END CARD DISPLAY////////////////////////////////// -->
   <!-- BEGIN CIRCLE DISPLAY////////////////////////////// -->
-  <div v-else-if="foundCircle">
-    <p>Circle: {{ foundCircle.circleName }}</p>
-    <div v-if="foundSeedsForCircleCode.length">
-      <p>Seeds:</p>
-      <ul>
-        <li v-for="foundSeed in foundSeedsForCircleCode" :key="foundSeed.seedCode">
-          <a
-            target="_blank"
-            :href="foundSeed.seedLinkHref"
-            class="showlink"
-          >
-            {{ foundSeed.seedLinkText }}
-          </a>
-        </li>
-      </ul>
-    </div>
+  <div v-if="foundSeed">
+    <a
+      target="_blank"
+      :href="foundSeed.seedLinkHref"
+      class="showlink"
+    >
+      {{ foundSeed.seedLinkText }}
+    </a>
     <div v-for="aCard in foundCardsForCircle" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+          <img :src="aCard.image">
+        </RouterLink> -->
+        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
       </div>

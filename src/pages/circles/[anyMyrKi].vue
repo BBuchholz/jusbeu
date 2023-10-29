@@ -16,20 +16,6 @@ watchEffect(() => {
   user.setNewMyrKi(props.anyMyrKi)
 })
 
-// // BEGIN CARD LOOKUP /////////////////////////////////////
-// const foundCards = ref([
-//   ...getCardsFor(props.anyMyrKi),
-// ])
-
-// const foundCirclesForPassCode = ref([
-//   ...getCirclesForPassCode(props.anyMyrKi),
-// ])
-
-// const foundSeedsForPassCode = ref([
-//   ...getSeedsForPassCode(props.anyMyrKi),
-// ])
-// // END CARD LOOKUP //////////////////////////////////////
-
 // BEGIN CIRCLE LOOKUP //////////////////////////////////
 const foundCircle = ref(getCircleForCircleCode(props.anyMyrKi))
 
@@ -47,72 +33,9 @@ if (foundCircle
   ])
 }
 // END CIRCLE LOOKUP ////////////////////////////////////
-
-// // BEGIN CARD CAROUSEL //////////////////////////////////
-// const currentIndex = ref(0)
-
-// const currentCard = ref(foundCards.value[currentIndex.value])
-
-// function incrementIndex() {
-//   if (currentIndex.value >= foundCards.value.length - 1)
-//     currentIndex.value = 0
-//   else
-//     currentIndex.value++
-
-//   currentCard.value = foundCards.value[currentIndex.value]
-// }
-
-// function decrementIndex() {
-//   if (currentIndex.value <= 0)
-//     currentIndex.value = foundCards.value.length - 1
-//   else
-//     currentIndex.value--
-
-//   currentCard.value = foundCards.value[currentIndex.value]
-// }
-// // END CARD CAROUSEL //////////////////////////////////////
 </script>
 
 <template>
-  <!-- BEGIN CARD DISPLAY ///////////////////////////////// -->
-  <!-- <div v-if="currentCard">
-    <div>
-      <button @click="decrementIndex">
-        -
-      </button>
-      <button @click="incrementIndex">
-        +
-      </button>
-      <img class="card" :src="currentCard.image">
-    </div>
-    <div v-if="foundCirclesForPassCode.length">
-      <p>Circles:</p>
-      <ul>
-        <li
-          v-for="thisFoundCircle in foundCirclesForPassCode"
-          :key="thisFoundCircle.circleCode"
-          @click="go(thisFoundCircle.circleCode)"
-        >
-          {{ `${thisFoundCircle.circleName}` }}
-        </li>
-      </ul>
-    </div>
-    <div v-if="foundSeedsForPassCode.length">
-      <p>Seeds:</p>
-      <ul>
-        <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <a
-            target="_blank"
-            :href="foundSeed.seedLinkHref"
-            class="showlink"
-          >
-            {{ foundSeed.seedLinkText }}
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div> -->
-  <!-- END CARD DISPLAY////////////////////////////////// -->
   <!-- BEGIN CIRCLE DISPLAY////////////////////////////// -->
   <div v-if="foundCircle">
     <p>Circle: {{ foundCircle.circleName }}</p>
@@ -132,7 +55,10 @@ if (foundCircle
     </div>
     <div v-for="aCard in foundCardsForCircle" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
+          <img :src="aCard.image">
+        </RouterLink> -->
+        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
       </div>
