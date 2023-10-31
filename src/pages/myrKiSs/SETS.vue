@@ -6,31 +6,46 @@ import {
 import { setCG1 } from '../setCG1'
 import { setJBU1 } from '../setJBU1'
 
-const sortedCardsAll = ref([
-  ...allCards.value,
-])
+// const sortedCardsAll = ref([
+//   ...allCards.value,
+// ])
 
-const sortedCardsCG1 = ref([
-  ...setCG1.value,
-])
+// const sortedCardsCG1 = ref([
+//   ...setCG1.value,
+// ])
 
-const sortedCardsJBU1 = ref([
-  ...setJBU1.value,
-])
+// const sortedCardsJBU1 = ref([
+//   ...setJBU1.value,
+// ])
 
 const selectedSet = ref('cg1')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
 }
+
+const sortedCards = computed(() => {
+  switch (selectedSet.value) {
+    case 'cg1':
+      return ref([
+        ...setCG1.value,
+      ])
+    case 'jbu1':
+      return ref([
+        ...setJBU1.value,
+      ])
+    case 'all':
+      return ref([
+        ...allCards.value,
+      ])
+  }
+
+  return null
+})
 </script>
 
 <template>
-  <div class="text-center">
-    <h3>CREDIT WHERE CREDIT IS DUE</h3>
-  </div>
-
-  <div class="selector">
+  <div class="selector text-center">
     <select
       v-model="selectedSet"
       name="set-selection"
@@ -52,15 +67,28 @@ function onSelectedSetChange(e) {
     <p>Unless otherwise specified all copyrights mentioned on this page are licensed under CC-BY-SA 4.0</p>
   </div>
 
-  <div v-if="selectedSet === 'cg1'">
+  <div v-if="sortedCards">
+    <p class="text-center">
+      Cards In This Set: {{ sortedCards.value.length }}
+    </p>
+    <div v-for="aCard in sortedCards.value" :key="aCard" class="zhone flex-container">
+      <div class="card flex-child">
+        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
+          <img :src="aCard.image">
+        </RouterLink>
+      </div>
+      <div class="flex-child content">
+        <p>{{ getCreditsForCard(aCard) }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div v-else-if="selectedSet === 'cg1'">
     <p class="text-center">
       Cards In Set: {{ sortedCardsCG1.length }}
     </p>
     <div v-for="aCard in sortedCardsCG1" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
-          <img :src="aCard.image">
-        </RouterLink> -->
         <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
@@ -77,9 +105,6 @@ function onSelectedSetChange(e) {
     </p>
     <div v-for="aCard in sortedCardsJBU1" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
-          <img :src="aCard.image">
-        </RouterLink> -->
         <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
@@ -96,9 +121,6 @@ function onSelectedSetChange(e) {
     </p>
     <div v-for="aCard in sortedCardsAll" :key="aCard" class="zhone flex-container">
       <div class="card flex-child">
-        <!-- <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
-          <img :src="aCard.image">
-        </RouterLink> -->
         <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
@@ -107,7 +129,7 @@ function onSelectedSetChange(e) {
         <p>{{ getCreditsForCard(aCard) }}</p>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style scoped>
