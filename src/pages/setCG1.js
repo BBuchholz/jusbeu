@@ -57,20 +57,6 @@ export const setCG1 = ref([
     componentCredits: [],
   },
   {
-    passCode: 'ZAGREUS',
-    uuid: '0c1ca0bc-a7d6-4bfe-a911-53fb5fbda671',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ZAGREUS-a671_CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [],
-  },
-  {
-    passCode: 'ZAGREUS',
-    uuid: 'c21e2908-11a7-4e57-8b8b-de3b27436168',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ZAGREUS-6168_CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [],
-  },
-  {
     passCode: 'SCA',
     uuid: 'fd10ebc6-e270-4488-8208-a94089b70a5f',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/SCA-0a5f_CARD.png',

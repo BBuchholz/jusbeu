@@ -5,6 +5,7 @@ import {
 } from '../allSets'
 import { setCG1 } from '../setCG1'
 import { setJBU1 } from '../setJBU1'
+import { setSFG1 } from '../setSFG1'
 
 // const sortedCardsAll = ref([
 //   ...allCards.value,
@@ -34,6 +35,10 @@ const sortedCards = computed(() => {
       return ref([
         ...setJBU1.value,
       ])
+    case 'sfg1':
+      return ref([
+        ...setSFG1.value,
+      ])
     case 'all':
       return ref([
         ...allCards.value,
@@ -59,6 +64,9 @@ const sortedCards = computed(() => {
       </option>
       <option value="cg1">
         Coventry Grove (Set 1)
+      </option>
+      <option value="sfg1">
+        Shadow Fire Glen (Set 1)
       </option>
     </select>
   </div>
