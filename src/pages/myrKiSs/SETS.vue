@@ -3,6 +3,8 @@ import {
   allCards,
   getCreditsForCard,
 } from '../allSets'
+
+import { setTMPLT1 } from '../setTMPLT1'
 import { setCG1 } from '../setCG1'
 import { setJBU1 } from '../setJBU1'
 import { setSFG1 } from '../setSFG1'
@@ -19,11 +21,20 @@ import { setSFG1 } from '../setSFG1'
 //   ...setJBU1.value,
 // ])
 
-const selectedSet = ref('cg1')
+const selectedSet = ref('tmplt1')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
 }
+
+const setMetaData = computed(() => {
+  switch (selectedSet.value) {
+    default:
+      return ref([
+        ...setMetaTMPLT1.value,
+      ])
+  }
+})
 
 const sortedCards = computed(() => {
   switch (selectedSet.value) {
@@ -38,6 +49,10 @@ const sortedCards = computed(() => {
     case 'sfg1':
       return ref([
         ...setSFG1.value,
+      ])
+    case 'tmplt1':
+      return ref([
+        ...setTMPLT1.value,
       ])
     case 'all':
       return ref([
@@ -59,6 +74,9 @@ const sortedCards = computed(() => {
       <option value="all">
         All Sets
       </option>
+      <option value="tmplt1">
+        Template (Set 1)
+      </option>
       <option value="jbu1">
         Jus Be U (Set 1)
       </option>
@@ -73,6 +91,10 @@ const sortedCards = computed(() => {
 
   <div class="text-center">
     <p>Unless otherwise specified all copyrights mentioned on this page are licensed under CC-BY-SA 4.0</p>
+  </div>
+
+  <div class="text-center">
+    <p>{{ setMetaData.value }}</p>
   </div>
 
   <div v-if="sortedCards">
