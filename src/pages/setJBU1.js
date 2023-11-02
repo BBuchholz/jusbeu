@@ -1,5 +1,14 @@
 import { ref } from 'vue'
 
+export const setMetaJBU1 = ref(
+  {
+    setCode: 'JBU1',
+    setName: 'Jus Be U Set 1',
+    setDescription: 'Jus Be U comes from a place of healing light and happy vibes, positive energies are encouraged and controversial topics are avoided, this is the "safe set" compared to other sets within tha Myriad EcoSystem Arrangement',
+    setSize: 2,
+  },
+)
+
 export const setJBU1 = ref([
   {
     passCode: 'ENERGY',

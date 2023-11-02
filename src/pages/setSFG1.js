@@ -1,5 +1,14 @@
 import { ref } from 'vue'
 
+export const setMetaSFG1 = ref(
+  {
+    setCode: 'SFG1',
+    setName: 'Shadow Fire Glen Set 1',
+    setDescription: 'Shadow Fire Glen uses narrative devices to incorporate various ideas into a fictional framework that serves to explore those ideas. It is a subset of Coventry Grove, and can best be described as "witchy meets neurodivergence"',
+    setSize: 2,
+  },
+)
+
 export const setSFG1 = ref([
   {
     passCode: 'ZAGREUS',

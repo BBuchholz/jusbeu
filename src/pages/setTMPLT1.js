@@ -1,10 +1,13 @@
 import { ref } from 'vue'
 
-export const setMetaTMPLT1 = ref([
+export const setMetaTMPLT1 = ref(
   {
+    setCode: 'TMPLT1',
     setName: 'Template Set 1',
+    setDescription: 'A basic set consisting of reusable templates for other cards to be remixed from',
+    setSize: 2,
   },
-])
+)
 
 export const setTMPLT1 = ref([
   {

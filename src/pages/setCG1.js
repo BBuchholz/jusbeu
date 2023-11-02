@@ -1,5 +1,14 @@
 import { ref } from 'vue'
 
+export const setMetaCG1 = ref(
+  {
+    setCode: 'CG1',
+    setName: 'Coventry Grove Set 1',
+    setDescription: 'This set begins to delve into more mature topics, specifically incorporating darker and more supernatural elements. The first "witchy set" of tha Myriad EcoSystem Arrangement.',
+    setSize: 2,
+  },
+)
+
 export const setCG1 = ref([
   {
     passCode: 'TOMES',
