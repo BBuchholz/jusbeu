@@ -1,6 +1,5 @@
 <script setup>
 import {
-  allCards,
   getCreditsForCard,
 } from '../allSets'
 
@@ -9,7 +8,7 @@ import { setCG1, setMetaCG1 } from '../setCG1'
 import { setJBU1, setMetaJBU1 } from '../setJBU1'
 import { setMetaSFG1, setSFG1 } from '../setSFG1'
 
-const performSetAudit = ref(true)
+const performSetAudit = ref(false)
 const selectedSet = ref('tmplt1')
 
 function onSelectedSetChange(e) {
@@ -47,10 +46,6 @@ const sortedCards = computed(() => {
       return ref([
         ...setTMPLT1.value,
       ])
-    case 'all':
-      return ref([
-        ...allCards.value,
-      ])
   }
 
   return null
@@ -62,11 +57,9 @@ const sortedCards = computed(() => {
     <select
       v-model="selectedSet"
       name="set-selection"
+      class="text-center"
       @change="onSelectedSetChange"
     >
-      <option value="all">
-        All Sets
-      </option>
       <option value="tmplt1">
         Template (Set 1)
       </option>
@@ -80,10 +73,10 @@ const sortedCards = computed(() => {
         Shadow Fire Glen (Set 1)
       </option>
     </select>
-  </div>
 
-  <input id="checkbox" v-model="performSetAudit" type="checkbox">
-  <label for="checkbox">Display Set Audit</label>
+    <input id="checkbox" v-model="performSetAudit" type="checkbox">
+    <label for="checkbox">Display Set Audit</label>
+  </div>
 
   <div v-if="performSetAudit" class="text-center">
     <p>
