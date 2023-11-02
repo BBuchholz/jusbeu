@@ -1,6 +1,16 @@
 import { ref } from 'vue'
 
-export const allCards = ref([
+export const allSeeds = ref([
+  {
+    seedCode: 'TAPT',
+    seedLinkHref: 'https://docs.google.com/document/d/1z9QHG9wp0v2MzasvNKV0YWWop2HbX8llAQ0GEYS3JFk/edit?usp=sharing',
+    seedLinkText: 'TOMES Activity: Pl4nt1n Tr33s',
+    seedSourceType: 'Google Doc In Progress',
+    seedSourceLink: '',
+    passCodes: [
+      'TOMES',
+    ],
+  },
   {
     seedCode: 'NRG1',
     seedLinkHref: 'https://www.youtube.com/watch?v=zodg4WwBovc',
@@ -155,7 +165,7 @@ export const allCards = ref([
 
 export function getSeedForSeedCode(aSeedCode) {
   const foundCredit
-        = allCards.value.find(seed =>
+        = allSeeds.value.find(seed =>
           seed.seedCode.toLowerCase()
                   === aSeedCode.toLowerCase(),
         )
@@ -165,7 +175,7 @@ export function getSeedForSeedCode(aSeedCode) {
 
 export function getSeedsForPassCode(aPassCode) {
   const foundSeeds
-        = allCards.value.filter(seedEntry =>
+        = allSeeds.value.filter(seedEntry =>
           seedEntry.passCodes.includes(aPassCode.toUpperCase()),
         )
 

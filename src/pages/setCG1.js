@@ -11,6 +11,18 @@ export const setMetaCG1 = ref(
 
 export const setCG1 = ref([
   {
+    passCode: 'NRNMCN',
+    uuid: '850e0630-fc1b-44e9-85ef-957cd55fafd9',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/NRNMCN-afd9_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'TOMES',
     uuid: 'dccaf5a0-0ecd-4283-a242-160e7eb998e1',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/TOMES-98e1_CARD.png',
