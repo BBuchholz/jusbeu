@@ -9,7 +9,7 @@ import { setJBU1, setMetaJBU1 } from '../setJBU1'
 import { setMetaSFG1, setSFG1 } from '../setSFG1'
 
 const performSetAudit = ref(false)
-const selectedSet = ref('tmplt1')
+const selectedSet = ref('cg1')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value

@@ -24,6 +24,13 @@ export const setCG1 = ref([
   },
   {
     passCode: 'TOMES',
+    uuid: '85547ba7-d66f-4223-9435-2aaa8564d0b5',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TOMES-d0b5_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
+    passCode: 'TOMES',
     uuid: 'dccaf5a0-0ecd-4283-a242-160e7eb998e1',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/TOMES-98e1_CARD.png',
     designCredit: 'Brent Buchholz',
