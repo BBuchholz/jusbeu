@@ -12,6 +12,16 @@ export const allSeeds = ref([
     ],
   },
   {
+    seedCode: 'SCRIBD1',
+    seedLinkHref: 'https://www.scribd.com/doc/398330616',
+    seedLinkText: 'Scribd Book: The Neuronomicon, a 21st century grimoire by Nathaniel j. Harris',
+    seedSourceType: 'Scribd Document Link',
+    seedSourceLink: '',
+    passCodes: [
+      'NRNMCN',
+    ],
+  },
+  {
     seedCode: 'NRG1',
     seedLinkHref: 'https://www.youtube.com/watch?v=zodg4WwBovc',
     seedLinkText: 'Everything Is Energy (video)',
