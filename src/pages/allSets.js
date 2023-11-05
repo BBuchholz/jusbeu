@@ -3,12 +3,14 @@ import { setCG1 } from './setCG1'
 import { setJBU1 } from './setJBU1'
 import { setSFG1 } from './setSFG1'
 import { setTMPLT1 } from './setTMPLT1'
+import { setNOV23 } from './setNOV23'
 
 export const allCards = ref([
   ...setJBU1.value,
   ...setCG1.value,
   ...setSFG1.value,
   ...setTMPLT1.value,
+  ...setNOV23.value,
 ])
 
 export function getCardFor(aPassCode) {

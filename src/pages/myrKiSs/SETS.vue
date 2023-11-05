@@ -7,9 +7,10 @@ import { setMetaTMPLT1, setTMPLT1 } from '../setTMPLT1'
 import { setCG1, setMetaCG1 } from '../setCG1'
 import { setJBU1, setMetaJBU1 } from '../setJBU1'
 import { setMetaSFG1, setSFG1 } from '../setSFG1'
+import { setMetaNOV23, setNOV23 } from '../setNOV23'
 
 const performSetAudit = ref(false)
-const selectedSet = ref('cg1')
+const selectedSet = ref('nov23')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
@@ -25,6 +26,8 @@ const setMetaData = computed(() => {
       return ref(setMetaJBU1.value)
     case 'sfg1':
       return ref(setMetaSFG1.value)
+    case 'nov23':
+      return ref(setMetaNOV23.value)
   }
 })
 
@@ -46,6 +49,10 @@ const sortedCards = computed(() => {
       return ref([
         ...setTMPLT1.value,
       ])
+    case 'nov23':
+      return ref([
+        ...setNOV23.value,
+      ])
   }
 
   return null
@@ -60,6 +67,9 @@ const sortedCards = computed(() => {
       class="text-center"
       @change="onSelectedSetChange"
     >
+      <option value="nov23">
+        November 2023 Set
+      </option>
       <option value="tmplt1">
         Template (Set 1)
       </option>
