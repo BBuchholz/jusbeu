@@ -11,6 +11,18 @@ export const setMetaNOV23 = ref(
 
 export const setNOV23 = ref([
   {
+    passCode: 'YIU',
+    uuid: 'c6acb9c8-a5f2-457c-9dcb-40412cb4eda0',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/YIU-radar-eda0_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'LOREFUL',
     uuid: 'c2370604-aadf-4a0a-94aa-7ba649fbe256',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/LOREFUL-larval-e256_CARD.png',

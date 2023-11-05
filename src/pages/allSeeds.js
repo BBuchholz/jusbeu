@@ -2,6 +2,16 @@ import { ref } from 'vue'
 
 export const allSeeds = ref([
   {
+    seedCode: 'YIU1',
+    seedLinkHref: 'https://tomrocksmaths.com/2021/10/19/air-traffic-control-and-radar/',
+    seedLinkText: 'Complex Numbers, Air Traffic Control and RADAR',
+    seedSourceType: '',
+    seedSourceLink: '',
+    passCodes: [
+      'YIU',
+    ],
+  },
+  {
     seedCode: 'TAPT',
     seedLinkHref: 'https://docs.google.com/document/d/1z9QHG9wp0v2MzasvNKV0YWWop2HbX8llAQ0GEYS3JFk/edit?usp=sharing',
     seedLinkText: 'TOMES Activity: Pl4nt1n Tr33s',
