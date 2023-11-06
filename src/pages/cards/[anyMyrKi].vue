@@ -19,10 +19,6 @@ watchEffect(() => {
   user.setNewMyrKi(props.anyMyrKi)
 })
 
-// function navigateTo(aCode) {
-//   user.setNewMyrKi(aCode)
-// }
-
 // BEGIN CARD LOOKUP /////////////////////////////////////
 const foundCards = ref([
   ...getCardsFor(props.anyMyrKi),
@@ -36,24 +32,6 @@ const foundSeedsForPassCode = ref([
   ...getSeedsForPassCode(props.anyMyrKi),
 ])
 // END CARD LOOKUP //////////////////////////////////////
-
-// BEGIN CIRCLE LOOKUP //////////////////////////////////
-// const foundCircle = ref(getCircleForCircleCode(props.anyMyrKi))
-
-// const foundSeedsForCircleCode = ref([
-//   ...getSeedsForPassCode(props.anyMyrKi),
-// ])
-
-// let foundCardsForCircle = ref([])
-
-// if (foundCircle
-//     && foundCircle.value
-//     && foundCircle.value.passCodes) {
-//   foundCardsForCircle = ref([
-//     ...getCardsForPassCodeArray(foundCircle.value.passCodes),
-//   ])
-// }
-// END CIRCLE LOOKUP ////////////////////////////////////
 
 // BEGIN CARD CAROUSEL //////////////////////////////////
 const currentIndex = ref(0)
@@ -109,46 +87,19 @@ function decrementIndex() {
       </ul>
     </div>
     <div v-if="foundSeedsForPassCode.length">
-      <p>Seeds:</p>
       <ul>
         <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <!-- <a
-            target="_blank"
-            :href="foundSeed.seedLinkHref"
-            class="showlink"
-          >
-            {{ foundSeed.seedLinkText }}
-          </a> -->
-          <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
-            {{ foundSeed.seedLinkText }}
-          </RouterLink>
+          <div class="seed">
+            <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
+              <div class="i-ri-seedling-line" />
+              {{ foundSeed.seedLinkText }}
+            </RouterLink>
+          </div>
         </li>
       </ul>
     </div>
   </div>
   <!-- END CARD DISPLAY////////////////////////////////// -->
-  <!-- BEGIN CIRCLE DISPLAY////////////////////////////// -->
-  <!-- <div v-else-if="foundCircle">
-    <p>Circle: {{ foundCircle.circleName }}</p>
-    <div v-if="foundSeedsForCircleCode.length">
-      <p>Seeds:</p>
-      <ul>
-        <li v-for="foundSeed in foundSeedsForCircleCode" :key="foundSeed.seedCode">
-          <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
-            {{ foundSeed.seedLinkText }}
-          </RouterLink>
-        </li>
-      </ul>
-    </div>
-    <div v-for="aCard in foundCardsForCircle" :key="aCard" class="zhone flex-container">
-      <div class="card flex-child">
-        <RouterLink :to="`/myrKiSs/${aCard.passCode}`" replace>
-          <img :src="aCard.image">
-        </RouterLink>
-      </div>
-    </div>
-  </div> -->
-  <!-- END CIRCLE DISPLAY////////////////////////////// -->
   <!-- BEGIN NOT FOUND DISPLAY//////////////////////// -->
   <div v-else>
     <p>
@@ -199,6 +150,28 @@ function decrementIndex() {
 <style scoped>
   .display {
     margin: 40px;
+  }
+
+  .i-ri-seedling-line {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M5.998 3a7.002 7.002 0 0 1 6.913 5.895A6.479 6.479 0 0 1 17.498 7h4.5v2.5a6.5 6.5 0 0 1-6.5 6.5h-2.5v5h-2v-8h-2a7 7 0 0 1-7-7V3h4Zm14 6h-2.5a4.5 4.5 0 0 0-4.5 4.5v.5h2.5a4.5 4.5 0 0 0 4.5-4.5V9Zm-14-4h-2v1a5 5 0 0 0 5 5h2v-1a5 5 0 0 0-5-5Z'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 2.4em;
+    height: 2.4em;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .seed {
+    margin: 40px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border: none;
   }
 
   button {
