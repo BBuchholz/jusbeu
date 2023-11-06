@@ -11,6 +11,42 @@ export const setMetaNOV23 = ref(
 
 export const setNOV23 = ref([
   {
+    passCode: 'POSSE',
+    uuid: 'd174ad78-edaf-4d35-8945-2709c771ddbf',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/POSSE-nursery-ddbf_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'EMOTONE',
+    uuid: 'b2c017cf-4adb-4548-8d34-c02294df4d8f',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/EMOTONE-hopeful-4d8f_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'EMOTONE',
+    uuid: '2eb68a65-c847-43a9-bbc9-87da1f3487fa',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/EMOTONE-anxious-87fa_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'YIU',
     uuid: 'c6acb9c8-a5f2-457c-9dcb-40412cb4eda0',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/YIU-radar-eda0_CARD.png',
