@@ -4,6 +4,15 @@ import { allCards } from './allSets'
 export const allCircles = ref([
   {
 
+    circleName: 'SCA Book Shelf: Magick (SCA Magick Shelf)',
+    circleCode: 'SCAMS',
+    passCodes: [
+      'TOMES',
+      'NRNMCN',
+    ],
+  },
+  {
+
     circleName: 'SCA Book Shelf: Chaos Magick (SCA Chaos Shelf)',
     circleCode: 'SCACS',
     passCodes: [

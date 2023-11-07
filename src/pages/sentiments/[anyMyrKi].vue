@@ -15,106 +15,44 @@ watchEffect(() => {
   user.setNewMyrKi(props.anyMyrKi)
 })
 
-// BEGIN CARD LOOKUP /////////////////////////////////////
-// const foundCards = ref([
-//   ...getCardsFor(props.anyMyrKi),
-// ])
-
-// const foundCirclesForPassCode = ref([
-//   ...getCirclesForPassCode(props.anyMyrKi),
-// ])
-
-// const foundSeedsForPassCode = ref([
-//   ...getSeedsForPassCode(props.anyMyrKi),
-// ])
-// END CARD LOOKUP //////////////////////////////////////
-
-// BEGIN CIRCLE LOOKUP //////////////////////////////////
-// const foundCircle = ref(getCircleForCircleCode(props.anyMyrKi))
+// BEGIN SENTIMENT LOOKUP //////////////////////////////////
 
 const foundSentimentsForUuid = ref([
   ...getSentimentsForUuid(props.anyMyrKi),
 ])
-// END CIRCLE LOOKUP ////////////////////////////////////
+// END SENTIMENT LOOKUP ////////////////////////////////////
 
 // BEGIN CARD CAROUSEL //////////////////////////////////
-// const currentIndex = ref(0)
 
 const currentCard = ref(getCardForUuid(props.anyMyrKi))
 
-// function incrementIndex() {
-//   if (currentIndex.value >= foundCards.value.length - 1)
-//     currentIndex.value = 0
-//   else
-//     currentIndex.value++
-
-//   currentCard.value = foundCards.value[currentIndex.value]
-// }
-
-// function decrementIndex() {
-//   if (currentIndex.value <= 0)
-//     currentIndex.value = foundCards.value.length - 1
-//   else
-//     currentIndex.value--
-
-//   currentCard.value = foundCards.value[currentIndex.value]
-// }
 // END CARD CAROUSEL //////////////////////////////////////
 </script>
 
 <template>
-  <!-- BEGIN CARD DISPLAY ///////////////////////////////// -->
   <div v-if="currentCard">
-    <div>
-      <!-- <button @click="decrementIndex">
-        -
-      </button>
-      <button @click="incrementIndex">
-        +
-      </button> -->
-      <img class="card" :src="currentCard.image">
-      <p>UUID: {{ currentCard.uuid }}</p>
-    </div>
-    <!-- <div v-if="foundCirclesForPassCode.length">
-      <p>Circles:</p>
-      <ul>
-        <li
-          v-for="thisFoundCircle in foundCirclesForPassCode"
-          :key="thisFoundCircle.circleCode"
-          @click="go(thisFoundCircle.circleCode)"
-        >
-          {{ `${thisFoundCircle.circleName}` }}
-        </li>
-      </ul>
-    </div>
-    <div v-if="foundSeedsForPassCode.length">
-      <p>Seeds:</p>
-      <ul>
-        <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <a
-            target="_blank"
-            :href="foundSeed.seedLinkHref"
-            class="showlink"
-          >
-            {{ foundSeed.seedLinkText }}
-          </a>
-        </li>
-      </ul>
-    </div> -->
-
-    <!-- END CARD DISPLAY////////////////////////////////// -->
-    <!-- BEGIN CIRCLE DISPLAY////////////////////////////// -->
+    <!-- BEGIN Sentiment DISPLAY////////////////////////////// -->
 
     <div v-if="foundSentimentsForUuid.length">
-      <p>Sentiments:</p>
       <ul>
         <li v-for="foundSentiment in foundSentimentsForUuid" :key="foundSentiment.sentimentCode">
-          <p>{{ `${foundSentiment.sentimentContent} - ${foundSentiment.sentimentSource}` }}</p>
+          <div class="scs">
+            <div class="i-carbon-phrase-sentiment" />
+            <p>{{ `${foundSentiment.sentimentContent} - ${foundSentiment.sentimentSource}` }}</p>
+          </div>
         </li>
       </ul>
     </div>
 
-    <!-- END CIRCLE DISPLAY////////////////////////////// -->
+    <!-- END Sentiment DISPLAY////////////////////////////// -->
+    <!-- BEGIN CARD DISPLAY ///////////////////////////////// -->
+    <div>
+      <RouterLink :to="`/cards/${currentCard.passCode}`">
+        <img class="card" :src="currentCard.image">
+        <p>UUID: {{ currentCard.uuid }}</p>
+      </RouterLink>
+    </div>
+    <!-- END CARD DISPLAY////////////////////////////////// -->
   </div>
   <!-- BEGIN NOT FOUND DISPLAY//////////////////////// -->
   <div v-else>
@@ -175,6 +113,28 @@ const currentCard = ref(getCardForUuid(props.anyMyrKi))
     border-radius: 10px;
   }
 
+  .i-carbon-phrase-sentiment {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 32 32' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M18.303 10a2.662 2.662 0 0 0-1.908.806l-.393.405l-.397-.405a2.662 2.662 0 0 0-3.816 0a2.8 2.8 0 0 0 0 3.896L16.002 19l4.209-4.298a2.8 2.8 0 0 0 0-3.896A2.662 2.662 0 0 0 18.303 10Z'/%3E%3Cpath fill='currentColor' d='M17.736 30L16 29l4-7h6a1.997 1.997 0 0 0 2-2V8a1.997 1.997 0 0 0-2-2H6a1.997 1.997 0 0 0-2 2v12a1.997 1.997 0 0 0 2 2h9v2H6a4 4 0 0 1-4-4V8a3.999 3.999 0 0 1 4-4h20a3.999 3.999 0 0 1 4 4v12a4 4 0 0 1-4 4h-4.835Z'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 2.4em;
+    height: 2.4em;
+    margin: 0% auto 10% auto;
+  }
+
+  .scs {
+    padding: 20px;
+    width: 300px;
+    margin: 10% auto;
+    border: none;
+    border-radius: 20px;
+    background-color: lightgrey;
+    color: darkslategrey;
+  }
   .card {
     max-width: 50%;
     height: auto;
