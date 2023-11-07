@@ -11,6 +11,18 @@ export const setMetaNOV23 = ref(
 
 export const setNOV23 = ref([
   {
+    passCode: 'TOMES',
+    uuid: 'dccaf5a0-0ecd-4283-a242-160e7eb998e1',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TOMES-98e1_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'POSSE',
     uuid: 'd174ad78-edaf-4d35-8945-2709c771ddbf',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/POSSE-nursery-ddbf_CARD.png',

@@ -74,29 +74,31 @@ function decrementIndex() {
         <img class="card" :src="currentCard.image">
       </RouterLink>
     </div>
-    <div v-if="foundCirclesForPassCode.length">
-      <p>Circles:</p>
-      <ul>
-        <li v-for="thisFoundCircle in foundCirclesForPassCode" :key="thisFoundCircle.circleCode">
-          <RouterLink
-            :to="`/circles/${thisFoundCircle.circleCode}`"
-          >
-            {{ `${thisFoundCircle.circleName}` }}
-          </RouterLink>
-        </li>
-      </ul>
-    </div>
-    <div v-if="foundSeedsForPassCode.length">
-      <ul>
-        <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <div class="seed">
-            <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
-              <div class="i-ri-seedling-line" />
-              {{ foundSeed.seedLinkText }}
+    <div class="page-center">
+      <div v-if="foundCirclesForPassCode.length">
+        <p>Circles:</p>
+        <ul>
+          <li v-for="thisFoundCircle in foundCirclesForPassCode" :key="thisFoundCircle.circleCode">
+            <RouterLink
+              :to="`/circles/${thisFoundCircle.circleCode}`"
+            >
+              {{ `${thisFoundCircle.circleName}` }}
             </RouterLink>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
+      <div v-if="foundSeedsForPassCode.length">
+        <ul>
+          <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
+            <div class="seed">
+              <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
+                <div class="i-ri-seedling-line" />
+                {{ foundSeed.seedLinkText }}
+              </RouterLink>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- END CARD DISPLAY////////////////////////////////// -->
@@ -166,12 +168,20 @@ function decrementIndex() {
     margin: 0 auto;
   }
 
-  .seed {
-    margin: 40px;
-    padding: 20px;
-    width: 300px;
+  .page-center {
+    width: 400px;
     margin: 0 auto;
     border: none;
+  }
+
+  .seed {
+    padding: 20px;
+    width: 300px;
+    margin: 10% auto;
+    border: none;
+    border-radius: 20px;
+    background-color: lightgrey;
+    color: darkslategrey;
   }
 
   button {
