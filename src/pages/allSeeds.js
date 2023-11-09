@@ -12,9 +12,19 @@ export const allSeeds = ref([
     ],
   },
   {
-    seedCode: 'TAPT',
+    seedCode: 'TAWG',
+    seedLinkHref: 'https://docs.google.com/document/d/1Xcu_aW1ZOaYsZEm6IAGRTugSL67tQTbFUitTKVDAAOI/edit?usp=sharing',
+    seedLinkText: 'TOMES Activity: WaterinG',
+    seedSourceType: 'Google Doc In Progress',
+    seedSourceLink: '',
+    passCodes: [
+      'TOMES',
+    ],
+  },
+  {
+    seedCode: 'TAGG',
     seedLinkHref: 'https://docs.google.com/document/d/1z9QHG9wp0v2MzasvNKV0YWWop2HbX8llAQ0GEYS3JFk/edit?usp=sharing',
-    seedLinkText: 'TOMES Activity: Pl4nt1n Tr33s',
+    seedLinkText: 'TOMES Activity: GatherinG',
     seedSourceType: 'Google Doc In Progress',
     seedSourceLink: '',
     passCodes: [
