@@ -1,6 +1,6 @@
 ---
 mdSetMeta2RMX:
-- setCode: 2RMX
+  setCode: 2RMX
   setName: 2B Remixed Set 1
   setDescription: A set consisting of cards in previous formats that need to be remixed into the new standard for release
   setSize: 2
