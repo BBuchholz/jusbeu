@@ -1,10 +1,16 @@
 import { ref } from 'vue'
+import { mdSet2RMX, mdSetMeta2RMX } from './mdSet2RMX.md'
 
-// TODO: REMIX THIS FILE TO LOAD FROM MarkDown
-//       like MDREADTEST does in the cards/ folder
-// TODO: each hardcoded value should be moved to a md file
-// TODO: write function to load from those files into
-//       the set lists
+export const mdSet2RMXCards = ref([
+  ...mdSet2RMX,
+])
+
+export const mdSet2RMXMeta = ref(
+  mdSetMeta2RMX,
+)
+
+// TODO: remove these JSON versions in favor of the MD version
+//       (comment out and test first before removing entirely)
 
 export const setMeta2RMX = ref(
   {
@@ -14,10 +20,6 @@ export const setMeta2RMX = ref(
     setSize: 2,
   },
 )
-
-export function getCreditsForCard() {
-  return 'set2RMX.getCreditsForCard not implemented'
-}
 
 export const set2RMX = ref([
   {
@@ -40,3 +42,7 @@ export const set2RMX = ref([
     componentCredits: [],
   },
 ])
+
+export function getCreditsForCard() {
+  return 'set2RMX.getCreditsForCard not implemented'
+}

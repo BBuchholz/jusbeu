@@ -1,6 +1,8 @@
 <script setup>
 import {
   getCreditsForCard,
+  mdSet2RMXCards,
+  mdSet2RMXMeta,
   set2RMX,
   setMeta2RMX,
 } from '../set2RMX'
@@ -16,6 +18,8 @@ const setMetaData = computed(() => {
   switch (selectedSet.value) {
     case '2rmx':
       return ref(setMeta2RMX.value)
+    case 'md2rmx':
+      return ref(mdSet2RMXMeta.value)
   }
 })
 
@@ -24,6 +28,10 @@ const sortedCards = computed(() => {
     case '2rmx':
       return ref([
         ...set2RMX.value,
+      ])
+    case 'md2rmx':
+      return ref([
+        ...mdSet2RMXCards.value,
       ])
   }
 
@@ -41,6 +49,9 @@ const sortedCards = computed(() => {
     >
       <option value="2rmx">
         2B Remixed (Set)
+      </option>
+      <option value="md2rmx">
+        md version of 2B Remixed (Set)
       </option>
     </select>
 
