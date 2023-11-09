@@ -275,12 +275,6 @@ export const allCards = ref([
   },
 ])
 
-// TODO: build function that is exported that gets a single
-// card by passcode so in other pages we can
-// call this function to get just one, I want to display
-// cards next to the zhones, and have the written
-// part be the description
-
 export function getCardFor(aPassCode) {
   const foundCard
         = allCards.value.find(card =>
