@@ -7,6 +7,17 @@ import {
   setMeta2RMX,
 } from '../set2RMX'
 
+import {
+  mDinDex,
+} from '../mdindex.md'
+
+// TODO: adapt this to load from mdindex.md
+//       which is patterned to be a wxrdType lookup file
+// TODO: display different templates based on wxrdtype
+// TODO: clicking on a wxrd instance should load the
+//       appropriate template (cards, seeds, circles, etc.)
+// TODO: seeds, circles, sentiments, and cards are wxrdTypes
+
 const performSetAudit = ref(false)
 const selectedSet = ref('2rmx')
 
@@ -40,6 +51,19 @@ const sortedCards = computed(() => {
 </script>
 
 <template>
+  <div v-if="mDinDex">
+    <p class="text-center">
+      entries In mDinDex: {{ mDinDex.length }}
+    </p>
+    <div v-for="aWxrd in mDinDex" :key="aWxrd" class="zhone flex-container">
+      <div class="card flex-child">
+        <p>{{ aWxrd }}</p>
+      </div>
+      <div class="flex-child content">
+        <p>{{ aWxrd }}</p>
+      </div>
+    </div>
+  </div>
   <div class="selector text-center">
     <select
       v-model="selectedSet"

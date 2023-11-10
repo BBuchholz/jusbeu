@@ -26,8 +26,8 @@
 
     <RouterLink
       icon-btn
-      to="/myrKiSs/MDINDEX"
-      title="MDinDex"
+      to="/myrKiSs/MDINDEXDISPLAY"
+      title="MDinDexDisplay"
     >
       <div i-carbon-dicom-overlay />
     </RouterLink>
