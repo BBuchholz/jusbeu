@@ -11,7 +11,7 @@ import {
   mDinDex,
 } from '../mdindex.md'
 
-// TODO: adapt this to load from mdindex.md
+// DONE: adapt this to load from mdindex.md
 //       which is patterned to be a wxrdType lookup file
 // TODO: display different templates based on wxrdtype
 // TODO: clicking on a wxrd instance should load the

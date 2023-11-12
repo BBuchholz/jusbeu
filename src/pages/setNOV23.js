@@ -11,6 +11,37 @@ export const setMetaNOV23 = ref(
 
 export const setNOV23 = ref([
   {
+    passCode: 'TCTKL',
+    uuid: 'bcb286a2-5e59-469f-8006-38f425a36c4b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-0-6c4b_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'TCTKL',
+    uuid: 'd938879a-5076-4260-92cd-dfc9cf9dda24',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-1-da24_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'SEPTAGRAM',
+    uuid: 'b461b839-52e7-43db-bdba-ef9111d44c80',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/SEPTAGRAM-4c80_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
     passCode: 'TOMES',
     uuid: 'dccaf5a0-0ecd-4283-a242-160e7eb998e1',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/TOMES-98e1_CARD.png',
