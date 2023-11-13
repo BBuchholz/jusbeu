@@ -11,6 +11,30 @@ export const setMetaNOV23 = ref(
 
 export const setNOV23 = ref([
   {
+    passCode: 'EMOTONE',
+    uuid: 'e9ce0a1e-9b8f-4dad-8c0e-2abe74d6e5fa',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/EMOTONE-irritated-e5fa_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'EMOTONE',
+    uuid: 'ce567f8d-2ca7-4524-8d95-97d9569569aa',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/EMOTONE-angry-69aa_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'TCTKL',
     uuid: 'bcb286a2-5e59-469f-8006-38f425a36c4b',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-0-6c4b_CARD.png',
