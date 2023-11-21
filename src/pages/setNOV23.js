@@ -11,6 +11,66 @@ export const setMetaNOV23 = ref(
 
 export const setNOV23 = ref([
   {
+    passCode: 'TCTKL',
+    uuid: '85ee4aab-7e99-4541-b0f4-a41e50cfd88a',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-5-d88a_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'TCTKL',
+    uuid: '92b970ea-23e2-43d0-a7c3-83fc873e63b9',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-4-63b9_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'TCTKL',
+    uuid: '72998593-7e5b-44d3-af0d-f86dc8b3cf9a',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-3-cf9a_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'TCTKL',
+    uuid: 'd89beebf-63b5-416f-9a91-519d915565b9',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-2-65b9_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
+    passCode: 'JAYNES',
+    uuid: 'f634c927-ee24-4aba-bf24-f322f8cfa4cd',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/JAYNES-a4cd_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator',
+      },
+    ],
+  },
+  {
     passCode: 'EMOTONE',
     uuid: 'e9ce0a1e-9b8f-4dad-8c0e-2abe74d6e5fa',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/EMOTONE-irritated-e5fa_CARD.png',
