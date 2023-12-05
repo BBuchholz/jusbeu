@@ -8,9 +8,10 @@ import { setCG1, setMetaCG1 } from '../setCG1'
 import { setJBU1, setMetaJBU1 } from '../setJBU1'
 import { setMetaSFG1, setSFG1 } from '../setSFG1'
 import { setMetaNOV23, setNOV23 } from '../setNOV23'
+import { setDEC23, setMetaDEC23 } from '../setDEC23'
 
 const performSetAudit = ref(false)
-const selectedSet = ref('nov23')
+const selectedSet = ref('dec23')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
@@ -28,6 +29,8 @@ const setMetaData = computed(() => {
       return ref(setMetaSFG1.value)
     case 'nov23':
       return ref(setMetaNOV23.value)
+    case 'dec23':
+      return ref(setMetaDEC23.value)
   }
 })
 
@@ -53,6 +56,10 @@ const sortedCards = computed(() => {
       return ref([
         ...setNOV23.value,
       ])
+    case 'dec23':
+      return ref([
+        ...setDEC23.value,
+      ])
   }
 
   return null
@@ -67,6 +74,9 @@ const sortedCards = computed(() => {
       class="text-center"
       @change="onSelectedSetChange"
     >
+      <option value="dec23">
+        December 2023 Set
+      </option>
       <option value="nov23">
         November 2023 Set
       </option>
