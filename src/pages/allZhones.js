@@ -13,6 +13,10 @@ export const allZhones = ref([
     zhoneCode: 'SCA',
     zhoneName: 'Sylvan Circle Academy',
   },
+  {
+    zhoneCode: 'OBALG',
+    zhoneName: 'Our Benevolent Awakening Lore Guild',
+  },
 ])
 
 export function getZhoneFor(aZhoneCode) {
