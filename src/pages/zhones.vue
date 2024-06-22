@@ -1,12 +1,7 @@
 <script setup>
-import { getZhoneFor } from './allZhones'
-
-const sortedZhones = ref([
-  getZhoneFor('OBALG'),
-  getZhoneFor('SC'),
-  getZhoneFor('SCA'),
-  getZhoneFor('COVENTRY'),
-])
+import {
+  sortedZhones,
+} from './allZhones'
 </script>
 
 <template>
@@ -18,6 +13,13 @@ const sortedZhones = ref([
     <div class="content flex-child">
       <li>
         <em>{{ aZhone.zhoneCode }}</em> - {{ aZhone.zhoneName }}
+        <a
+          v-if="aZhone.zhoneHref"
+          target="_blank"
+          :href="aZhone.zhoneHref"
+        >
+          (site here)
+        </a>
       </li>
     </div>
   </div>
