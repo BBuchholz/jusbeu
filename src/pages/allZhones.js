@@ -7,6 +7,16 @@ export const allZhones = ref([
     zhoneHref: '#',
   },
   {
+    zhoneCode: 'JSY',
+    zhoneName: 'Jacob\'s Salvage Yard',
+    zhoneHref: 'https://extremely-daemonic-gate.netlify.app/',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/JSY-5bd4_CARD.png',
+  },
+  {
+    zhoneCode: 'SC',
+    zhoneName: 'Sonic Circle',
+  },
+  {
     zhoneCode: 'SC',
     zhoneName: 'Sonic Circle',
   },
@@ -16,11 +26,12 @@ export const allZhones = ref([
   },
   {
     zhoneCode: 'OBALG',
-    zhoneName: 'Our Benevolent Awakening Lore Guild',
+    zhoneName: 'Our Builders Awakening Library Guild',
   },
 ])
 
 export const sortedZhones = ref([
+  getZhoneFor('JSY'),
   getZhoneFor('OBALG'),
   getZhoneFor('SC'),
   getZhoneFor('SCA'),

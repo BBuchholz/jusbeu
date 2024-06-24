@@ -20,6 +20,7 @@ import {
         >
           (site here)
         </a>
+        <img v-if="aZhone.zhoneImgSrc" class="card" :src="aZhone.zhoneImgSrc">
       </li>
     </div>
   </div>
@@ -46,5 +47,19 @@ a {
 
 .flex-child:first-child {
     margin-right: 20px;
+}
+
+.card {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 5px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 2%;
 }
 </style>
