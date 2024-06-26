@@ -5,6 +5,7 @@ export const allZhones = ref([
     zhoneCode: 'COVENTRY',
     zhoneName: 'Coventry Grove Builders Association',
     zhoneHref: 'https://cgba.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/CGBA-f6df_CARD.png',
   },
   {
     zhoneCode: 'JSY',
@@ -15,15 +16,19 @@ export const allZhones = ref([
   {
     zhoneCode: 'SC',
     zhoneName: 'Sonic Circle (OLDER VERSION)',
+    zhoneHref: 'https://nameless-star.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/SC-08ef_CARD.png',
   },
   {
     zhoneCode: 'SoC',
     zhoneName: 'Sonic Circle Shell (NEWER VERSION)',
+    zhoneHref: 'https://sonic-circle.netlify.app',
   },
   {
     zhoneCode: 'SCA',
     zhoneName: 'Sylfan Circle Academy (OLDER VERSION)',
     zhoneHref: 'https://antiquarian-cup.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/SYLFAN-857a_CARD.png',
   },
   {
     zhoneCode: 'SyC',
@@ -33,14 +38,13 @@ export const allZhones = ref([
   {
     zhoneCode: 'SCHS',
     zhoneName: '(Socratic/Slacker) Circle Home School',
-  },
-  {
-    zhoneCode: 'CHS',
-    zhoneName: 'Codified Heart Song',
+    zhoneHref: 'https://codified-heart-song.netlify.app',
   },
   {
     zhoneCode: 'OBAOLG',
     zhoneName: 'Our Builders Association Ov Layered Generalists',
+    zhoneHref: 'https://truthfully-cyclopean-barracks.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/BAOLG-0c83.png',
   },
   {
     zhoneCode: 'MDMDM',
@@ -80,7 +84,6 @@ export const sortedZhones = ref([
   getZhoneFor('SCA'),
   getZhoneFor('SyC'),
   getZhoneFor('SCHS'),
-  getZhoneFor('CHS'),
   getZhoneFor('OBAOLG'),
   getZhoneFor('MDMDM'),
   getZhoneFor('AWLWA'),
