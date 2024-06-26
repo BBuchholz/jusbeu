@@ -4,7 +4,7 @@ export const allZhones = ref([
   {
     zhoneCode: 'COVENTRY',
     zhoneName: 'Coventry Grove Builders Association',
-    zhoneHref: '#',
+    zhoneHref: 'https://cgba.netlify.app',
   },
   {
     zhoneCode: 'JSY',
@@ -29,6 +29,42 @@ export const allZhones = ref([
     zhoneCode: 'SyC',
     zhoneName: 'Sylvan Circle Academy (NEWER VERSION)',
     zhoneHref: 'https://sylvan-circle.netlify.app',
+  },
+  {
+    zhoneCode: 'SCHS',
+    zhoneName: '(Socratic/Slacker) Circle Home School',
+  },
+  {
+    zhoneCode: 'CHS',
+    zhoneName: 'Codified Heart Song',
+  },
+  {
+    zhoneCode: 'OBAOLG',
+    zhoneName: 'Our Builders Association Ov Layered Generalists',
+  },
+  {
+    zhoneCode: 'MDMDM',
+    zhoneName: 'MaDaMaDaM',
+    zhoneHref: 'https://madamadam.netlify.app',
+  },
+  {
+    zhoneCode: 'AWLWA',
+    zhoneName: 'AWLWA Carteography',
+    zhoneHref: 'https://papaya-parfait-8fcafc.netlify.app',
+  },
+  {
+    zhoneCode: 'STS',
+    zhoneName: 'Shepton Transmission Services',
+  },
+  {
+    zhoneCode: 'CMART',
+    zhoneName: 'C(a/u)PMART',
+    zhoneHref: 'https://fearlessly-artifactual.netlify.app',
+  },
+  {
+    zhoneCode: 'AMOS',
+    zhoneName: 'A Myriad Ov Strivings',
+    zhoneHref: 'https://a-myriad-of-strivings.netlify.app',
   },
   {
     zhoneCode: 'OBALG',
