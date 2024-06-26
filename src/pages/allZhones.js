@@ -73,13 +73,21 @@ export const allZhones = ref([
 ])
 
 export const sortedZhones = ref([
+  getZhoneFor('COVENTRY'),
   getZhoneFor('JSY'),
-  getZhoneFor('OBALG'),
   getZhoneFor('SC'),
   getZhoneFor('SoC'),
-  getZhoneFor('SyC'),
   getZhoneFor('SCA'),
-  getZhoneFor('COVENTRY'),
+  getZhoneFor('SyC'),
+  getZhoneFor('SCHS'),
+  getZhoneFor('CHS'),
+  getZhoneFor('OBAOLG'),
+  getZhoneFor('MDMDM'),
+  getZhoneFor('AWLWA'),
+  getZhoneFor('STS'),
+  getZhoneFor('CMART'),
+  getZhoneFor('AMOS'),
+  getZhoneFor('OBALG'),
 ])
 
 export function getZhoneFor(aZhoneCode) {
