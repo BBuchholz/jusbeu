@@ -1,7 +1,7 @@
 <script setup>
 import {
   sortedZhones,
-} from './allZhones'
+} from './allZhones.js'
 </script>
 
 <template>

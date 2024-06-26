@@ -14,15 +14,21 @@ export const allZhones = ref([
   },
   {
     zhoneCode: 'SC',
-    zhoneName: 'Sonic Circle',
+    zhoneName: 'Sonic Circle (OLDER VERSION)',
   },
   {
-    zhoneCode: 'SC',
-    zhoneName: 'Sonic Circle',
+    zhoneCode: 'SoC',
+    zhoneName: 'Sonic Circle Shell (NEWER VERSION)',
   },
   {
     zhoneCode: 'SCA',
-    zhoneName: 'Sylvan Circle Academy',
+    zhoneName: 'Sylfan Circle Academy (OLDER VERSION)',
+    zhoneHref: 'https://antiquarian-cup.netlify.app',
+  },
+  {
+    zhoneCode: 'SyC',
+    zhoneName: 'Sylvan Circle Academy (NEWER VERSION)',
+    zhoneHref: 'https://sylvan-circle.netlify.app',
   },
   {
     zhoneCode: 'OBALG',
@@ -34,6 +40,8 @@ export const sortedZhones = ref([
   getZhoneFor('JSY'),
   getZhoneFor('OBALG'),
   getZhoneFor('SC'),
+  getZhoneFor('SoC'),
+  getZhoneFor('SyC'),
   getZhoneFor('SCA'),
   getZhoneFor('COVENTRY'),
 ])
