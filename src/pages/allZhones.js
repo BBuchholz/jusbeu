@@ -34,6 +34,7 @@ export const allZhones = ref([
     zhoneCode: 'SyC',
     zhoneName: 'Sylvan Circle Academy (NEWER VERSION)',
     zhoneHref: 'https://sylvan-circle.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/SyC-939f_CARD.png',
   },
   {
     zhoneCode: 'SCHS',

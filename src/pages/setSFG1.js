@@ -24,4 +24,11 @@ export const setSFG1 = ref([
     designCredit: 'Brent Buchholz',
     componentCredits: [],
   },
+  {
+    passCode: 'sYc',
+    uuid: '67dcda47-0da9-4d53-a5c8-ae3f7578939f',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/SyC-939f_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
 ])
