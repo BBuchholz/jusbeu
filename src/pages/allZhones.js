@@ -40,6 +40,7 @@ export const allZhones = ref([
     zhoneCode: 'SCHS',
     zhoneName: '(Socratic/Slacker) Circle Home School',
     zhoneHref: 'https://codified-heart-song.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/SCHS-62e8_CARD.png',
   },
   {
     zhoneCode: 'OBAOLG',
@@ -56,20 +57,23 @@ export const allZhones = ref([
     zhoneCode: 'AWLWA',
     zhoneName: 'AWLWA Carteography',
     zhoneHref: 'https://papaya-parfait-8fcafc.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/AWLWA-6bf1_CARD.png',
   },
   {
     zhoneCode: 'STS',
     zhoneName: 'Shepton Transmission Services',
   },
   {
-    zhoneCode: 'CMART',
+    zhoneCode: 'CELMART',
     zhoneName: 'C(a/u)PMART',
     zhoneHref: 'https://fearlessly-artifactual.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/CELMART-1923_CARD.png',
   },
   {
     zhoneCode: 'AMOS',
     zhoneName: 'A Myriad Ov Strivings',
     zhoneHref: 'https://a-myriad-of-strivings.netlify.app',
+    zhoneImgSrc: 'https://madamadam.s3.us-east-2.amazonaws.com/AMOS-c558_CARD.png',
   },
   {
     zhoneCode: 'OBALG',
@@ -89,7 +93,7 @@ export const sortedZhones = ref([
   getZhoneFor('MDMDM'),
   getZhoneFor('AWLWA'),
   getZhoneFor('STS'),
-  getZhoneFor('CMART'),
+  getZhoneFor('CELMART'),
   getZhoneFor('AMOS'),
   getZhoneFor('OBALG'),
 ])
