@@ -12,14 +12,20 @@ import {
   <div v-for="aZhone in sortedZhones" :key="aZhone" class="zhone flex-container">
     <div class="content flex-child">
       <li>
-        <em>{{ aZhone.zhoneCode }}</em> - {{ aZhone.zhoneName }}
+        Pending Zhone Transfer for myrKi: {{ aZhone.zhoneCode }}<br>
+        ---<br>
+        mdFileAt: {{ aZhone.zhoneZtlFileName }}<br>
+        ---<br>
         <a
           v-if="aZhone.zhoneHref"
           target="_blank"
           :href="aZhone.zhoneHref"
         >
-          (site here)
+          {{ aZhone.zhoneName }}
         </a>
+        <p v-else>
+          {{ aZhone.zhoneName }}
+        </p>
         <img v-if="aZhone.zhoneImgSrc" class="card" :src="aZhone.zhoneImgSrc">
       </li>
     </div>
