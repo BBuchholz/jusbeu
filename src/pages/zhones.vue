@@ -26,7 +26,11 @@ import {
         <p v-else>
           {{ aZhone.zhoneName }}
         </p>
-        <img v-if="aZhone.zhoneImgSrc" class="card" :src="aZhone.zhoneImgSrc">
+        <div v-if="aZhone.zhoneImgSrc" class="card">
+          <RouterLink :to="`/cards/${aZhone.zhoneCode}`" replace>
+            <img :src="aZhone.zhoneImgSrc">
+          </RouterLink>
+        </div>
       </li>
     </div>
   </div>
