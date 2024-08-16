@@ -155,6 +155,7 @@ export const allSeeds = ref([
     seedCode: 'SC1',
     seedLinkHref: 'https://musictheorysite.com/',
     seedLinkText: 'Music Theory Site',
+    seedLinkDesc: 'A really cool music theory site submitted by an anonymous user',
     seedSourceType: 'tik tok video',
     seedSourceLink: 'https://www.tiktok.com/t/ZT8h81wpk/',
     passCodes: [

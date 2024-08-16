@@ -38,6 +38,9 @@ if (foundSeed
 <template>
   <!-- BEGIN CIRCLE DISPLAY////////////////////////////// -->
   <div v-if="foundSeed">
+    <p v-if="foundSeed.seedLinkDesc">
+      {{ foundSeed.seedLinkDesc }}
+    </p>
     <a
       target="_blank"
       :href="foundSeed.seedLinkHref"

@@ -5,7 +5,15 @@
       to="/"
       title="Home"
     >
-      🜾
+      <div i-carbon-voice-activate />
+    </RouterLink>
+
+    <RouterLink
+      icon-btn
+      to="/myrKiSs/SETS"
+      title="Sets"
+    >
+      <div i-carbon-notebook />
     </RouterLink>
 
     <button
@@ -18,18 +26,10 @@
 
     <RouterLink
       icon-btn
-      to="/myrKiSs/SETS"
-      title="Sets"
-    >
-      <div i-carbon-language />
-    </RouterLink>
-
-    <RouterLink
-      icon-btn
       to="/myrKiSs/MDINDEXDISPLAY"
       title="MDinDexDisplay"
     >
-      <div i-carbon-dicom-overlay />
+      <div i-carbon-language />
     </RouterLink>
 
     <RouterLink
@@ -37,7 +37,7 @@
       to="/zhones"
       title="Zhones"
     >
-      <div i-carbon-events />
+      🜾
     </RouterLink>
   </nav>
 </template>

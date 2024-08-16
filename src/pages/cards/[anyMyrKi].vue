@@ -96,6 +96,9 @@ function decrementIndex() {
               <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
                 <div class="i-ri-seedling-line" />
                 {{ foundSeed.seedLinkText }}
+                <p v-if="foundSeed.seedLinkDesc">
+                  {{ foundSeed.seedLinkDesc }}
+                </p>
               </RouterLink>
             </div>
           </li>

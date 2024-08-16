@@ -110,13 +110,6 @@ function decrementIndex() {
       <p>Seeds:</p>
       <ul>
         <li v-for="foundSeed in foundSeedsForPassCode" :key="foundSeed.seedCode">
-          <!-- <a
-            target="_blank"
-            :href="foundSeed.seedLinkHref"
-            class="showlink"
-          >
-            {{ foundSeed.seedLinkText }}
-          </a> -->
           <RouterLink :to="`/seeds/${foundSeed.seedCode}`" replace>
             {{ foundSeed.seedLinkText }}
           </RouterLink>
