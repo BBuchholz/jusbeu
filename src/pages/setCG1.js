@@ -11,6 +11,25 @@ export const setMetaCG1 = ref(
 
 export const setCG1 = ref([
   {
+    passCode: 'TOMES',
+    uuid: '85547ba7-d66f-4223-9435-2aaa8564d0b5',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TOMES-d0b5_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
+    passCode: 'TASK',
+    uuid: 'c5c56c88-d2ee-4f2b-8e6a-e843b3228b93',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TASK-8b93_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Microsoft Copilot',
+      },
+    ],
+  },
+  {
     passCode: 'NRNMCN',
     uuid: '850e0630-fc1b-44e9-85ef-957cd55fafd9',
     image: 'https://madamadam.s3.us-east-2.amazonaws.com/NRNMCN-afd9_CARD.png',
@@ -21,13 +40,6 @@ export const setCG1 = ref([
         creditDue: 'Bing Image Creator',
       },
     ],
-  },
-  {
-    passCode: 'TOMES',
-    uuid: '85547ba7-d66f-4223-9435-2aaa8564d0b5',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TOMES-d0b5_CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [],
   },
   {
     passCode: 'RATATOSKR',
