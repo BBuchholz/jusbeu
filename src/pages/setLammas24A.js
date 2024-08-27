@@ -3,7 +3,7 @@ import { ref } from 'vue'
 export const setMetaLammas24A = ref(
   {
     setCode: 'LMS24A',
-    setName: 'Lammas 24A',
+    setName: 'Lammas Set 24A',
     setDescription: 'This set marks the first of the Wheel Cycle release format, wherein sets are named for the Year and Most Recent Sabbat when they were manifested, clustered into sequential AlphaCet groupings organically arising from thee Original Vision Bursts',
     setSize: 13,
   },
