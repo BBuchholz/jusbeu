@@ -152,7 +152,7 @@ const sortedCards = computed(() => {
   </div>
 
   <div class="text-center">
-    <p>Unless otherwise specified all copyrights mentioned on this page are licensed under CC-BY-SA 4.0</p>
+    <p>Unless otherwise specified all copyrights mentioned on this page are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></p>
   </div>
 
   <div v-if="sortedCards">
@@ -160,10 +160,16 @@ const sortedCards = computed(() => {
       Cards In This Set: {{ sortedCards.value.length }}
     </p>
     <div v-for="aCard in sortedCards.value" :key="aCard" class="zhone flex-container">
-      <div class="card flex-child">
+      <div v-if="aCard.image" class="card flex-child">
         <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
+      </div>
+      <div v-else class="card flex-child">
+        <p>NOT YET COLLECTED</p>
+        <p>
+          {{ aCard.uuid }}
+        </p>
       </div>
       <div class="flex-child content">
         <p>{{ getCreditsForCard(aCard) }}</p>
