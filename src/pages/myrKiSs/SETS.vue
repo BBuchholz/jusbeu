@@ -9,9 +9,10 @@ import { setJBU1, setMetaJBU1 } from '../setJBU1'
 import { setMetaSFG1, setSFG1 } from '../setSFG1'
 import { setMetaNOV23, setNOV23 } from '../setNOV23'
 import { setDEC23, setMetaDEC23 } from '../setDEC23'
+import { setLammas24A, setMetaLammas24A } from '../setLammas24A'
 
 const performSetAudit = ref(false)
-const selectedSet = ref('dec23')
+const selectedSet = ref('lammas24A')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
@@ -31,6 +32,8 @@ const setMetaData = computed(() => {
       return ref(setMetaNOV23.value)
     case 'dec23':
       return ref(setMetaDEC23.value)
+    case 'lammas24A':
+      return ref(setMetaLammas24A.value)
   }
 })
 
@@ -60,6 +63,10 @@ const sortedCards = computed(() => {
       return ref([
         ...setDEC23.value,
       ])
+    case 'lammas24A':
+      return ref([
+        ...setLammas24A.value,
+      ])
   }
 
   return null
@@ -68,12 +75,10 @@ const sortedCards = computed(() => {
 
 <template>
   <div class="selector text-center">
-    <select
-      v-model="selectedSet"
-      name="set-selection"
-      class="text-center"
-      @change="onSelectedSetChange"
-    >
+    <select v-model="selectedSet" name="set-selection" class="text-center" @change="onSelectedSetChange">
+      <option value="lammas24A">
+        Set: Lammas 24A
+      </option>
       <option value="dec23">
         December 2023 Set
       </option>
@@ -129,9 +134,7 @@ const sortedCards = computed(() => {
     <div class="text-center">
       <div v-if="setMetaData.value.setSize">
         <p>setSize: {{ setMetaData.value.setSize }}</p>
-        <div
-          v-if="setMetaData.value.setSize === sortedCards.value.length"
-        >
+        <div v-if="setMetaData.value.setSize === sortedCards.value.length">
           <p>listed setSize matches actual size</p>
         </div>
         <div v-else>
@@ -173,8 +176,9 @@ const sortedCards = computed(() => {
 .text-center {
   margin: 40px;
 }
+
 a {
-    color: aqua;
+  color: aqua;
 }
 
 .error {
@@ -182,17 +186,18 @@ a {
 }
 
 .zhone {
-    margin: 40px;
+  margin: 40px;
 }
+
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
 .flex-child {
-    flex: 1;
+  flex: 1;
 }
 
 .flex-child:first-child {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 </style>
