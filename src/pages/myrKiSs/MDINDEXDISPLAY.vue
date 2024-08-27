@@ -1,4 +1,5 @@
 <script setup>
+import { useStorage } from '@vueuse/core'
 import {
   getCreditsForCard,
   mdSet2RMXCards,
@@ -10,6 +11,13 @@ import {
 import {
   mDinDex,
 } from '../mdindex.md'
+
+const foundCards = useStorage('foundCardsKey', [])
+
+function findCard() {
+  foundCards.value.push('37097913-1734-491b-a1be-64caf29ad365')
+  alert('found')
+}
 
 // DONE: adapt this to load from mdindex.md
 //       which is patterned to be a wxrdType lookup file
@@ -51,6 +59,17 @@ const sortedCards = computed(() => {
 </script>
 
 <template>
+  <div class="text-center">
+    <h1>TOOLBOX</h1>
+    <p>
+      LOCAL STORAGE FOR:
+    </p>
+    <p>"TEST": </p>
+    <button @click="findCard()">
+      Find Card
+    </button>
+  </div>
+
   <div v-if="mDinDex">
     <p class="text-center">
       entries In mDinDex: {{ mDinDex.length }}

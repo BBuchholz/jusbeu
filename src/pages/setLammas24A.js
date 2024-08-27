@@ -13,7 +13,7 @@ export const setLammas24A = ref([
   {
     passCode: '',
     uuid: '5f6dc9cf-f0e6-4086-a7fe-25cf0e484b66',
-    image: '',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-6-f72c_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
@@ -37,7 +37,7 @@ export const setLammas24A = ref([
   {
     passCode: '',
     uuid: '37097913-1734-491b-a1be-64caf29ad365',
-    image: '',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-6-f72c_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {

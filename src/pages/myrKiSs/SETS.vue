@@ -1,4 +1,5 @@
 <script setup>
+import { useStorage } from '@vueuse/core'
 import {
   getCreditsForCard,
 } from '../allSets'
@@ -10,6 +11,13 @@ import { setMetaSFG1, setSFG1 } from '../setSFG1'
 import { setMetaNOV23, setNOV23 } from '../setNOV23'
 import { setDEC23, setMetaDEC23 } from '../setDEC23'
 import { setLammas24A, setMetaLammas24A } from '../setLammas24A'
+
+const foundCards = useStorage('foundCardsKey', [])
+
+function clearCards() {
+  foundCards.value = []
+  alert('found')
+}
 
 const performSetAudit = ref(false)
 const selectedSet = ref('lammas24A')
@@ -74,6 +82,16 @@ const sortedCards = computed(() => {
 </script>
 
 <template>
+  <div class="text-center">
+    <h1>TOOLBOX</h1>
+    <p>
+      LOCAL STORAGE FOR:
+    </p>
+    <p>"TEST": </p>
+    <button @click="clearCards()">
+      Clear Cards
+    </button>
+  </div>
   <div class="selector text-center">
     <select v-model="selectedSet" name="set-selection" class="text-center" @change="onSelectedSetChange">
       <option value="lammas24A">
@@ -160,7 +178,12 @@ const sortedCards = computed(() => {
       Cards In This Set: {{ sortedCards.value.length }}
     </p>
     <div v-for="aCard in sortedCards.value" :key="aCard" class="zhone flex-container">
-      <div v-if="aCard.image" class="card flex-child">
+      <!-- <div v-if="aCard.image" class="card flex-child">
+        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
+          <img :src="aCard.image">
+        </RouterLink>
+      </div> -->
+      <div v-if="foundCards.includes(aCard.uuid)" class="card flex-child">
         <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
@@ -168,6 +191,7 @@ const sortedCards = computed(() => {
       <div v-else class="card flex-child">
         <p>NOT YET COLLECTED</p>
         <p>
+          foundCards: {{ foundCards[aCard.uuid] }}
           {{ aCard.uuid }}
         </p>
       </div>
