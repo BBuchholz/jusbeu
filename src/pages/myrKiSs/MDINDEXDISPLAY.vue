@@ -15,8 +15,8 @@ import {
 const foundCards = useStorage('foundCardsKey', [])
 
 function findCard() {
-  foundCards.value.push('37097913-1734-491b-a1be-64caf29ad365')
-  alert('found')
+  foundCards.value.push('74705f2e-dd07-47da-8055-2c4f2939bafc')
+  alert('found TreeG')
 }
 
 // DONE: adapt this to load from mdindex.md

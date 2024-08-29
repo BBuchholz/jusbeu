@@ -16,7 +16,7 @@ const foundCards = useStorage('foundCardsKey', [])
 
 function clearCards() {
   foundCards.value = []
-  alert('found')
+  alert('Cards Cleared')
 }
 
 const performSetAudit = ref(false)
