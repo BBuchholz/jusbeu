@@ -10,7 +10,7 @@ import { setJBU1, setMetaJBU1 } from '../setJBU1'
 import { setMetaSFG1, setSFG1 } from '../setSFG1'
 import { setMetaNOV23, setNOV23 } from '../setNOV23'
 import { setDEC23, setMetaDEC23 } from '../setDEC23'
-import { setLammas24A, setMetaLammas24A } from '../setLammas24A'
+import { setLammas24A, setMetaLammas24A } from '../setLMS24A'
 
 const foundCards = useStorage('foundCardsKey', [])
 
@@ -43,6 +43,10 @@ const setMetaData = computed(() => {
     case 'lammas24A':
       return ref(setMetaLammas24A.value)
   }
+})
+
+const currentSetName = computed(() => {
+  return setMetaData.value.setName
 })
 
 const sortedCards = computed(() => {
@@ -79,6 +83,10 @@ const sortedCards = computed(() => {
 
   return null
 })
+
+function collect(uuid) {
+  foundCards.value.push(uuid)
+}
 </script>
 
 <template>
@@ -190,8 +198,10 @@ const sortedCards = computed(() => {
       </div>
       <div v-else class="card flex-child">
         <p>NOT YET COLLECTED</p>
+        <button @click="collect(aCard.uuid)">
+          Collect
+        </button>
         <p>
-          foundCards: {{ foundCards[aCard.uuid] }}
           {{ aCard.uuid }}
         </p>
       </div>

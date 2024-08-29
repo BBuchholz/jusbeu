@@ -95,9 +95,9 @@ export const setLammas24A = ref([
     ],
   },
   {
-    passCode: '',
+    passCode: 'RATATOSKR',
     uuid: '42ced657-b7dc-4ad8-9e27-71a3ed683fd2',
-    image: '',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/RATATOSKR-3fd2_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
@@ -131,9 +131,9 @@ export const setLammas24A = ref([
     ],
   },
   {
-    passCode: '',
+    passCode: 'SCHS',
     uuid: 'a8024208-ea76-49c0-b664-8dec9d03e386',
-    image: '',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/SCHS-e386_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
@@ -143,9 +143,9 @@ export const setLammas24A = ref([
     ],
   },
   {
-    passCode: '',
+    passCode: 'TCTKL',
     uuid: '8be0d3b0-18a6-4b4c-93bd-be1cd9334b25',
-    image: '',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TCTKL-4b25_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {

@@ -5,7 +5,7 @@ import { setSFG1 } from './setSFG1'
 import { setTMPLT1 } from './setTMPLT1'
 import { setNOV23 } from './setNOV23'
 import { setDEC23 } from './setDEC23'
-import { setLammas24A } from './setLammas24A'
+import { setLammas24A } from './setLMS24A'
 
 export const allCards = ref([
   ...setJBU1.value,
