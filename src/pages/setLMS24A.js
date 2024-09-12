@@ -11,9 +11,16 @@ export const setMetaLammas24A = ref(
 
 export const setLammas24A = ref([
   {
-    passCode: '',
-    uuid: '5f6dc9cf-f0e6-4086-a7fe-25cf0e484b66',
-    image: '',
+    passCode: 'TMPLT',
+    uuid: 'e12216db-b495-4b6c-bf89-0be7fa43913f',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TMPLT-ad1e_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [],
+  },
+  {
+    passCode: 'TASK',
+    uuid: 'c5c56c88-d2ee-4f2b-8e6a-e843b3228b93',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TASK-8b93_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
@@ -23,117 +30,10 @@ export const setLammas24A = ref([
     ],
   },
   {
-    passCode: '',
-    uuid: 'e252aca7-0f4d-4a3a-ae77-f0ed15eb1068',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: '',
-    uuid: '37097913-1734-491b-a1be-64caf29ad365',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: '',
-    uuid: 'de0e470a-153f-4e13-9c11-c3079c8dcf5c',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: '',
-    uuid: '8b641872-c28c-4336-a682-61e8252c6d67',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: '',
-    uuid: '7a18c22a-387e-4baa-b1fc-51cd77336d95',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: '',
-    uuid: 'ace7f649-a4b9-4752-a0d1-9417e6172d6b',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: 'RATATOSKR',
-    uuid: '42ced657-b7dc-4ad8-9e27-71a3ed683fd2',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/RATATOSKR-3fd2_PRINT_CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: '',
-    uuid: '2f187cdb-16c5-4c28-aff0-28b9884291d6',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: '',
-    uuid: '456dbbb2-56ce-44d5-88de-f32ee30b84d5',
-    image: '',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Microsoft Copilot',
-      },
-    ],
-  },
-  {
-    passCode: 'SCHS',
-    uuid: 'a8024208-ea76-49c0-b664-8dec9d03e386',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/SCHS-e386_PRINT_CARD.png',
+    passCode: 'TreeG',
+    related: 'TREE, ROOTS, WATER, EARTH, LEAVES, FIRE, SKY',
+    uuid: '74705f2e-dd07-47da-8055-2c4f2939bafc',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TreeG-bafc_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
@@ -150,15 +50,110 @@ export const setLammas24A = ref([
     componentCredits: [
       {
         creditItem: 'image',
+        creditDue: 'Bing Image Creator (from before it became Microsoft Copilot)',
+      },
+    ],
+  },
+  {
+    passCode: 'RATATOSKR',
+    uuid: '42ced657-b7dc-4ad8-9e27-71a3ed683fd2',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/RATATOSKR-3fd2_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Imagine (Android App)',
+      },
+    ],
+  },
+  {
+    passCode: 'SCHS',
+    uuid: 'a8024208-ea76-49c0-b664-8dec9d03e386',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/SCHS-e386_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
         creditDue: 'Microsoft Copilot',
       },
     ],
   },
   {
-    passCode: 'TreeG',
-    related: 'TREE, ROOTS, WATER, EARTH, LEAVES, FIRE, SKY',
-    uuid: '74705f2e-dd07-47da-8055-2c4f2939bafc',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TreeG-bafc_PRINT_CARD.png',
+    passCode: 'RF',
+    uuid: '2f187cdb-16c5-4c28-aff0-28b9884291d6',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/RF-91d6_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator (from before it became Microsoft Copilot)',
+      },
+    ],
+  },
+  {
+    passCode: 'SANDBOX',
+    uuid: '52c6e09b-af9d-43dc-84cc-d976c03b14f7',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/SANDBOX-14f7_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Imagine (Android App)',
+      },
+    ],
+  },
+  {
+    passCode: 'PERMUTATIONS',
+    uuid: '456dbbb2-56ce-44d5-88de-f32ee30b84d5',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/PERMUTATIONS-84d5_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator (from before it became Microsoft Copilot)',
+      },
+    ],
+  },
+  {
+    passCode: 'thaMESA',
+    uuid: '18944f56-917e-4c5b-81ff-78c5d561db49',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/thaMESA-db49_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Wombo Dream AI (Android App)',
+      },
+    ],
+  },
+  {
+    passCode: 'CARDS',
+    uuid: 'b88429c0-6e26-42ad-ab7f-67d4dd5bce8b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/CARDS-ce8b_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Bing Image Creator (from before it became Microsoft Copilot)',
+      },
+    ],
+  },
+  {
+    passCode: 'LOCI',
+    uuid: 'ace7f649-a4b9-4752-a0d1-9417e6172d6b',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/LOCI-2d6b_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'Google Gemini',
+      },
+    ],
+  },
+  {
+    passCode: 'TheeV',
+    uuid: '034f3e49-1b7a-4851-b244-74cd448955b2',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TheeV-55b2_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
