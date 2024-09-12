@@ -13,7 +13,7 @@ export const setLammas24A = ref([
   {
     passCode: 'TMPLT',
     uuid: 'e12216db-b495-4b6c-bf89-0be7fa43913f',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TMPLT-ad1e_CARD.png',
+    image: 'https://madamadam.s3.us-east-2.amazonaws.com/TMPLT-913f_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [],
   },
