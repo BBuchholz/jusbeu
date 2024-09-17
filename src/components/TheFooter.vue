@@ -24,17 +24,27 @@
       <div i="carbon-sun dark:carbon-moon" />
     </button>
 
-    <RouterLink
+    <!-- <RouterLink
       icon-btn
       to="/myrKiSs/MDINDEXDISPLAY"
       title="MDinDexDisplay"
+    > -->
+    <RouterLink
+      icon-btn
+      to="/portal"
+      title="Portal"
     >
       <div i-carbon-language />
     </RouterLink>
-
+    <!--
     <RouterLink
       icon-btn
       to="/zhones"
+      title="Zhones"
+    > -->
+    <RouterLink
+      icon-btn
+      to="/myrKiSs/ZHONES"
       title="Zhones"
     >
       🜾

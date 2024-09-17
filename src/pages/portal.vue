@@ -8,8 +8,8 @@ const anyMyrKi = $ref(user.savedMyrKi)
 const router = useRouter()
 function go() {
   if (anyMyrKi) {
-    // router.push(`/myrKiSs/${encodeURIComponent(anyMyrKi)}`)
-    router.push(`/cards/${encodeURIComponent(anyMyrKi)}`)
+    router.push(`/myrKiSs/${encodeURIComponent(anyMyrKi)}`)
+    // router.push(`/cards/${encodeURIComponent(anyMyrKi)}`)
     user.setNewMyrKi(anyMyrKi)
   }
 }
@@ -23,7 +23,7 @@ const { t } = useI18n()
 
     <TheInput
       v-model="anyMyrKi"
-      placeholder="enter cardCode..."
+      placeholder="enter myrKi..."
       autocomplete="false"
       @keydown.enter="go"
     />
