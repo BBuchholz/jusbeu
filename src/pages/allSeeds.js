@@ -44,7 +44,7 @@ export const allSeeds = ref([
   {
     seedCode: 'NRG1',
     seedLinkHref: 'https://www.youtube.com/watch?v=zodg4WwBovc',
-    seedLinkText: 'Everything Is Energy (video)',
+    seedLinkText: 'Everything Is Energy (vid)',
     seedSourceType: 'youtube video',
     seedSourceLink: '',
     passCodes: [
@@ -54,7 +54,7 @@ export const allSeeds = ref([
   {
     seedCode: 'NRG2',
     seedLinkHref: 'https://www.youtube.com/watch?v=cWLOUCXKHZw',
-    seedLinkText: 'LEARN TO VIBRATE CORRECTLY (video)',
+    seedLinkText: 'LEARN TO VIBRATE CORRECTLY (vid)',
     seedSourceType: 'youtube video',
     seedSourceLink: '',
     passCodes: [
