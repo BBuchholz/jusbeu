@@ -132,14 +132,14 @@ function decrementIndex() {
     <div v-if="user.otherMyrKis.length">
       <p mt-4 text-sm>
         <span opacity-75>Recently attempts:</span>
-        <ul>
-          <li v-for="otherMyrKi in user.otherMyrKis" :key="otherMyrKi">
-            <RouterLink :to="`/myrKiSs/${otherMyrKi}`" replace>
-              {{ otherMyrKi }}
-            </RouterLink>
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li v-for="otherMyrKi in user.otherMyrKis" :key="otherMyrKi">
+          <RouterLink :to="`/myrKiSs/${otherMyrKi}`" replace>
+            {{ otherMyrKi }}
+          </RouterLink>
+        </li>
+      </ul>
     </div>
 
     <div>
