@@ -4,7 +4,7 @@
   </p>
   <div>
     <!-- <a href="#" target="_blank"> -->
-    <img class="card" src="https://madamadam.s3.us-east-2.amazonaws.com/SCA-0a5f_CARD.png">
+    <img class="card" src="https://d17d04qkxoe2lw.cloudfront.net/SCA-0a5f_CARD.png">
     <!-- </a> -->
   </div>
   <p class="display">

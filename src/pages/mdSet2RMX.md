@@ -10,7 +10,7 @@ mdSet2RMX:
 
 - passCode: TMPLT
   uuid: ab04fe88-450c-488a-82af-1ca3dd5d2818
-  image: https://madamadam.s3.us-east-2.amazonaws.com/TMPLT-2818_CARD.png
+  image: https://d17d04qkxoe2lw.cloudfront.net/TMPLT-2818_CARD.png
   designCredit: Brent Buchholz
   componentCredits:
   - creditItem: image
@@ -18,7 +18,7 @@ mdSet2RMX:
 
 - passCode: TMPLT
   uuid: 9a01f805-272c-4617-a824-76990b35ad1e
-  image: https://madamadam.s3.us-east-2.amazonaws.com/TMPLT-ad1e_CARD.png
+  image: https://d17d04qkxoe2lw.cloudfront.net/TMPLT-ad1e_CARD.png
   designCredit: Brent Buchholz
 
 ---

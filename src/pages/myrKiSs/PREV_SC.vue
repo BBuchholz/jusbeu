@@ -16,7 +16,7 @@ const sortedSeeds = ref([
   </p>
   <div>
     <!-- <a href="#" target="_blank"> -->
-    <img class="card" src="https://madamadam.s3.us-east-2.amazonaws.com/SC-08ef_CARD.png">
+    <img class="card" src="https://d17d04qkxoe2lw.cloudfront.net/SC-08ef_CARD.png">
     <!-- </a> -->
   </div>
   <p class="display">

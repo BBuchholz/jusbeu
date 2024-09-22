@@ -4,7 +4,7 @@ export const allCards = ref([
   {
     cardKey: '01',
     cardTitle: 'Mountebank',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a01.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a01.jpg',
     modality: 'Mutable',
     element: 'Air',
     planet: 'Mercury',
@@ -13,7 +13,7 @@ export const allCards = ref([
   {
     cardKey: '02',
     cardTitle: 'Popess',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a02.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a02.jpg',
     modality: 'Cardinal',
     element: 'Water',
     planet: 'Luna',
@@ -22,7 +22,7 @@ export const allCards = ref([
   {
     cardKey: '03',
     cardTitle: 'Empress',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a03.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a03.jpg',
     modality: 'Cardinal',
     element: 'Air',
     planet: 'Venus',
@@ -31,7 +31,7 @@ export const allCards = ref([
   {
     cardKey: '04',
     cardTitle: 'Emperor',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a04.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a04.jpg',
     modality: 'Cardinal',
     element: 'Fire',
     planet: 'Mars',
@@ -40,7 +40,7 @@ export const allCards = ref([
   {
     cardKey: '05',
     cardTitle: 'Pope',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a05.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a05.jpg',
     modality: 'Cardinal',
     element: 'Earth',
     planet: 'Saturn',
@@ -49,7 +49,7 @@ export const allCards = ref([
   {
     cardKey: '06',
     cardTitle: 'Lovers',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a06.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a06.jpg',
     modality: '',
     element: '',
     planet: 'Venus',
@@ -58,7 +58,7 @@ export const allCards = ref([
   {
     cardKey: '07',
     cardTitle: 'Chariot',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a07.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a07.jpg',
     modality: 'Fixed',
     element: 'Air',
     planet: '',
@@ -67,7 +67,7 @@ export const allCards = ref([
   {
     cardKey: '08',
     cardTitle: 'Justice',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a08.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a08.jpg',
     modality: '',
     element: '',
     planet: 'Jupiter',
@@ -76,7 +76,7 @@ export const allCards = ref([
   {
     cardKey: '09',
     cardTitle: 'Hermit',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a09.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a09.jpg',
     modality: 'Fixed',
     element: 'Water',
     planet: 'Mars',
@@ -85,7 +85,7 @@ export const allCards = ref([
   {
     cardKey: '10',
     cardTitle: 'Wheel',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a10.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a10.jpg',
     modality: 'Mutable',
     element: 'Water',
     planet: '',
@@ -94,7 +94,7 @@ export const allCards = ref([
   {
     cardKey: '11',
     cardTitle: 'Force',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a11.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a11.jpg',
     modality: 'Mutable',
     element: 'Fire',
     planet: 'Jupiter',
@@ -103,7 +103,7 @@ export const allCards = ref([
   {
     cardKey: '12',
     cardTitle: 'Hanged Man',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a12.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a12.jpg',
     modality: '',
     element: '',
     planet: 'Mercury',
@@ -112,7 +112,7 @@ export const allCards = ref([
   {
     cardKey: '13',
     cardTitle: 'Death',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a13.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a13.jpg',
     modality: '',
     element: 'Earth',
     planet: 'Saturn',
@@ -121,7 +121,7 @@ export const allCards = ref([
   {
     cardKey: '14',
     cardTitle: 'Temperance',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a14.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a14.jpg',
     modality: 'Mutable',
     element: 'Earth',
     planet: 'Mercury',
@@ -130,7 +130,7 @@ export const allCards = ref([
   {
     cardKey: '15',
     cardTitle: 'Devil',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a15.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a15.jpg',
     modality: 'Fixed',
     element: 'Earth',
     planet: 'Venus',
@@ -139,7 +139,7 @@ export const allCards = ref([
   {
     cardKey: '16',
     cardTitle: 'Tower',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a16.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a16.jpg',
     modality: '',
     element: '',
     planet: 'Mars',
@@ -148,7 +148,7 @@ export const allCards = ref([
   {
     cardKey: '17',
     cardTitle: 'Star',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a17.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a17.jpg',
     modality: 'Fixed',
     element: 'Fire',
     planet: 'Sol',
@@ -157,7 +157,7 @@ export const allCards = ref([
   {
     cardKey: '18',
     cardTitle: 'Moon',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a18.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a18.jpg',
     modality: '',
     element: '',
     planet: 'Luna',
@@ -166,7 +166,7 @@ export const allCards = ref([
   {
     cardKey: '19',
     cardTitle: 'Sun',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a19.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a19.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -175,7 +175,7 @@ export const allCards = ref([
   {
     cardKey: '20',
     cardTitle: 'Judgement',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a20.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a20.jpg',
     modality: 'Mutable',
     element: 'Water',
     planet: 'Jupiter',
@@ -184,7 +184,7 @@ export const allCards = ref([
   {
     cardKey: '21',
     cardTitle: 'World',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a21.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a21.jpg',
     modality: 'Fixed',
     element: 'Air',
     planet: 'Saturn',
@@ -193,7 +193,7 @@ export const allCards = ref([
   {
     cardKey: '22',
     cardTitle: 'Le Mat',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_a22.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_a22.jpg',
     modality: 'Cardinal',
     element: 'Fire',
     planet: '',
@@ -202,7 +202,7 @@ export const allCards = ref([
   {
     cardKey: 'Z01',
     cardTitle: 'Copyright',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_z01.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_z01.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -211,7 +211,7 @@ export const allCards = ref([
   {
     cardKey: 'Z00',
     cardTitle: 'Blank Card',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_z00.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_z00.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -220,7 +220,7 @@ export const allCards = ref([
   {
     cardKey: '1W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b01.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b01.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -229,7 +229,7 @@ export const allCards = ref([
   {
     cardKey: '2W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b02.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b02.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -238,7 +238,7 @@ export const allCards = ref([
   {
     cardKey: '3W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b03.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b03.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -247,7 +247,7 @@ export const allCards = ref([
   {
     cardKey: '4W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b04.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b04.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -256,7 +256,7 @@ export const allCards = ref([
   {
     cardKey: '5W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b05.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b05.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -265,7 +265,7 @@ export const allCards = ref([
   {
     cardKey: '6W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b06.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b06.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -274,7 +274,7 @@ export const allCards = ref([
   {
     cardKey: '7W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b07.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b07.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -283,7 +283,7 @@ export const allCards = ref([
   {
     cardKey: '8W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b08.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b08.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -292,7 +292,7 @@ export const allCards = ref([
   {
     cardKey: '9W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b09.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b09.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -301,7 +301,7 @@ export const allCards = ref([
   {
     cardKey: '10W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b10.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b10.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -310,7 +310,7 @@ export const allCards = ref([
   {
     cardKey: '11W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b11.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b11.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -319,7 +319,7 @@ export const allCards = ref([
   {
     cardKey: '12W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b12.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b12.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -328,7 +328,7 @@ export const allCards = ref([
   {
     cardKey: '13W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b13.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b13.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -337,7 +337,7 @@ export const allCards = ref([
   {
     cardKey: '14W',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_b14.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_b14.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -346,7 +346,7 @@ export const allCards = ref([
   {
     cardKey: '1C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c01.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c01.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -355,7 +355,7 @@ export const allCards = ref([
   {
     cardKey: '2C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c02.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c02.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -364,7 +364,7 @@ export const allCards = ref([
   {
     cardKey: '3C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c03.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c03.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -373,7 +373,7 @@ export const allCards = ref([
   {
     cardKey: '4C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c04.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c04.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -382,7 +382,7 @@ export const allCards = ref([
   {
     cardKey: '5C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c05.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c05.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -391,7 +391,7 @@ export const allCards = ref([
   {
     cardKey: '6C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c06.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c06.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -400,7 +400,7 @@ export const allCards = ref([
   {
     cardKey: '7C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c07.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c07.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -409,7 +409,7 @@ export const allCards = ref([
   {
     cardKey: '8C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c08.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c08.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -418,7 +418,7 @@ export const allCards = ref([
   {
     cardKey: '9C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c09.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c09.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -427,7 +427,7 @@ export const allCards = ref([
   {
     cardKey: '10C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c10.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c10.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -436,7 +436,7 @@ export const allCards = ref([
   {
     cardKey: '11C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c11.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c11.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -445,7 +445,7 @@ export const allCards = ref([
   {
     cardKey: '12C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c12.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c12.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -454,7 +454,7 @@ export const allCards = ref([
   {
     cardKey: '13C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c13.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c13.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -463,7 +463,7 @@ export const allCards = ref([
   {
     cardKey: '14C',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_c14.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_c14.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -472,7 +472,7 @@ export const allCards = ref([
   {
     cardKey: '1D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d01.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d01.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -481,7 +481,7 @@ export const allCards = ref([
   {
     cardKey: '2D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d02.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d02.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -490,7 +490,7 @@ export const allCards = ref([
   {
     cardKey: '3D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d03.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d03.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -499,7 +499,7 @@ export const allCards = ref([
   {
     cardKey: '4D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d04.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d04.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -508,7 +508,7 @@ export const allCards = ref([
   {
     cardKey: '5D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d05.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d05.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -517,7 +517,7 @@ export const allCards = ref([
   {
     cardKey: '6D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d06.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d06.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -526,7 +526,7 @@ export const allCards = ref([
   {
     cardKey: '7D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d07.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d07.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -535,7 +535,7 @@ export const allCards = ref([
   {
     cardKey: '8D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d08.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d08.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -544,7 +544,7 @@ export const allCards = ref([
   {
     cardKey: '9D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d09.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d09.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -553,7 +553,7 @@ export const allCards = ref([
   {
     cardKey: '10D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d10.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d10.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -562,7 +562,7 @@ export const allCards = ref([
   {
     cardKey: '11D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d11.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d11.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -571,7 +571,7 @@ export const allCards = ref([
   {
     cardKey: '12D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d12.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d12.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -580,7 +580,7 @@ export const allCards = ref([
   {
     cardKey: '13D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d13.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d13.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -589,7 +589,7 @@ export const allCards = ref([
   {
     cardKey: '14D',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_d14.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_d14.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -598,7 +598,7 @@ export const allCards = ref([
   {
     cardKey: '1S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e01.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e01.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -607,7 +607,7 @@ export const allCards = ref([
   {
     cardKey: '2S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e02.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e02.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -616,7 +616,7 @@ export const allCards = ref([
   {
     cardKey: '3S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e03.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e03.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -625,7 +625,7 @@ export const allCards = ref([
   {
     cardKey: '4S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e04.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e04.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -634,7 +634,7 @@ export const allCards = ref([
   {
     cardKey: '5S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e05.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e05.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -643,7 +643,7 @@ export const allCards = ref([
   {
     cardKey: '6S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e06.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e06.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -652,7 +652,7 @@ export const allCards = ref([
   {
     cardKey: '7S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e07.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e07.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -661,7 +661,7 @@ export const allCards = ref([
   {
     cardKey: '8S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e08.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e08.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -670,7 +670,7 @@ export const allCards = ref([
   {
     cardKey: '9S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e09.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e09.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -679,7 +679,7 @@ export const allCards = ref([
   {
     cardKey: '10S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e10.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e10.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -688,7 +688,7 @@ export const allCards = ref([
   {
     cardKey: '11S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e11.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e11.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -697,7 +697,7 @@ export const allCards = ref([
   {
     cardKey: '12S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e12.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e12.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -706,7 +706,7 @@ export const allCards = ref([
   {
     cardKey: '13S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e13.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e13.jpg',
     modality: '',
     element: '',
     planet: '',
@@ -715,7 +715,7 @@ export const allCards = ref([
   {
     cardKey: '14S',
     cardTitle: '',
-    image: 'https://madamadam.s3.us-east-2.amazonaws.com/ToM_e14.jpg',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/ToM_e14.jpg',
     modality: '',
     element: '',
     planet: '',

@@ -12,7 +12,7 @@
     <!-- <a href="#" target="_blank"> -->
     <img
       class="card flex-child"
-      src="https://madamadam.s3.us-east-2.amazonaws.com/WEWALKS-9071_20230821_115243_0000.png"
+      src="https://d17d04qkxoe2lw.cloudfront.net/WEWALKS-9071_20230821_115243_0000.png"
     >
     <p class="flex-child display">
       COMING SOON!
@@ -25,12 +25,12 @@
     <p class="flex-child display">
       COMING SOON!
     </p>
-    <img class="card flex-child" src="https://madamadam.s3.us-east-2.amazonaws.com/LPI-60fc_CARD.png">
+    <img class="card flex-child" src="https://d17d04qkxoe2lw.cloudfront.net/LPI-60fc_CARD.png">
     <!-- </a> -->
   </div>
   <div class="flex-container">
     <!-- <a href="#" target="_blank"> -->
-    <img class="card flex-child" src="https://madamadam.s3.us-east-2.amazonaws.com/SYLFAN-857a_CARD.png">
+    <img class="card flex-child" src="https://d17d04qkxoe2lw.cloudfront.net/SYLFAN-857a_CARD.png">
 
     <p class="flex-child display">
       COMING SOON!
