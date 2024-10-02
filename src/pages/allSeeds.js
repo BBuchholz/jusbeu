@@ -192,6 +192,72 @@ export const allSeeds = ref([
       'ZAGREUS',
     ],
   },
+  {
+    seedCode: 'RF1',
+    seedLinkHref: 'https://open.substack.com/pub/thasb/p/introducing-redacted-files',
+    seedLinkText: 'Introducing Redacted Files! (RF-240921R1)',
+    seedLinkDesc: 'Redacted File from thaSandBox',
+    seedSourceType: 'SubStack Post',
+    seedSourceLink: '',
+    passCodes: [
+      'RF',
+    ],
+  },
+  {
+    seedCode: 'RF2',
+    seedLinkHref: 'https://open.substack.com/pub/thasb/p/jam-session-revelations-and-madtown',
+    seedLinkText: 'Jam Session Revelations and MadTown Memories (RF-240923R1)',
+    seedLinkDesc: 'Redacted File from thaSandBox',
+    seedSourceType: 'SubStack Post',
+    seedSourceLink: '',
+    passCodes: [
+      'RF',
+    ],
+  },
+  {
+    seedCode: 'RF3',
+    seedLinkHref: 'https://open.substack.com/pub/thasb/p/unicorns-r-born-ov-thoughts-and-dreams',
+    seedLinkText: 'Unicorns R Born Ov Thoughts & Dreams (RF-240929R2)',
+    seedLinkDesc: 'Redacted File from thaSandBox',
+    seedSourceType: 'SubStack Post',
+    seedSourceLink: '',
+    passCodes: [
+      'RF',
+    ],
+  },
+  {
+    seedCode: 'TMPLT1',
+    seedLinkHref: 'REPLACETHIS',
+    seedLinkText: 'REPLACETHIS',
+    seedLinkDesc: 'REPLACETHIS',
+    seedSourceType: 'REPLACETHIS',
+    seedSourceLink: '',
+    passCodes: [
+      'TMPLT',
+    ],
+  },
+  {
+    seedCode: 'TMPLT2',
+    seedLinkHref: 'REPLACETHIS',
+    seedLinkText: 'REPLACETHIS',
+    seedLinkDesc: 'REPLACETHIS',
+    seedSourceType: 'REPLACETHIS',
+    seedSourceLink: '',
+    passCodes: [
+      'TMPLT',
+    ],
+  },
+  {
+    seedCode: 'TMPLT3',
+    seedLinkHref: 'REPLACETHIS',
+    seedLinkText: 'REPLACETHIS',
+    seedLinkDesc: 'REPLACETHIS',
+    seedSourceType: 'REPLACETHIS',
+    seedSourceLink: '',
+    passCodes: [
+      'TMPLT',
+    ],
+  },
 ])
 
 export function getSeedForSeedCode(aSeedCode) {
