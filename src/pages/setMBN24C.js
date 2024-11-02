@@ -39,7 +39,7 @@ export const setMabon24C = ref([
     passCode: 'CIT',
     related: 'REPLACETHIS, REPLACETHIS, REPLACETHIS',
     uuid: 'REPLACETHIS',
-    image: 'https://d17d04qkxoe2lw.cloudfront.net/CIT-7384_BGB_CARD.png',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/CIT-7384_PRINT_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {

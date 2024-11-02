@@ -11,7 +11,7 @@ import { setMetaSFG1, setSFG1 } from '../setSFG1'
 import { setMetaNOV23, setNOV23 } from '../setNOV23'
 import { setDEC23, setMetaDEC23 } from '../setDEC23'
 import { setLammas24A, setMetaLammas24A } from '../setLMS24A'
-import { setMabon24C } from '../setMBN24C'
+import { setMabon24C, setMetaMabon24C } from '../setMBN24C'
 
 const foundCards = useStorage('foundCardsKey', [])
 
@@ -21,7 +21,7 @@ function clearCards() {
 }
 
 const performSetAudit = ref(false)
-const selectedSet = ref('lammas24A')
+const selectedSet = ref('mabon24C')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
@@ -43,6 +43,8 @@ const setMetaData = computed(() => {
       return ref(setMetaDEC23.value)
     case 'lammas24A':
       return ref(setMetaLammas24A.value)
+    case 'mabon24C':
+      return ref(setMetaMabon24C.value)
   }
 })
 
