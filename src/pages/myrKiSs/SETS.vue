@@ -11,6 +11,7 @@ import { setMetaSFG1, setSFG1 } from '../setSFG1'
 import { setMetaNOV23, setNOV23 } from '../setNOV23'
 import { setDEC23, setMetaDEC23 } from '../setDEC23'
 import { setLammas24A, setMetaLammas24A } from '../setLMS24A'
+import { setMabon24C } from '../setMBN24C'
 
 const foundCards = useStorage('foundCardsKey', [])
 
@@ -79,6 +80,10 @@ const sortedCards = computed(() => {
       return ref([
         ...setLammas24A.value,
       ])
+    case 'mabon24C':
+      return ref([
+        ...setMabon24C.value,
+      ])
   }
 
   return null
@@ -102,6 +107,9 @@ function collect(uuid) {
   </div>
   <div class="selector text-center">
     <select v-model="selectedSet" name="set-selection" class="text-center" @change="onSelectedSetChange">
+      <option value="mabon24C">
+        Set: Mabon 24C
+      </option>
       <option value="lammas24A">
         Set: Lammas 24A
       </option>
