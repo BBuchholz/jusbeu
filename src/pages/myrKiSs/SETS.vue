@@ -12,6 +12,7 @@ import { setMetaNOV23, setNOV23 } from '../setNOV23'
 import { setDEC23, setMetaDEC23 } from '../setDEC23'
 import { setLammas24A, setMetaLammas24A } from '../setLMS24A'
 import { setMabon24C, setMetaMabon24C } from '../setMBN24C'
+import { setImbolc25B, setMetaImbolc25B } from '../setIMB25B'
 
 const foundCards = useStorage('foundCardsKey', [])
 
@@ -21,7 +22,7 @@ function clearCards() {
 }
 
 const performSetAudit = ref(false)
-const selectedSet = ref('mabon24C')
+const selectedSet = ref('imbolc25B')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
@@ -45,6 +46,8 @@ const setMetaData = computed(() => {
       return ref(setMetaLammas24A.value)
     case 'mabon24C':
       return ref(setMetaMabon24C.value)
+    case 'imbolc25B':
+      return ref(setMetaImbolc25B.value)
   }
 })
 
@@ -86,6 +89,10 @@ const sortedCards = computed(() => {
       return ref([
         ...setMabon24C.value,
       ])
+    case 'imbolc25B':
+      return ref([
+        ...setImbolc25B.value,
+      ])
   }
 
   return null
@@ -109,6 +116,9 @@ function collect(uuid) {
   </div>
   <div class="selector text-center">
     <select v-model="selectedSet" name="set-selection" class="text-center" @change="onSelectedSetChange">
+      <option value="imbolc25B">
+        Set: Imbolc 25B
+      </option>
       <option value="mabon24C">
         Set: Mabon 24C
       </option>
