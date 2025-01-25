@@ -38,7 +38,7 @@ export const setImbolc25B = ref([
   {
     passCode: 'TMPLT',
     uuid: '',
-    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-708d_PRINT_CARD.png',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT_Dryadh-cbfe_PRINT-CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
