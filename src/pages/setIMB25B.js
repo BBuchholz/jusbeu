@@ -35,4 +35,64 @@ export const setImbolc25B = ref([
       },
     ],
   },
+  {
+    passCode: 'TMPLT',
+    uuid: '',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-708d_PRINT_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'TMPLT',
+    uuid: '',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-AETHYR-65dc_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'TMPLT',
+    uuid: '',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-VHALE-066c_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'TMPLT',
+    uuid: '',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-ZHONE-b9c5_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'TMPLT',
+    uuid: '',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-MATRIX-b9ad_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
 ])
