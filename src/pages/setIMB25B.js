@@ -11,45 +11,8 @@ export const setMetaImbolc25B = ref(
 
 export const setImbolc25B = ref([
   {
-    passCode: 'TMPLT',
-    uuid: '0b823a0e-e0ae-4c61-b52f-28c9874827af',
-    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-708d_PRINT_CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'REPLACETHIS',
-      },
-    ],
-  },
-  {
-    passCode: 'MauryB',
-    related: 'REPLACETHIS, REPLACETHIS, REPLACETHIS',
-    uuid: '04926a7f-d0c0-4fc8-bd29-ec6772a13c10',
-    image: 'https://d17d04qkxoe2lw.cloudfront.net/MAURYB-3c10_PRINT_CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'Imagine AI app',
-      },
-    ],
-  },
-  {
-    passCode: 'TMPLT',
-    uuid: '',
-    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT_Dryadh-cbfe_PRINT-CARD.png',
-    designCredit: 'Brent Buchholz',
-    componentCredits: [
-      {
-        creditItem: 'image',
-        creditDue: 'REPLACETHIS',
-      },
-    ],
-  },
-  {
-    passCode: 'TMPLT',
-    uuid: '',
+    passCode: 'TMPLT-AETHYR',
+    uuid: 'TMPLT-AETHYR-65dc',
     image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-AETHYR-65dc_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
@@ -60,9 +23,9 @@ export const setImbolc25B = ref([
     ],
   },
   {
-    passCode: 'TMPLT',
-    uuid: '',
-    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-VHALE-066c_CARD.png',
+    passCode: 'TMPLT-DRYADH',
+    uuid: 'TMPLT-DRYADH-cbfe',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-DRYADH-cbfe_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
@@ -72,8 +35,8 @@ export const setImbolc25B = ref([
     ],
   },
   {
-    passCode: 'TMPLT',
-    uuid: '',
+    passCode: 'TMPLT-ZHONE',
+    uuid: 'TMPLT-ZHONE-b9c5',
     image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-ZHONE-b9c5_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
@@ -84,9 +47,81 @@ export const setImbolc25B = ref([
     ],
   },
   {
-    passCode: 'TMPLT',
-    uuid: '',
+    passCode: 'TMPLT-VHALE',
+    uuid: 'TMPLT-VHALE-066c',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-VHALE-066c_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'TMPLT-MATRIX',
+    uuid: 'TMPLT-MATRIX-b9ad',
     image: 'https://d17d04qkxoe2lw.cloudfront.net/TMPLT-MATRIX-b9ad_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'IMAGINAL-AETHYR',
+    uuid: 'IMAGINAL-AETHYR-1255',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/IMAGINAL-AETHYR-1255_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'POSSE-DRYADH',
+    uuid: 'POSSE-DRYADH-d682',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/POSSE-DRYADH-d682_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'JSY-ZHONE',
+    uuid: 'JSY-ZHONE-d79f',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/JSY-ZHONE-d79f_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'GARDINER-VHALE',
+    uuid: 'GARDINER-VHALE-9cc3',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/GARDINER-VHALE-9cc3_CARD.png',
+    designCredit: 'Brent Buchholz',
+    componentCredits: [
+      {
+        creditItem: 'image',
+        creditDue: 'REPLACETHIS',
+      },
+    ],
+  },
+  {
+    passCode: 'TCTKL-MATRIX',
+    uuid: 'TCTKL-MATRIX-0fe4',
+    image: 'https://d17d04qkxoe2lw.cloudfront.net/TCTKL-MATRIX-0fe4_CARD.png',
     designCredit: 'Brent Buchholz',
     componentCredits: [
       {
