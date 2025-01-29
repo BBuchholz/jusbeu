@@ -3,14 +3,6 @@ import {
   getCardsFor,
 } from '../allSets'
 
-import {
-  getCirclesForPassCode,
-} from '../allCircles'
-
-import {
-  getSeedsForPassCode,
-} from '../allSeeds'
-
 const props = defineProps({ anyMyrKi: String })
 const router = useRouter()
 const user = useUserStore()
@@ -24,13 +16,13 @@ const foundCards = ref([
   ...getCardsFor(props.anyMyrKi),
 ])
 
-const foundCirclesForPassCode = ref([
-  ...getCirclesForPassCode(props.anyMyrKi),
-])
+// const foundCirclesForPassCode = ref([
+//   ...getCirclesForPassCode(props.anyMyrKi),
+// ])
 
-const foundSeedsForPassCode = ref([
-  ...getSeedsForPassCode(props.anyMyrKi),
-])
+// const foundSeedsForPassCode = ref([
+//   ...getSeedsForPassCode(props.anyMyrKi),
+// ])
 // END CARD LOOKUP //////////////////////////////////////
 
 // BEGIN CARD CAROUSEL //////////////////////////////////
@@ -74,7 +66,7 @@ function decrementIndex() {
         <img class="card" :src="currentCard.image">
       </RouterLink>
     </div>
-    <div class="page-center">
+    <!-- <div class="page-center">
       <div v-if="foundCirclesForPassCode.length">
         <ul>
           <li v-for="thisFoundCircle in foundCirclesForPassCode" :key="thisFoundCircle.circleCode">
@@ -104,7 +96,7 @@ function decrementIndex() {
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </div>
   <!-- END CARD DISPLAY////////////////////////////////// -->
   <!-- BEGIN NOT FOUND DISPLAY//////////////////////// -->
