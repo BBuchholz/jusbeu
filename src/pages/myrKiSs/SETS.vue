@@ -1,59 +1,85 @@
 <script setup>
-import { useStorage } from '@vueuse/core'
+// import {
+//   getCreditsForCard,
+// } from '../allSets'
+
 import {
-  getCreditsForCard,
-} from '../allSets'
+  // setMetaTMPLT1,
+  setTMPLT1,
+} from '../setTMPLT1'
+import {
+  setCG1,
+  // setMetaCG1,
+} from '../setCG1'
+import {
+  setJBU1,
+  // setMetaJBU1
+} from '../setJBU1'
+import {
+  // setMetaSFG1,
+  setSFG1,
+} from '../setSFG1'
+import {
+  // setMetaNOV23,
+  setNOV23,
+} from '../setNOV23'
+import {
+  setDEC23,
+  // setMetaDEC23
+} from '../setDEC23'
+import {
+  setLammas24A,
+  // setMetaLammas24A
+} from '../setLMS24A'
+import {
+  setMabon24C,
+  // setMetaMabon24C
+} from '../setMBN24C'
+import {
+  setImbolc25B,
+  // setMetaImbolc25B
+} from '../setIMB25B'
 
-import { setMetaTMPLT1, setTMPLT1 } from '../setTMPLT1'
-import { setCG1, setMetaCG1 } from '../setCG1'
-import { setJBU1, setMetaJBU1 } from '../setJBU1'
-import { setMetaSFG1, setSFG1 } from '../setSFG1'
-import { setMetaNOV23, setNOV23 } from '../setNOV23'
-import { setDEC23, setMetaDEC23 } from '../setDEC23'
-import { setLammas24A, setMetaLammas24A } from '../setLMS24A'
-import { setMabon24C, setMetaMabon24C } from '../setMBN24C'
-import { setImbolc25B, setMetaImbolc25B } from '../setIMB25B'
+// const foundCards = useStorage('foundCardsKey', [])
 
-const foundCards = useStorage('foundCardsKey', [])
+// function clearCards() {
+//   foundCards.value = []
+//   alert('Cards Cleared')
+// }
 
-function clearCards() {
-  foundCards.value = []
-  alert('Cards Cleared')
-}
-
-const performSetAudit = ref(false)
+// const performSetAudit = ref(false)
 const selectedSet = ref('imbolc25B')
 
 function onSelectedSetChange(e) {
   selectedSet.value = e.target.value
 }
 
-const setMetaData = computed(() => {
-  switch (selectedSet.value) {
-    case 'tmplt1':
-      return ref(setMetaTMPLT1.value)
-    case 'cg1':
-      return ref(setMetaCG1.value)
-    case 'jbu1':
-      return ref(setMetaJBU1.value)
-    case 'sfg1':
-      return ref(setMetaSFG1.value)
-    case 'nov23':
-      return ref(setMetaNOV23.value)
-    case 'dec23':
-      return ref(setMetaDEC23.value)
-    case 'lammas24A':
-      return ref(setMetaLammas24A.value)
-    case 'mabon24C':
-      return ref(setMetaMabon24C.value)
-    case 'imbolc25B':
-      return ref(setMetaImbolc25B.value)
-  }
-})
+// const setMetaData = computed(() => {
+//   switch (selectedSet.value) {
+//     case 'tmplt1':
+//       return ref(setMetaTMPLT1.value)
+//     case 'cg1':
+//       return ref(setMetaCG1.value)
+//     case 'jbu1':
+//       return ref(setMetaJBU1.value)
+//     case 'sfg1':
+//       return ref(setMetaSFG1.value)
+//     case 'nov23':
+//       return ref(setMetaNOV23.value)
+//     case 'dec23':
+//       return ref(setMetaDEC23.value)
+//     case 'lammas24A':
+//       return ref(setMetaLammas24A.value)
+//     case 'mabon24C':
+//       return ref(setMetaMabon24C.value)
+//     case 'imbolc25B':
+//       return ref(setMetaImbolc25B.value)
+//   }
+// })
 
-const currentSetName = computed(() => {
-  return setMetaData.value.setName
-})
+// const currentSetName = computed(() => {
+//   return setMetaData.value.setName
+// })
 
 const sortedCards = computed(() => {
   switch (selectedSet.value) {
@@ -98,13 +124,13 @@ const sortedCards = computed(() => {
   return null
 })
 
-function collect(uuid) {
-  foundCards.value.push(uuid)
-}
+// function collect(uuid) {
+//   foundCards.value.push(uuid)
+// }
 </script>
 
 <template>
-  <div class="text-center">
+  <!-- <div class="text-center">
     <h1>TOOLBOX</h1>
     <p>
       LOCAL STORAGE FOR:
@@ -113,7 +139,7 @@ function collect(uuid) {
     <button @click="clearCards()">
       Clear Cards
     </button>
-  </div>
+  </div> -->
   <div class="selector text-center">
     <select v-model="selectedSet" name="set-selection" class="text-center" @change="onSelectedSetChange">
       <option value="imbolc25B">
@@ -145,11 +171,11 @@ function collect(uuid) {
       </option>
     </select>
 
-    <input id="checkbox" v-model="performSetAudit" type="checkbox">
-    <label for="checkbox">Display Set Audit</label>
+    <!-- <input id="checkbox" v-model="performSetAudit" type="checkbox">
+    <label for="checkbox">Display Set Audit</label> -->
   </div>
 
-  <div v-if="performSetAudit" class="text-center">
+  <!-- <div v-if="performSetAudit" class="text-center">
     <p>
       SET AUDIT
     </p>
@@ -195,28 +221,28 @@ function collect(uuid) {
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="text-center">
+  <!-- <div class="text-center">
     <p>Unless otherwise specified all copyrights mentioned on this page are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a></p>
-  </div>
+  </div> -->
 
   <div v-if="sortedCards">
-    <p class="text-center">
+    <!-- <p class="text-center">
       Cards In This Set: {{ sortedCards.value.length }}
-    </p>
+    </p> -->
     <div v-for="aCard in sortedCards.value" :key="aCard" class="zhone flex-container">
       <!-- <div v-if="aCard.image" class="card flex-child">
         <RouterLink :to="`/cards/${aCard.passCode}`" replace>
           <img :src="aCard.image">
         </RouterLink>
       </div> -->
-      <div v-if="foundCards.includes(aCard.uuid)" class="card flex-child">
-        <RouterLink :to="`/cards/${aCard.passCode}`" replace>
-          <img :src="aCard.image">
-        </RouterLink>
-      </div>
-      <div v-else class="card flex-child">
+      <!-- <div v-if="foundCards.includes(aCard.uuid)" class="card flex-child"> -->
+      <RouterLink :to="`/cards/${aCard.passCode}`" replace>
+        <img :src="aCard.image">
+      </RouterLink>
+      <!-- </div> -->
+      <!-- <div v-else class="card flex-child">
         <p>NOT YET COLLECTED</p>
         <button @click="collect(aCard.uuid)">
           Collect
@@ -224,10 +250,10 @@ function collect(uuid) {
         <p>
           {{ aCard.uuid }}
         </p>
-      </div>
-      <div class="flex-child content">
+      </div> -->
+      <!-- <div class="flex-child content">
         <p>{{ getCreditsForCard(aCard) }}</p>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -246,7 +272,7 @@ a {
 }
 
 .zhone {
-  margin: 40px;
+  margin: 100px;
 }
 
 .flex-container {
