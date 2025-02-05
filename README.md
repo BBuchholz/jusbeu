@@ -1,46 +1,31 @@
-<h1 align='center'>MCN</h1>
+<h1 align='center'>JBU</h1>
 
 <p align='center'>
-  Welcome to the base template for a Myriad Central Node. Anyone can host a central node, interaction with other nodes is determined by a mutually agreeded upon level of processing between nodes, determined by the moderators of that node.
+  This is my documentation for JusBeU, an app I built from a template that was admittedly way above my head.
 </p>
 
 <p align='center'>
-  Myriad is a Decentralized Ecosystem, built upon a backbone of interconnected "Central Nodes". To Spin another up, follow the steps below and link up to existing nodes you follow within the ecosystem.
+  I am working on building a better documentation for myself and will update these notes as I go. Basically, this site revolves around the use of passcodes which I call "MyrKiS" (singular "MyrKi", originating from an intentional play on words referering to "no mere key", but more on that elsewhere)
 </p>
 
 <br>
 
-<p align='center'>
-<a href="https://myriad-central.netlify.app/">Live Demo</a>
+<p>
+  My "squirrel brain alchemy" builds all my various projekts and this one is no different so I'd check expectations of stability and steadiness at the door, this is a passion project and what gets worked on is where my passion leads me.
 </p>
-
-<p>Try PASSCODES "ADMIT_1" and "ADMITONE" for demo purposes</p>
 
 <br>
 
+<p align='center'>Try  "PNDMN" to see a Tarot project I was working on when I originally started this years ago, everything is in an ever-evolving state of lovingly fearless tinkering, nothing is ever truly completed.</p>
 
+<br>
 
+<p>
+  If you came here from my SubStack, any of the cards can be found by entering the MyrKi from the cards. I'm working on making both JusBeU and Cyber Temple Cet into vessels for the Decks going forward (this may become Aethyr Temple Alpha someday...)
+</p>
 
-## Try it now!
+<br>
 
-> Myriad Central Node requires Node >=14.18
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/BBuchholz/myriad-central-node/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit BBuchholz/myriad-central-node my-mcn-app
-cd my-mcn-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
-```
-
-
-## Usage
 
 ### Development
 
@@ -81,25 +66,6 @@ Then, after review, deploy to production with
 ntl deploy --prod
 ```
 
-## Checklist
-
-When you use this template, try to follow the checklist to update your info properly 
-
-- [ ] Modify LICENSING as needed
-
-- [ ] Change the title in `App.vue` 
-- [ ] Change title on home page
-
-- [ ] Change the default MYRIAD SYMBOL to reflect Desired Branding
-
-- [ ] Change the hostname in `vite.config.ts`
-- [ ] change all github links to point to the proper site
-- [ ] change demo link to hosted site
-- [ ] add Logo to index.vue
-
-- [ ] Change the favicon in `public`
-
-- [ ] Clean up the README when finished
 
 ## Features
 

@@ -61,7 +61,7 @@ function decrementIndex() {
         +
       </button>
       <RouterLink
-        :to="`/sentiments/${currentCard.uuid}`"
+        :to="`/related/${currentCard.uuid}`"
       >
         <img class="card" :src="currentCard.image">
       </RouterLink>
